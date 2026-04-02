@@ -1,0 +1,8 @@
+﻿@page "/retrieval_reservation"
+@inherits ChildPageBasePC
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <CompGroupField @attributes="@(GetAttributes(STR_ATTRIBUTE_SEARCH))" />
+    <DataGridExtend2 @ref="@_gridObject" @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID))" @bind-SelectedData="@_gridSelectedData" />
+</EditForm>

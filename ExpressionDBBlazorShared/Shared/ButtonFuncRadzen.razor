@@ -1,0 +1,67 @@
+﻿@using Blazor.DynamicJS
+@inject IJSRuntime JS
+@implements IAsyncDisposable
+
+
+<RadzenRow JustifyContent="JustifyContent.SpaceBetween" AlignItems="AlignItems.Normal"  Gap="0">
+    <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.End" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="1">
+        @if (IsHandy)
+        {
+            <RadzenButton @ref="RadzenButtonF1" Icon="@IconName1" style=@($"margin-bottom: {HTButtonMarginBottom};background-color: {HT_Button1BackgroundColor}; color:{HT_Button1TextColor}") Text="@button1text" Click="@ButtonClickF1" Variant="Variant.Flat" Visible=@(!string.IsNullOrWhiteSpace(@button1text) || !string.IsNullOrWhiteSpace(@IconName1)) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyF1" />
+            <RadzenButton @ref="RadzenButtonF2" Icon="@IconName2" style=@($"margin-bottom: {HTButtonMarginBottom};background-color: {HT_Button2BackgroundColor};") Text="@button2text" Click="@ButtonClickF2" Variant="Variant.Flat" Visible=@(!string.IsNullOrWhiteSpace(@button2text) || !string.IsNullOrWhiteSpace(@IconName2)) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyF2" />
+            <RadzenButton @ref="RadzenButtonF3" Icon="@IconName3" style=@($"margin-bottom: {HTButtonMarginBottom};background-color: {HT_Button3BackgroundColor};") Text="@button3text" Click="@ButtonClickF3" Variant="Variant.Flat" Visible=@(!string.IsNullOrWhiteSpace(@button3text) || !string.IsNullOrWhiteSpace(@IconName3)) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyF3" />
+            <RadzenButton @ref="RadzenButtonF4" Icon="@IconName4" style=@($"margin-bottom: {HTButtonMarginBottom};background-color: {HT_Button4BackgroundColor}; color:{HT_Button4TextColor}") Text="@button4text" Click="@ButtonClickF4" Variant="Variant.Flat" Visible=@(!string.IsNullOrWhiteSpace(@button4text) || !string.IsNullOrWhiteSpace(@IconName4)) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyF4" />
+        }
+        else
+        {
+            <RadzenButton @ref="RadzenButtonF1" Icon="@IconName1" style=@($"margin-bottom: {PCButtonMarginBottom};") Text="@button1text" Click="@ButtonClickF1" Variant="Variant.Flat" Visible=@(!string.IsNullOrWhiteSpace(@button1text) || !string.IsNullOrWhiteSpace(@IconName1)) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyF1" />
+            <RadzenButton @ref="RadzenButtonF2" Icon="@IconName2" style=@($"margin-bottom: {PCButtonMarginBottom};") Text="@button2text" Click="@ButtonClickF2" Variant="Variant.Flat" Visible=@(!string.IsNullOrWhiteSpace(@button2text) || !string.IsNullOrWhiteSpace(@IconName2)) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyF2" />
+            <RadzenButton @ref="RadzenButtonF3" Icon="@IconName3" style=@($"margin-bottom: {PCButtonMarginBottom};") Text="@button3text" Click="@ButtonClickF3" Variant="Variant.Flat" Visible=@(!string.IsNullOrWhiteSpace(@button3text) || !string.IsNullOrWhiteSpace(@IconName3)) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyF3" />
+            <RadzenButton @ref="RadzenButtonF4" Icon="@IconName4" style=@($"margin-bottom: {PCButtonMarginBottom};") Text="@button4text" Click="@ButtonClickF4" Variant="Variant.Flat" Visible=@(!string.IsNullOrWhiteSpace(@button4text) || !string.IsNullOrWhiteSpace(@IconName4)) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyF4" />
+        }
+    </RadzenStack>
+    <RadzenStack  Orientation="Orientation.Horizontal" AlignItems="AlignItems.End" JustifyContent="JustifyContent.Center" Wrap="FlexWrap.NoWrap" Gap="1">
+        <RadzenButton @ref="RadzenButtonF5" Icon="@IconName5"
+                                style=@($"margin-bottom: {PCButtonMarginBottom};") Text="@button5text" Click="@ButtonClickF5" Variant="Variant.Flat" Visible=@(!string.IsNullOrWhiteSpace(@button5text)|| !string.IsNullOrWhiteSpace(@IconName5)) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyF5" />
+        <RadzenButton @ref="RadzenButtonF6" Icon="@IconName6"
+                                style=@($"margin-bottom: {PCButtonMarginBottom};") Text="@button6text" Click="@ButtonClickF6" Variant="Variant.Flat" Visible=@(!string.IsNullOrWhiteSpace(@button6text)|| !string.IsNullOrWhiteSpace(@IconName6)) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyF6" />
+        <RadzenButton @ref="RadzenButtonF7" Icon="@IconName7"
+                                style=@($"margin-bottom: {PCButtonMarginBottom};") Text="@button7text" Click="@ButtonClickF7" Variant="Variant.Flat" Visible=@(!string.IsNullOrWhiteSpace(@button7text)|| !string.IsNullOrWhiteSpace(@IconName7)) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyF7" />
+        <RadzenButton @ref="RadzenButtonF8" Icon="@IconName8"
+                                style=@($"margin-bottom: {PCButtonMarginBottom};") Text="@button8text" Click="@ButtonClickF8" Variant="Variant.Flat" Visible=@(!string.IsNullOrWhiteSpace(@button8text)|| !string.IsNullOrWhiteSpace(@IconName8)) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyF8" />
+    </RadzenStack>
+    <RadzenStack  Orientation="Orientation.Horizontal" AlignItems="AlignItems.End" JustifyContent="JustifyContent.End" Wrap="FlexWrap.NoWrap" Gap="1">
+        <RadzenButton @ref="RadzenButtonF9" Icon="@IconName9"
+                                style=@($"margin-bottom: {PCButtonMarginBottom};") Text="@button9text" Click="@ButtonClickF9" Variant="Variant.Flat" Visible=@(!string.IsNullOrWhiteSpace(@button9text)|| !string.IsNullOrWhiteSpace(@IconName9)) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyF9" />
+        <RadzenButton @ref="RadzenButtonF10" Icon="@IconName10"
+                                style=@($"margin-bottom: {PCButtonMarginBottom};") Text="@button10text" Click="@ButtonClickF10" Variant="Variant.Flat" Visible=@(!string.IsNullOrWhiteSpace(@button10text)|| !string.IsNullOrWhiteSpace(@IconName10)) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyF10" />
+        <RadzenButton @ref="RadzenButtonF11" Icon="@IconName11"
+                                style=@($"margin-bottom: {PCButtonMarginBottom};") Text="@button11text" Click="@ButtonClickF11" Variant="Variant.Flat" Visible=@(!string.IsNullOrWhiteSpace(@button11text)|| !string.IsNullOrWhiteSpace(@IconName11)) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyF11" />
+        <RadzenButton @ref="RadzenButtonF12" Icon="@IconName12"
+                                style=@($"margin-bottom: {PCButtonMarginBottom};") Text="@button12text" Click="@ButtonClickF12" Variant="Variant.Flat" Visible=@(!string.IsNullOrWhiteSpace(@button12text)|| !string.IsNullOrWhiteSpace(@IconName12)) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyF12" />
+        @if (IsHandy)
+        {
+            <RadzenButton @ref="RadzenButtonPageUp" Icon="@IconNamePageUp"
+                            style="margin-bottom: 1px;background-color: #87cefa; color:#ffffff" Text="@buttonPageUptext" Click="@ButtonClickPageUp" Variant="Variant.Flat" Visible=@(@pageupvisible) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyPageUp" />
+            <RadzenButton @ref="RadzenButtonPageDown" Icon="@IconNamePageDown"
+                            style="margin-bottom: 1px;background-color: #000000; color:#ffffff" Text="@buttonPageDowntext" Click="@ButtonClickPageDown" Variant="Variant.Flat" Visible=@(@pagedownvisible) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyPageDown" />
+            <RadzenButton @ref="RadzenButtonNotify" Icon="@IconNameNotify"
+                            style="margin-bottom: 1px;background-color: #000000; color:#ffffff" Text="@buttonNotifytext" Click="@ButtonClickNotify" Variant="Variant.Flat" Visible=@(!string.IsNullOrWhiteSpace(@buttonNotifytext)|| !string.IsNullOrWhiteSpace(@IconNameNotify)) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyNotify" />
+            <RadzenButton @ref="RadzenButtonHomeNavigate" Icon="@IconNameHomeNavigate"
+                            style="margin-bottom: 1px;background-color: #000000; color:#ffffff" Text="@buttonHomeNavigatetext" Click="@ButtonClickHomeNavigate" Variant="Variant.Flat" Visible=@(!string.IsNullOrWhiteSpace(@buttonHomeNavigatetext)|| !string.IsNullOrWhiteSpace(@IconNameHomeNavigate)) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyHomeNavigate" />
+        }
+        else
+        {
+            <RadzenButton @ref="RadzenButtonPageUp" Icon="@IconNamePageUp"
+                            style="margin-bottom: 1px" Text="@buttonPageUptext" Click="@ButtonClickPageUp" Variant="Variant.Flat" Visible=@(@pageupvisible) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyPageUp" />
+            <RadzenButton @ref="RadzenButtonPageDown" Icon="@IconNamePageDown"
+                            style="margin-bottom: 1px" Text="@buttonPageDowntext" Click="@ButtonClickPageDown" Variant="Variant.Flat" Visible=@(@pagedownvisible) class="rz-border-radius-10 rz-shadow-10 rz-ripple" IsBusy="@isBusyPageDown" />
+        }
+        <div id="modal" class="modal">
+            <div id="interactive" class="viewport"></div>
+            <p class="text">カメラにバーコードを写してください。</p>
+        </div>
+    </RadzenStack>
+</RadzenRow>
+
+

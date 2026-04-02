@@ -1,0 +1,146 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DE77D4A8-A79B-413D-B47F-CD3CCB3F13DD}|ExpressionDBWebAPI\\ExpressionDBWebAPI.csproj|c:\\suntory_osaka_materialhandlingmanagementapp\\expressiondbwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{DE77D4A8-A79B-413D-B47F-CD3CCB3F13DD}|ExpressionDBWebAPI\\ExpressionDBWebAPI.csproj|solutionrelative:expressiondbwebapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE77D4A8-A79B-413D-B47F-CD3CCB3F13DD}|ExpressionDBWebAPI\\ExpressionDBWebAPI.csproj|c:\\suntory_osaka_materialhandlingmanagementapp\\expressiondbwebapi\\fodyweavers.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{DE77D4A8-A79B-413D-B47F-CD3CCB3F13DD}|ExpressionDBWebAPI\\ExpressionDBWebAPI.csproj|solutionrelative:expressiondbwebapi\\fodyweavers.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D393E1-46D1-4A95-AB33-AF66C8886DAC}|AspireAppHost\\AspireAppHost.csproj|c:\\suntory_osaka_materialhandlingmanagementapp\\aspireapphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{24D393E1-46D1-4A95-AB33-AF66C8886DAC}|AspireAppHost\\AspireAppHost.csproj|solutionrelative:aspireapphost\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{24D393E1-46D1-4A95-AB33-AF66C8886DAC}|AspireAppHost\\AspireAppHost.csproj|c:\\suntory_osaka_materialhandlingmanagementapp\\aspireapphost\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{24D393E1-46D1-4A95-AB33-AF66C8886DAC}|AspireAppHost\\AspireAppHost.csproj|solutionrelative:aspireapphost\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 40,
+          "SelectedChildIndex": 9,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3822e751-eb69-4b0e-b301-595a9e4c74d5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{605322a2-17ae-43f4-b60f-766556e46c87}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{28836128-fc2c-11d2-a433-00c04f72d18a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBWebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "ExpressionDBWebAPI\\appsettings.json",
+              "ToolTip": "C:\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBWebAPI\\appsettings.json",
+              "RelativeToolTip": "ExpressionDBWebAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-11T08:41:34.35Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FodyWeavers.xml",
+              "DocumentMoniker": "C:\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBWebAPI\\FodyWeavers.xml",
+              "RelativeDocumentMoniker": "ExpressionDBWebAPI\\FodyWeavers.xml",
+              "ToolTip": "C:\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBWebAPI\\FodyWeavers.xml",
+              "RelativeToolTip": "ExpressionDBWebAPI\\FodyWeavers.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2026-03-11T08:41:33.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\AspireAppHost\\Program.cs",
+              "RelativeDocumentMoniker": "AspireAppHost\\Program.cs",
+              "ToolTip": "C:\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\AspireAppHost\\Program.cs",
+              "RelativeToolTip": "AspireAppHost\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-11T08:41:01.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\AspireAppHost\\appsettings.json",
+              "RelativeDocumentMoniker": "AspireAppHost\\appsettings.json",
+              "ToolTip": "C:\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\AspireAppHost\\appsettings.json",
+              "RelativeToolTip": "AspireAppHost\\appsettings.json",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-03-11T08:40:55.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeDocumentMoniker": "..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "RelativeToolTip": "..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AgIAAGoSAAAAAAAAAAAhwMYTAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2026-02-27T01:05:12.486Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

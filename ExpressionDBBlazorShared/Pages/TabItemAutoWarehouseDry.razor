@@ -1,0 +1,40 @@
+﻿@inherits TabItemBase
+
+@*自動倉庫状況(常温)*@
+
+<style>
+    .color_box {
+        display: flex;
+        justify-content: center; /* 水平方向の中央揃え */
+        align-items: center; /* 垂直方向の中央揃え */
+        border-style:dashed;
+        border-block-color: black;
+        border-width: 2px;
+        height: @ColorHeight;
+        width: @ColorWidth;
+    }
+</style>
+
+<EditForm Model="@(this)" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    @* <CompGroupField @attributes="@(GetAttributes(STR_ATTRIBUTE_SEARCH))" /> *@
+    @*ロケーション区分による色の説明表示*@
+    @if (VisibleColor)
+    {
+        <RadzenCard style="padding:8px">
+            <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Start" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="2">
+                <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" Gap="0.5rem" RowGap="0.5rem">
+                    @{
+                        for (int i = 0; i < _locationTypes.Count(); i++)
+                        {
+                            <div class="color_box" Style="@($"color:{_locationTypes[i].CellForeColor}; background-color:{_locationTypes[i].CellBackColor};")" >
+                                @_locationTypes[i].LocationTypeName
+                            </div>
+                        }
+                    }
+                </RadzenRow>
+            </RadzenStack>
+        </RadzenCard>
+    }
+    <DataGridExtend2 @ref="@_gridObject" @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID))" @bind-SelectedCellData="@_gridSelectedCellData"/>
+</EditForm>

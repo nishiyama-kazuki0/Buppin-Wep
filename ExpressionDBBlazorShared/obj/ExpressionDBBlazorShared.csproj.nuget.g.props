@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <RestoreSuccess Condition=" '$(RestoreSuccess)' == '' ">True</RestoreSuccess>
+    <RestoreTool Condition=" '$(RestoreTool)' == '' ">NuGet</RestoreTool>
+    <ProjectAssetsFile Condition=" '$(ProjectAssetsFile)' == '' ">$(MSBuildThisFileDirectory)project.assets.json</ProjectAssetsFile>
+    <NuGetPackageRoot Condition=" '$(NuGetPackageRoot)' == '' ">$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+    <NuGetPackageFolders Condition=" '$(NuGetPackageFolders)' == '' ">C:\Users\G2507\.nuget\packages\;C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages</NuGetPackageFolders>
+    <NuGetProjectStyle Condition=" '$(NuGetProjectStyle)' == '' ">PackageReference</NuGetProjectStyle>
+    <NuGetToolVersion Condition=" '$(NuGetToolVersion)' == '' ">6.13.2</NuGetToolVersion>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <SourceRoot Include="C:\Users\G2507\.nuget\packages\" />
+    <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)sotsera.blazor.toaster\3.0.0\contentFiles\any\netstandard2.1\Properties\launchSettings.json" Condition="Exists('$(NuGetPackageRoot)sotsera.blazor.toaster\3.0.0\contentFiles\any\netstandard2.1\Properties\launchSettings.json')">
+      <NuGetPackageId>Sotsera.Blazor.Toaster</NuGetPackageId>
+      <NuGetPackageVersion>3.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Properties\launchSettings.json</Link>
+    </Content>
+  </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)toolbelt.blazor.getproperty.script\1.2.0\buildTransitive\Toolbelt.Blazor.GetProperty.Script.props" Condition="Exists('$(NuGetPackageRoot)toolbelt.blazor.getproperty.script\1.2.0\buildTransitive\Toolbelt.Blazor.GetProperty.Script.props')" />
+    <Import Project="$(NuGetPackageRoot)toolbelt.blazor.viewtransition\1.0.3\buildTransitive\Toolbelt.Blazor.ViewTransition.props" Condition="Exists('$(NuGetPackageRoot)toolbelt.blazor.viewtransition\1.0.3\buildTransitive\Toolbelt.Blazor.ViewTransition.props')" />
+    <Import Project="$(NuGetPackageRoot)sotsera.blazor.toaster\3.0.0\buildTransitive\Sotsera.Blazor.Toaster.props" Condition="Exists('$(NuGetPackageRoot)sotsera.blazor.toaster\3.0.0\buildTransitive\Sotsera.Blazor.Toaster.props')" />
+    <Import Project="$(NuGetPackageRoot)radzen.blazor\5.3.5\buildTransitive\Radzen.Blazor.props" Condition="Exists('$(NuGetPackageRoot)radzen.blazor\5.3.5\buildTransitive\Radzen.Blazor.props')" />
+    <Import Project="$(NuGetPackageRoot)blazordownloadfile\2.4.0.2\buildTransitive\BlazorDownloadFile.props" Condition="Exists('$(NuGetPackageRoot)blazordownloadfile\2.4.0.2\buildTransitive\BlazorDownloadFile.props')" />
+    <Import Project="$(NuGetPackageRoot)blazor.dynamicjs\0.13.0\buildTransitive\Blazor.DynamicJS.props" Condition="Exists('$(NuGetPackageRoot)blazor.dynamicjs\0.13.0\buildTransitive\Blazor.DynamicJS.props')" />
+  </ImportGroup>
+</Project>

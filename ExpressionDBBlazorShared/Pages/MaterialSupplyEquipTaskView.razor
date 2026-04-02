@@ -1,0 +1,10 @@
+﻿@page "/material_supply_equip_task_view"
+@inherits ChildPageBasePC
+
+@*原料供給状況*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <CompGroupField @attributes="@(GetAttributes(STR_ATTRIBUTE_SEARCH))" />
+    <DataGridExtend2 @ref="@_gridObject" @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID))" @bind-SelectedData="@_gridSelectedData" />
+</EditForm>

@@ -1,0 +1,43 @@
+﻿@inherits StepItemBase
+
+@*HT画面：物品登録*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+
+    @*検索条件*@
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+        <RadzenIcon Icon="search" />
+        <RadzenText Text="棚検索" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px;"></RadzenText>
+    </RadzenRow>
+
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            <HtTitleValueTextBox Id="棚番" NextId="場所" Focus="true" Disabled="false" Title="棚番" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).棚番)"
+                                 Change="@棚"
+                                 MaxLength="SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+
+            <HtTitleValueTextBox Id="場所" NextId="階" Focus="true" Disabled="false" Title="場所" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).場所)"
+                                 Change="@場所"
+                                 MaxLength="SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+
+            <HtTitleValueTextBox Id="階" NextId="棚番" Focus="true" Disabled="false" Title="階" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).階)"
+                                 Change="@階"
+                                 MaxLength="SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+
+
+           
+@*             <HtTitleValueDropDown Id="AreaCd" NextId="ZoneCd" Disabled="false" Title="倉庫" Data="@dropdownArea" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).AreaCd)" Change="@OnChangeArea" />
+ *@           @*  <HtTitleValueDropDown Id="ZoneCd" NextId="PalletNo" Disabled="false" Title="ｿﾞｰﾝ" Data="@dropdownZone" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).ZoneCd)" Change="@OnChangeZone" />
+ *@
+        </RadzenStack>
+    </RadzenCard>
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+        <RadzenIcon Icon="info" />
+        <RadzenText Text="棚一覧" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px;"></RadzenText>
+    </RadzenRow>
+
+    <DataGridExtend4 @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID))" @bind-SelectedData="@_gridSelectedData"  />
+
+</EditForm>

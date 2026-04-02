@@ -1,0 +1,15 @@
+﻿@inherits DialogCommonInputContent
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    @if (Mode == enumDialogMode.Edit)
+    {
+        <CompGroupField @attributes="AttributesInfo" />
+    }
+    <CompGroupField @attributes="AttributesInput" />
+    <ButtonFuncRadzen @attributes="AttributesFuncButton"
+                      IsBusyDialog="false"
+                      OnClickResultF1="@OnClickResultF1"
+                      OnClickResultF4="@OnClickResultF4" 
+                      OnClickResultF2="@OnClickResultF2" />
+</EditForm>

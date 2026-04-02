@@ -1,0 +1,254 @@
+﻿@inherits HtTitleValueBase
+@using ExpressionDBBlazorShared.Validator;
+@using ExpressionDBBlazorShared.Services;
+
+<RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Start" Wrap="FlexWrap.NoWrap" Gap="0">
+    <RadzenRow class="rz-text-align-left" AlignItems="AlignItems.Center" Gap="0.5rem" RowGap="0.5rem" Style="width:100%">
+        <RadzenColumn Size=@(ColumnSize)>
+            <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.P" style=@($"font-size:{FontSizeLabel};font-weight:{FontWeightBold};")>
+                @{
+                    string strValue = Title;
+                    strValue = strValue.Replace("\\n", "\n");
+                }
+                @if (strValue.Contains("\n"))
+                {
+                    string[] lines = strValue.Split("\n");
+                    @for (int i = 0; i < lines.Length; i++)
+                    {
+                        <div>
+                            @if ((Required || Required2) && !Disabled && i == lines.Length - 1)
+                            {
+                                @lines[i]<span style="color: red;">@RequiredDisplaySuffix</span>
+                            }
+                            else
+                            {
+                                @lines[i]
+                            }
+                        </div>
+                    }
+                }
+                else
+                {
+                    @if ((Required || Required2) && !Disabled)
+                    {
+                        @strValue<span style="color: red;">@RequiredDisplaySuffix</span>
+                    }
+                    else
+                    {
+                        @strValue
+                    }
+                }
+            </RadzenText>
+        </RadzenColumn>
+        <RadzenColumn Size=@(Textnewline ? 12 : 12 - ColumnSize)>
+            
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Start" Wrap="FlexWrap.NoWrap" Gap="0">
+                <RadzenTextBox id="@Id" Disabled="@Disabled" Value="@Value" Name="@Name" Class="w-100" MaxLength="@MaxLength" Style=@($"width:50%;font-size:{FontSizeTextBox};font-weight:{FontWeightBold};text-align:right") Change="OnChange" ValueChanged="OnValueChanged" @onkeypress="@(args => OnKeyPress(args))" @onfocus="@(args => OnFocus(args))" />
+                @if (Required)
+                {
+                    <RequiredValidator For="() => Value" ItemName=@CaseTitle />
+                }
+                @if (Min is not null || Max is not null)
+                {
+                    <NumericRangeValidator For="() => Value" ItemName=@CaseTitle Min=@Min Max=@Max />
+                }
+                @if (RegexPattern is not null)
+                {
+                    <RegexValidator For="() => Value" ItemName=@CaseTitle PatternString=@RegexPattern />
+                }
+
+                <div style=@($"border-right: {CaseBaraMargin} solid transparent;")></div>
+
+                <RadzenTextBox id="@Id2" Disabled="@Disabled2" Value="@(Disabled2 && Value2 == "0" ? "" : Value2)" Name="@Name" Class="w-100" MaxLength="@MaxLength2" Style=@($"width:50%;font-size:{FontSizeTextBox};text-align:right;font-weight:{FontWeightBold};{(Disabled ? "color:#ff0000" : "")}") Change="OnChange2" ValueChanged="OnValue2Changed" @onkeypress="@(args => OnKeyPress2(args))" @onfocus="@(args => OnFocus2(args))" />
+                @if (Required2)
+                {
+                    <RequiredValidator For="() => Value2" ItemName=@BaraTitle />
+                }
+                @if (Min2 is not null || Max2 is not null)
+                {
+                    <NumericRangeValidator For="() => Value2" ItemName=@BaraTitle Min=@Min2 Max=@Max2 />
+                }
+                @if (RegexPattern2 is not null)
+                {
+                    <RegexValidator For="() => Value2" ItemName=@BaraTitle PatternString=@RegexPattern2 />
+                }
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+
+</RadzenStack>
+
+@code
+{
+    [Parameter]
+    public bool IsMixed { get; set; } = false;
+    [Parameter]
+    public EventCallback<string> Change { get; set; }
+    /// <summary>
+    /// 最大文字数（nullは制限なし）
+    /// </summary>
+    [Parameter]
+    public long? MaxLength { get; set; } = null;
+    /// <summary>
+    /// 最小値（nullは制限なし）
+    /// </summary>
+    [Parameter]
+    public decimal? Min { get; set; } = null;
+    /// <summary>
+    /// 最大値（nullは制限なし）
+    /// </summary>
+    [Parameter]
+    public decimal? Max { get; set; } = null;
+
+    /// <summary>
+    /// 正規表現文字列
+    /// </summary>
+    [Parameter]
+    public string? RegexPattern { get; set; } = null;
+
+    [Parameter]
+    public string CaseTitle { get; set; } = string.Empty;
+    [Parameter]
+    public string BaraTitle { get; set; } = string.Empty;
+
+    [Parameter]
+    public string Value2 { get; set; } = string.Empty;
+
+    [Parameter]
+    public string Id2 { get; set; } = string.Empty;
+
+    /// <summary>
+    /// データ変更イベントのコールバック
+    /// </summary>
+    [Parameter]
+    public EventCallback<string> Value2Changed { get; set; }
+    [Parameter]
+    public bool Disabled2 { get; set; } = true;
+    [Parameter]
+    public EventCallback<string> Change2 { get; set; }
+    /// <summary>
+    /// 最大文字数（nullは制限なし）
+    /// </summary>
+    [Parameter]
+    public long? MaxLength2 { get; set; } = null;
+    /// <summary>
+    /// 最小値（nullは制限なし）
+    /// </summary>
+    [Parameter]
+    public decimal? Min2 { get; set; } = null;
+    /// <summary>
+    /// 最大値（nullは制限なし）
+    /// </summary>
+    [Parameter]
+    public decimal? Max2 { get; set; } = null;
+
+    /// <summary>
+    /// 正規表現文字列
+    /// </summary>
+    [Parameter]
+    public string? RegexPattern2 { get; set; } = null;
+    /// <summary>
+    /// 必須フラグ
+    /// </summary>
+    [Parameter]
+    public bool Required2 { get; set; } = false;
+    /// <summary>
+    /// 二段表示の有無
+    /// </summary>
+    [Parameter]
+    public bool Textnewline { get; set; } = false;
+    /// <summary>
+    /// データ変更イベント
+    /// </summary>
+    /// <param name="args"></param>
+    private async void OnValueChanged(string args)
+    {
+        Value = args;
+        await ValueChanged.InvokeAsync(Value);
+    }
+    /// <summary>
+    /// チェンジイベントを上位に連携する
+    /// </summary>
+    /// <param name="args"></param>
+    private async void OnChange(string args)
+    {
+        await Change.InvokeAsync(args);
+    }
+
+    private void OnKeyPress(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            if (!string.IsNullOrEmpty(Id2))
+            {
+                dynamic window = _js!.GetWindow();
+                if (Id2 == Id)
+                {
+                    
+                    dynamic element1 = window.document.getElementById(Id);
+                    element1.blur();
+                }
+                dynamic element = window.document.getElementById(!Disabled2 ? Id2 : NextId);
+                if (element is not null)
+                {
+                    element.focus(); // カーソルを合わせる
+                }
+            }
+        }
+    }
+    private async void OnFocus(FocusEventArgs e)
+    {
+        // 最終フォーカスID更新
+        ChildBaseService.LastFocusId = Id;
+
+        // _jsを使用する方法では、画面遷移時初回は_jsがnullのためjavascriptコードを呼び出す方法とする
+        await JS.InvokeVoidAsync("selectText", Id);
+    }
+
+    /// <summary>
+    /// データ変更イベント
+    /// </summary>
+    /// <param name="args"></param>
+    private async void OnValue2Changed(string args)
+    {
+        Value2 = args;
+        await Value2Changed.InvokeAsync(Value2);
+    }
+    /// <summary>
+    /// チェンジイベントを上位に連携する
+    /// </summary>
+    /// <param name="args"></param>
+    private async void OnChange2(string args)
+    {
+        await Change2.InvokeAsync(args);
+    }
+
+    private void OnKeyPress2(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter")
+        {
+            if (!string.IsNullOrEmpty(NextId))
+            {
+                dynamic window = _js!.GetWindow();
+                if (NextId == Id2)
+                {
+                    dynamic element1 = window.document.getElementById(Id2);
+                    element1.blur();
+                }
+                dynamic element = window.document.getElementById(NextId);
+                if (element is not null)
+                {
+                    element.focus(); // カーソルを合わせる
+                }
+            }
+        }
+    }
+    private async void OnFocus2(FocusEventArgs e)
+    {
+        // 最終フォーカスID更新
+        ChildBaseService.LastFocusId = Id2;
+
+        // _jsを使用する方法では、画面遷移時初回は_jsがnullのためjavascriptコードを呼び出す方法とする
+        await JS.InvokeVoidAsync("selectText", Id2);
+    }
+}

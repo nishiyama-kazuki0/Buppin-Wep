@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "ManifestType": "Build",
+  "Endpoints": [
+    {
+      "Route": "ExpressionDBWebAPI.modules.json",
+      "AssetFile": "ExpressionDBWebAPI.modules.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AYfWq0QKtftfuVn9Qn6H19PCqkUQfJL5oFBnaAIX2KU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Feb 2026 01:31:30 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AYfWq0QKtftfuVn9Qn6H19PCqkUQfJL5oFBnaAIX2KU="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Toolbelt.Blazor.GetProperty.Script/Toolbelt.Blazor.GetProperty.Script.lib.module.js",
+      "AssetFile": "_content/Toolbelt.Blazor.GetProperty.Script/Toolbelt.Blazor.GetProperty.Script.lib.module.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "183"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rN9ebccf1yzi+bWyyip51JJuAKONWUHDBKWnKUpDWAA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Nov 2023 18:49:12 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rN9ebccf1yzi+bWyyip51JJuAKONWUHDBKWnKUpDWAA="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Toolbelt.Blazor.ViewTransition/script.js",
+      "AssetFile": "_content/Toolbelt.Blazor.ViewTransition/script.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "601"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CelfgRuXrd+xDV/UXAOf4S4CYAcbtbPDsEi8BjGkz9w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 29 Oct 2023 07:07:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CelfgRuXrd+xDV/UXAOf4S4CYAcbtbPDsEi8BjGkz9w="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Toolbelt.Blazor.ViewTransition/script.min.js",
+      "AssetFile": "_content/Toolbelt.Blazor.ViewTransition/script.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "206"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cVFUbnNf1a5+GJS3btwhrnv95ePLF+UwtEbIhAKtpkc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 29 Oct 2023 07:07:04 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cVFUbnNf1a5+GJS3btwhrnv95ePLF+UwtEbIhAKtpkc="
+        }
+      ]
+    }
+  ]
+}

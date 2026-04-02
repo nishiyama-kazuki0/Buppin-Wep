@@ -1,0 +1,143 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="wwwroot\lib\**" />
+    <Content Remove="wwwroot\lib\**" />
+    <EmbeddedResource Remove="wwwroot\lib\**" />
+    <None Remove="wwwroot\lib\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Data\CsvDataContractSerializerOutputFormatter.cs" />
+    <Compile Remove="Data\OutputFormatter.cs" />
+    <Compile Remove="Data\XlsDataContractSerializerOutputFormatter.cs" />
+    <Compile Remove="Pages\EditArrivals.razor.cs" />
+    <Compile Remove="Pages\MobileArrivalMenu - コピー (2).razor.cs" />
+    <Compile Remove="Pages\MobileArrivalMenu - コピー.razor.cs" />
+    <Compile Remove="Pages\MobileMenu - コピー.razor.cs" />
+    <Compile Remove="Pages\MoblileMenu.razor.cs" />
+    <Compile Remove="Pages\PickMenuPallet - コピー.razor.cs" />
+    <Compile Remove="Pages\StepItemPickingTargetSelect.razor.cs" />
+    <Compile Remove="Pages\StepItemSortingByStoreDestination.razor.cs" />
+    <Compile Remove="Services\DbManageService.cs" />
+    <Compile Remove="Services\NorthwindService.cs" />
+    <Compile Remove="Services\ThemeService.cs" />
+    <Compile Remove="Shared\ParentComponent - コピー.razor.cs" />
+    <Compile Remove="Shared\StepItemArrivalsInspectsSearch.razor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Pages\EditArrivals.razor" />
+    <Content Remove="Pages\MobileArrivalMenu - コピー.razor" />
+    <Content Remove="Pages\orgCounter.razor" />
+    <Content Remove="Pages\orgIndex.razor" />
+    <Content Remove="Pages\StepItemPickingTargetSelect.razor" />
+    <Content Remove="Pages\StepItemSortingByStoreDestination.razor" />
+    <Content Remove="Shared\StepItemArrivalsInspectsSearch.razor" />
+    <Content Remove="Shared\Theme.razor" />
+  </ItemGroup>
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Blazor.DynamicJS" Version="0.13.0" />
+    <PackageReference Include="BlazorDownloadFile" Version="2.4.0.2" />
+    <PackageReference Include="Blazored.LocalStorage" Version="4.5.0" />
+    <PackageReference Include="Blazored.SessionStorage" Version="2.4.0" />
+    <PackageReference Include="ClosedXML" Version="0.105.0" />
+    <PackageReference Include="CsvHelper" Version="33.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+    <PackageReference Include="Radzen.Blazor" Version="5.3.5" />
+    <PackageReference Include="Sotsera.Blazor.Toaster" Version="3.0.0" />
+    <PackageReference Include="Toolbelt.Blazor.ViewTransition" Version="1.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.10" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Net.Http.Json" Version="8.0.1" />
+    <!--<PackageReference Include="WindowsAzure.ServiceBus" Version="7.0.1" />--><!--西山123-->
+    <PackageReference Include="ZXing.Net" Version="0.16.11" />
+  </ItemGroup>
+  <ItemGroup>
+    <Using Include="Radzen" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Shared\ChildPageBaseMobile - コピー.razor.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pages\MobileInventoryContorolMenu.razor.cs" />
+    <Content Include="Pages\MobileArrivalMenu.razor.cs" />
+    <Content Include="Pages\MobilePickMenuItem.razor.cs" />
+    <Content Include="Pages\MobileShipMenu.razor.cs" />
+    <Content Include="Pages\MobileMenu.razor.cs" />
+    <Content Include="Shared\ChildPageBase.razor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\share\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="Pages\AllEquipView.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="Pages\BatchMaintenanceDetail.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="Pages\MovePallet.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="Pages\PickingTargetSelectItemByDelivery.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="Pages\ProductionBatchProgress.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="Pages\MaterialSupplyPlanResult.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="Pages\StepItemSortingByStoreDeliverySelect.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="Pages\AGVTaskView.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="Pages\TabItemAGVStation.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="Pages\TabItemAutoWarehouseFrozen.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="Pages\TabItemInventoryPallet.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="Pages\TabItemProductionBatchProgress1.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="Shared\DialogBatchMaintenanceContent.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="Shared\DialogAutoWarehouseStocks.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="Shared\DialogBatchMaintenanceDetailFixContent.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="Shared\DialogBatchMaintenanceFixContent.razor">
+      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
+    </Content>
+    <Content Update="wwwroot\css\app.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\css\radzen_override.css">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Shared\StepItemBase.razor" />
+  </ItemGroup>
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Shared\StepItemBase.razor" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharedModels\SharedModels.csproj" />
+  </ItemGroup>
+</Project>

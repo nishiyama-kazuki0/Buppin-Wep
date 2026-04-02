@@ -1,0 +1,65 @@
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\bin\Debug\net8.0\AspireServiceDefaults.deps.json
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\bin\Debug\net8.0\AspireServiceDefaults.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\bin\Debug\net8.0\AspireServiceDefaults.pdb
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.csproj.AssemblyReference.cache
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.AssemblyInfoInputs.cache
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.AssemblyInfo.cs
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.csproj.CoreCompileInputs.cache
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.sourcelink.json
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\refint\AspireServiceDefaults.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.pdb
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\ref\AspireServiceDefaults.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\bin\Debug\net8.0\AspireServiceDefaults.deps.json
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\bin\Debug\net8.0\AspireServiceDefaults.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\bin\Debug\net8.0\AspireServiceDefaults.pdb
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.csproj.AssemblyReference.cache
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.AssemblyInfoInputs.cache
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.AssemblyInfo.cs
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.csproj.CoreCompileInputs.cache
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.sourcelink.json
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\refint\AspireServiceDefaults.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.pdb
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\ref\AspireServiceDefaults.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\bin\Debug\net8.0\AspireServiceDefaults.deps.json
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\bin\Debug\net8.0\AspireServiceDefaults.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\bin\Debug\net8.0\AspireServiceDefaults.pdb
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.csproj.AssemblyReference.cache
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.AssemblyInfoInputs.cache
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.AssemblyInfo.cs
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.csproj.CoreCompileInputs.cache
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.sourcelink.json
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\refint\AspireServiceDefaults.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.pdb
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\ref\AspireServiceDefaults.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\bin\Debug\net8.0\AspireServiceDefaults.deps.json
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\bin\Debug\net8.0\AspireServiceDefaults.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\bin\Debug\net8.0\AspireServiceDefaults.pdb
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.csproj.AssemblyReference.cache
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.AssemblyInfoInputs.cache
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.AssemblyInfo.cs
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.csproj.CoreCompileInputs.cache
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.sourcelink.json
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\refint\AspireServiceDefaults.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.pdb
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\ref\AspireServiceDefaults.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\bin\Debug\net8.0\AspireServiceDefaults.deps.json
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\bin\Debug\net8.0\AspireServiceDefaults.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\bin\Debug\net8.0\AspireServiceDefaults.pdb
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.csproj.AssemblyReference.cache
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.AssemblyInfoInputs.cache
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.AssemblyInfo.cs
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.csproj.CoreCompileInputs.cache
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.sourcelink.json
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\refint\AspireServiceDefaults.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\AspireServiceDefaults.pdb
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireServiceDefaults\obj\Debug\net8.0\ref\AspireServiceDefaults.dll

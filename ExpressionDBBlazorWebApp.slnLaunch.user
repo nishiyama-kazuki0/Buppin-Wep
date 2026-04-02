@@ -1,0 +1,17 @@
+[
+  {
+    "Name": "新しいプロファイル",
+    "Projects": [
+      {
+        "Path": "ExpressionDBWebAPI\\ExpressionDBWebAPI.csproj",
+        "Action": "Start",
+        "DebugTarget": "http"
+      },
+      {
+        "Path": "ExpressionDBBlazorWasmApp\\ExpressionDBBlazorWasmApp.csproj",
+        "Action": "Start",
+        "DebugTarget": "ExpressionDBBlazorWasmApp"
+      }
+    ]
+  }
+]

@@ -1,0 +1,36 @@
+﻿<UserControl x:Class="ExpressionDBCycleProcessApp.Views.UcCDword"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ExpressionDBCycleProcessApp.Views"
+             >
+    <GroupBox
+                Header="DWord Field情報"
+                >
+        <StackPanel>
+            <TextBlock
+                        Text="{Binding AreaName.Value}" />
+
+            <TextBlock
+                        Text="{Binding Summary.Value}"
+                        Width="300"
+                        TextWrapping="WrapWithOverflow"
+                        />
+
+            <StackPanel>
+                <Label
+                            Content="値"
+                            />
+                <TextBox
+                            Text="{Binding Value.Value, Mode=TwoWay}"
+                            MinWidth="100"
+                            />
+                <Button
+                            Content="書込"
+                            Command="{Binding CommandSetValue}" />
+
+            </StackPanel>
+        </StackPanel>
+    </GroupBox>
+</UserControl>

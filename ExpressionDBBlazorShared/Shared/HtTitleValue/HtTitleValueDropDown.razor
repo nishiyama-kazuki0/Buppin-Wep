@@ -1,0 +1,156 @@
+﻿@inherits HtTitleValueBase
+@using ExpressionDBBlazorShared.Validator;
+@using ExpressionDBBlazorShared.Services;
+@using ExpressionDBBlazorShared.Data;
+<style>
+    .rz-dropdown{
+        height: @($"{HightComb}");
+    }
+
+    .rz-dropdown-items li {
+        font-size: @($"{FontSizeComb}");
+        font-weight: @($"{FontWeightBold}");
+    }
+</style>
+<RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Start" Wrap="FlexWrap.NoWrap" Gap="0">
+
+    <RadzenRow class="rz-text-align-left" AlignItems="AlignItems.Center" Gap="0.5rem" RowGap="0.5rem" Style="width:100%">
+        <RadzenColumn Size=@(ColumnSize)>
+            <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.P" style=@($"font-size:{FontSizeLabel};font-weight:{FontWeightBold};")>
+                @{
+                    string strValue = Title;
+                    strValue = strValue.Replace("\\n", "\n");
+                }
+                @if (strValue.Contains("\n"))
+                {
+                    string[] lines = strValue.Split("\n");
+                    @for (int i = 0; i < lines.Length; i++)
+                    {
+                        <div>
+                            @if ((IsDispRequiredMark || (Required && !Disabled)) && i == lines.Length - 1)
+                            {
+                                @lines[i]<span style="color: red;">@RequiredDisplaySuffix</span>
+                            }
+                            else
+                            {
+                                @lines[i]
+                            }
+                        </div>
+                    }
+                }
+                else
+                {
+                    @if (IsDispRequiredMark || (Required && !Disabled))
+                    {
+                        @strValue<span style="color: red;">@RequiredDisplaySuffix</span>
+                    }
+                    else
+                    {
+                        @strValue
+                    }
+                }
+            </RadzenText>
+        </RadzenColumn>
+        <RadzenColumn Size=@(Textnewline ? 12:12 - ColumnSize)>
+            <CustomHTDropDown @ref=@refobj id="@Id" AllowClear="false" TValue="string" Style=@($"width:100%;font-size:{FontSizeComb};font-weight:{FontWeightBold};") AllowFiltering="@AllowFiltering"
+                              Disabled="@Disabled" Data="@Data" Value="@Value" Name="@Name" TextProperty="Text" ValueProperty="Value" 
+                              Change="OnChange" ValueChanged="OnValueChanged" OnPopupClose="OnPopupClose" OnFocusCallback="OnFocus" />
+            
+            @if (Required)
+            {
+                <RequiredValidator For="() => Value" ItemName=@(@Title.Replace("\\n",string.Empty)) />
+            }
+        </RadzenColumn>
+    </RadzenRow>
+
+</RadzenStack>
+
+@code
+{
+    [Parameter]
+    public IList<ValueTextInfo> Data { get; set; } = new List<ValueTextInfo>();
+    [Parameter]
+    public EventCallback<object> Change { get; set; }
+    /// <summary>
+    /// 二段表示の有無
+    /// </summary>
+    [Parameter]
+    public bool Textnewline { get; set; } = false;
+
+    /// <summary>
+    /// 必須マークの表示
+    /// Requiredがtrueではないが、必須マークを表示したい場合にtrueとする。TODO 力押しな対応なので他に良い方法があれば採用する
+    /// </summary>
+    [Parameter]
+    public bool IsDispRequiredMark { get; set; } = false;
+
+    /// <summary>
+    /// フィルタリング ON/OFF
+    /// </summary>
+    [Parameter]
+    public bool AllowFiltering { get; set; } = true;
+
+    private bool enterLostFlg = false;
+
+    private int idx ;
+
+    private string pid;
+
+    private CustomHTDropDown<string>? refobj;
+
+    /// <summary>
+    /// データ変更イベント
+    /// </summary>
+    /// <param name="args"></param>
+    private async void OnValueChanged(string args)
+    {
+        Value = args;
+        await ValueChanged.InvokeAsync(Value);
+    }
+
+    /// <summary>
+    /// チェンジイベントを上位に連携する
+    /// </summary>
+    /// <param name="args"></param>
+    private async void OnChange(object args)
+    {
+        await Change.InvokeAsync(args);
+    }
+
+    /// <summary>
+    /// ポップアップが閉じた時のイベント
+    /// </summary>
+    private async Task OnPopupClose()
+    {
+        await Task.Delay(0);
+        if (!string.IsNullOrEmpty(NextId))
+        {
+            dynamic window = _js!.GetWindow();
+            if (NextId == Id)
+            {
+                dynamic element1 = window.document.getElementById(Id);
+                element1.blur();
+            }
+            
+            dynamic element = window.document.getElementById(NextId);
+            if (element is not null)
+            {
+                //_ = WebComService.PostLogAsync($"{refobj.UniqueID}:OnPopupClose NextId:{NextId}");
+                element.focus(); // カーソルを合わせる
+
+                StateHasChanged();
+            }
+        }
+    }
+
+    /// <summary>
+    /// フォーカスイベント
+    /// </summary>
+    /// <returns></returns>
+    private async Task OnFocus()
+    {
+        await Task.Delay(0);
+        // 最終フォーカスID更新
+        ChildBaseService.LastFocusId = Id;
+    }
+}

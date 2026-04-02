@@ -1,0 +1,29 @@
+﻿<style>
+    .rz-body
+    {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .rz-card
+    {
+        padding-right:5px;
+        padding-left: 5px;
+    }
+    .rz-steps ul {
+        display: @($"{stepUlDisplay}");
+    }
+    .rz-steps-title {
+        display: @($"{stepTitleDisplay}");
+    }
+    .rz-steps-number {
+        display: @($"{stepNumberDisplay}");
+    }
+</style>
+
+<CascadingValue Value="StepItemVm" Name="ViewModel">
+    <RadzenSteps ShowStepsButtons="false"
+                 Steps="@steps"
+                 Change="OnChange"
+                 @ref="@radzenSteps"
+                 class="step-a-invalid" />
+</CascadingValue>

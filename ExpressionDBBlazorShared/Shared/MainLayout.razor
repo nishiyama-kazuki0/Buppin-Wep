@@ -1,0 +1,164 @@
+﻿@inherits LayoutComponentBase
+@inject CommonService ComService
+@inject IJSRuntime JS
+
+@implements IAsyncDisposable
+
+<RadzenDialog />
+<RadzenNotification />
+<RadzenTooltip />
+<RadzenContextMenu />
+
+@*TODO 可能であれば、ダイアログ用のrazorを作成して、初期ページはindex.razorではなくそっちを参照したい*@
+@*ログインダイアログ*@
+<RadzenBody style="margin-left: 0px" Visible=@(!IsLogin)>
+    <ChildContent>
+        <div class="row justify-content-center">
+            <div class="justify-content-center col-xl-5 col-md-7">
+                <RadzenCard class="d-flex p-0 rz-border-radius-4 rz-shadow-10 " Style="margin-top: 5%; width: 100%; flex-direction: column; overflow: hidden; align-items: stretch;">
+                    <RadzenCard Class="rz-shadow-0 rz-border-radius-0 rz-background-color-info p-5" style="text-align: center;">
+                        <RadzenStack AlignItems="AlignItems.Center" >
+                            <RadzenImage Path="_content/ExpressionDBBlazorShared/WMS_logo.jpg" Style="width: 18rem;" />
+                        </RadzenStack>
+                        <RadzenStack AlignItems="AlignItems.Center">
+                            <RadzenText TextStyle="TextStyle.DisplayH3" TagName="TagName.H2" Class="rz-color-white mb-0">WMS Login</RadzenText>
+                        </RadzenStack>
+                        <br/>
+                        <RadzenStack AlignItems="AlignItems.End">
+                            <RadzenText Style="font-size: 100%;" Class="rz-color-black mb-0">@($"version:{versionText}")</RadzenText>
+                        </RadzenStack>
+                    </RadzenCard>
+                    <RadzenCard Class="rz-shadow-0 p-5">
+                        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" Wrap="FlexWrap.NoWrap" Gap="20">
+                            <RadzenTemplateForm Data=@("SimpleLogin")>
+                                <CustomLoginForm @ref="loginForm"
+                                    AllowRegister="false" 
+                                    AllowResetPassword="true"
+                                    Login=@(args => OnLogin(args)) 
+                                    LoginText="ログイン"
+                                    WorkerText="作業者名"
+                                    UserText="作業者コード"
+                                    PasswordText="パスワード" 
+                                    UserRequired = "作業者ｺｰﾄﾞは必須です。"
+                                    PasswordRequired="ﾊﾟｽﾜｰﾄﾞは必須です。"
+                                    Workername="@userName"
+                                    Username=@userCode
+                                    Password=@password
+                                    ResetPasswordText=""
+                                    RegisterText=""
+                                    RememberMeText=""
+                                    UserNameChanged="@(args => OnUserNameChanged(args))"
+                                    />
+                            </RadzenTemplateForm>
+                        </RadzenStack>
+                    </RadzenCard>
+                </RadzenCard>
+            </div>
+        </div>
+    </ChildContent>
+</RadzenBody>
+@*ログイン後のメインページ*@
+@*左メニュースライダーのみレイアウト*@
+<RadzenLayout class="rz-shadow-3" style="height: max ,grid-template-areas: 'rz-sidebar rz-header' 'rz-sidebar rz-body';" Visible=@IsLogin>
+    <RadzenHeader class="rz-background-color-base-300">
+        <div class="container-fluid" style="height:100%">
+            <div class="row justify-content-start align-items-center" style="height:100%">
+                <div class="col-6 d-flex align-items-center ps-0 pl-0">
+                    @if (!DeviceInfo.IsHandy())
+                    {
+                        <RadzenSidebarToggle Click="@OnClickSidebarToggle"></RadzenSidebarToggle>
+                    }
+                    else
+                    {
+                    }
+                    <RadzenText TextStyle="TextStyle.Body2" Style=@($"font-size:{MainLayoutMenuFontSize};font-weight:{MainLayoutMenuFontWeight};")>@((MarkupString)PageName.Replace("\\n", "\n").Replace("\n", "<br/>"))</RadzenText>
+                </div>
+                <div class="col-6 d-flex align-items-center justify-content-end pr-0 pe-0">
+                    @* ヘルプチャットボタン *@
+@*                     <RadzenButton Click="@OnClickHelpButton" class="rz-border-radius-10 rz-shadow-10" ButtonStyle=ButtonStyle.Success>
+                        <RadzenIcon Icon="contact_support"></RadzenIcon>
+                    </RadzenButton> *@
+                    @*通知を表示するボタン*@
+                    @if (!DeviceInfo.IsHandy())
+                    {
+                        ButtonStyle buttonStyle = ButtonStyle.Info;
+                        @if (NotifyCategory == SharedConst.TYPE_NOTIFY_CATEGORY.DANGER)
+                        {
+                            buttonStyle = ButtonStyle.Danger;
+                        }
+                    else if (NotifyCategory == SharedConst.TYPE_NOTIFY_CATEGORY.WARNING)
+                        {
+                            buttonStyle = ButtonStyle.Warning;
+                        }
+                        <RadzenButton Click="@OnClickNotified" class="rz-border-radius-10 rz-shadow-10" ButtonStyle="buttonStyle">
+                            <RadzenIcon Icon="announcement"></RadzenIcon>
+                        </RadzenButton>
+                    }
+                    @*ログインユーザー表示*@
+                    @if (!DeviceInfo.IsHandy())
+                    {
+                        <RadzenIcon Icon="groups"></RadzenIcon>
+                        <RadzenLabel Text="@AffiliationName" Style=@($"font-size:{MainLayoutAffiliationFontSize};font-weight:{MainLayoutAffiliationFontWeight};") />
+                    }
+                    else
+                    {
+                        @* HTの場合は所属を非表示する *@
+                        @* <RadzenIcon Icon="groups"></RadzenIcon> *@
+                        @* <RadzenLabel Text="所属テスト" Style="font-size: 75%;" /> *@
+                    }
+
+                    @if (!DeviceInfo.IsHandy())
+                    {
+                        <RadzenButton Icon="account_circle" Click="@OnClickUser" class="rz-border-radius-10 rz-shadow-10" ButtonStyle="ButtonStyle.Secondary"></RadzenButton>
+                    }
+                    else
+                    {
+                        <RadzenButton Icon="@ArrivalIcon" style="@ArrivalStyle" Visible=@(@ArrivalIconVisible) Enable="false" class="rz-border-radius-10 rz-shadow-10"></RadzenButton>
+                        <RadzenButton Icon="@ShipmentIcon" style="@ShipmentStyle" Visible=@(@ShipmentIconVisible) Enable="false" class="rz-border-radius-10 rz-shadow-10"></RadzenButton>
+                        <RadzenIcon Icon="account_circle"></RadzenIcon>
+                    }
+                    <RadzenLabel Text="@LoginUserName" Style=@($"font-size:{MainLayoutUserFontSize};font-weight:{MainLayoutUserFontWeight};") />
+                    @if (!DeviceInfo.IsHandy())
+                    {
+                        <RadzenButton Icon="logout" Click="@OnClickLogout" class="rz-border-radius-10 rz-shadow-10"></RadzenButton>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </RadzenHeader>
+    <RadzenSidebar @bind-Expanded="@sidebarLeftExpanded">
+        <NavMenu IsHandy="@DeviceInfo.IsHandy()" />
+    </RadzenSidebar>
+    @*MainLayoutオブジェクトはBodyから変更したい時があるためthisでCascadingする*@
+    @* styleでApp.siteから指定されたタグの動作を取得 *@
+    <CascadingValue　Value ="this">
+        <RadzenBody id="contentId_body" ChildContent="@Body" Style="view-transition-name: site-name" />
+    </CascadingValue>
+    @*画面フッター*@
+    <RadzenFooter >
+        @if (IsLogin == true){
+            <ButtonFuncRadzen @ref="buttonFunc"
+                @attributes="@AttributesFuncButton"
+                OnClickResultF1="@OnClickResultF1"
+                OnClickResultF2="@OnClickResultF2"
+                OnClickResultF3="@OnClickResultF3"
+                OnClickResultF4="@OnClickResultF4"
+                OnClickResultF5="@OnClickResultF5"
+                OnClickResultF6="@OnClickResultF6"
+                OnClickResultF7="@OnClickResultF7"
+                OnClickResultF8="@OnClickResultF8"
+                OnClickResultF9="@OnClickResultF9"
+                OnClickResultF10="@OnClickResultF10"
+                OnClickResultF11="@OnClickResultF11"
+                OnClickResultF12="@OnClickResultF12"
+                OnClickHtNotify="@OnClickHtNotify"
+                OnClickHtHomeNavigate="@OnClickHtHomeNavigate"
+                OnClickPageUp="@OnClickPageUp"
+                OnClickPageDown="@OnClickPageDown"
+                                  IsHandy="@DeviceInfo.IsHandy()">
+            </ButtonFuncRadzen>
+        }
+    </RadzenFooter>
+</RadzenLayout>
+        

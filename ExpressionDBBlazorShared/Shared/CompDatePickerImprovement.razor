@@ -1,0 +1,52 @@
+﻿@inherits CompBase
+@using ExpressionDBBlazorShared.Validator;
+@using ExpressionDBBlazorShared.Services;
+<style>
+    .@(GetType().Name) .rz-calendar .rz-inputtext {
+        font-size: @($"{CompFontSize}");
+        font-weight: @($"{CompFontWeight}");
+    @(string.IsNullOrEmpty(CompHeight) ? "" : $"height: {CompHeight};")
+    }
+</style>
+<RadzenDatePicker 
+    Disabled="@Disabled" 
+    class="@Class" 
+    style="@Style" 
+    @bind-Value=@_inputValue 
+    DateFormat="@DispFormat" 
+    TimeOnly="@TimeOnly" 
+    ShowTime="@ShowTime" 
+    ShowSeconds="@ShowSeconds" 
+    HoursStep="@HoursStep" 
+    MinutesStep="@MinutesStep" 
+    SecondsStep="@SecondsStep" 
+    AllowClear="@AllowClear"
+    Min="@Today"/>
+@if (Required)
+{
+    <RequiredValidator For="() => InputValue" ItemName=@Title />
+}
+
+@code {
+    // 下限：今日（ローカル日付）
+    private DateTime Today => DateTime.Today;
+
+    private DateTime TodayPast = DateTime.Today;
+
+    // 上限：今日から1年後
+    private DateTime OneYearLater => DateTime.Today.AddYears(1);
+
+    // バインド先
+    private DateTime? 保管終了日2 { get; set; }
+
+    //手入力で過去日付入力された場合
+    private void OnChange(DateTime? value)
+    {
+        if (value is null) { 保管終了日2 = null; return; }
+        保管終了日2 = value < Today ? Today : value;
+    }
+
+
+
+
+}

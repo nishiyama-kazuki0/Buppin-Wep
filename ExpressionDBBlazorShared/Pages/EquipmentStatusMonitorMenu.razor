@@ -1,0 +1,12 @@
+﻿@page "/equipment_status_monitor_menu"
+@inherits ChildPageBasePC
+
+@*設備状態監視*@
+
+@*タブ用コンポーネント*@
+<EditForm Model="@(this)" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <CompGroupField @attributes="@(GetAttributes(STR_ATTRIBUTE_SEARCH))" />
+    @* <DataGridExtend3 @ref="@_gridObject" @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID))" @bind-SelectedData="@_gridSelectedData" /> *@
+    <DataGridExtend3 @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID))" @bind-SelectedData="@_gridSelectedData" />
+</EditForm>

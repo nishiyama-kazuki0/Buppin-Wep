@@ -1,0 +1,285 @@
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.exe
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.deps.json
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.runtimeconfig.json
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.pdb
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Aspire.Hosting.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Aspire.Hosting.AppHost.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Fractions.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\IdentityModel.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\IdentityModel.OidcClient.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\KubernetesClient.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Polly.Core.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\YamlDotNet.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\cs\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\de\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\es\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\fr\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\it\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\ja\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\ko\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\pl\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\pt-BR\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\ru\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\tr\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\zh-Hans\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\zh-Hant\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.csproj.AssemblyReference.cache
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.AssemblyInfoInputs.cache
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.AssemblyInfo.cs
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.csproj.CoreCompileInputs.cache
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\Aspire\references\ExpressionDBBlazorWasmApp.ProjectMetadata.g.cs
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\Aspire\references\ExpressionDBWebAPI.ProjectMetadata.g.cs
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\Aspire\references\_AppHost.ProjectMetadata.g.cs
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.sourcelink.json
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAp.0B630A40.Up2Date
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\refint\AspireAppHost.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.pdb
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.genruntimeconfig.cache
+C:\Users\24018\Documents\マイドキュメント\一時保存\suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\ref\AspireAppHost.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.exe
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.deps.json
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.runtimeconfig.json
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.pdb
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Aspire.Hosting.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Aspire.Hosting.AppHost.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Fractions.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\IdentityModel.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\IdentityModel.OidcClient.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\KubernetesClient.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Polly.Core.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\YamlDotNet.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\cs\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\de\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\es\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\fr\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\it\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\ja\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\ko\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\pl\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\pt-BR\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\ru\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\tr\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\zh-Hans\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\zh-Hant\Aspire.Hosting.resources.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.csproj.AssemblyReference.cache
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.AssemblyInfoInputs.cache
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.AssemblyInfo.cs
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.csproj.CoreCompileInputs.cache
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\Aspire\references\ExpressionDBBlazorWasmApp.ProjectMetadata.g.cs
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\Aspire\references\ExpressionDBWebAPI.ProjectMetadata.g.cs
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\Aspire\references\_AppHost.ProjectMetadata.g.cs
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.sourcelink.json
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAp.0B630A40.Up2Date
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\refint\AspireAppHost.dll
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.pdb
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.genruntimeconfig.cache
+C:\Users\24018\Documents\マイドキュメント\一時保存\s_suntry\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\ref\AspireAppHost.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.exe
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.deps.json
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.runtimeconfig.json
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.pdb
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Aspire.Hosting.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Aspire.Hosting.AppHost.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Fractions.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Google.Protobuf.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\IdentityModel.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\IdentityModel.OidcClient.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\KubernetesClient.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Polly.Core.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\YamlDotNet.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\cs\Aspire.Hosting.resources.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\de\Aspire.Hosting.resources.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\es\Aspire.Hosting.resources.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\fr\Aspire.Hosting.resources.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\it\Aspire.Hosting.resources.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\ja\Aspire.Hosting.resources.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\ko\Aspire.Hosting.resources.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\pl\Aspire.Hosting.resources.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\pt-BR\Aspire.Hosting.resources.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\ru\Aspire.Hosting.resources.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\tr\Aspire.Hosting.resources.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\zh-Hans\Aspire.Hosting.resources.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\zh-Hant\Aspire.Hosting.resources.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.csproj.AssemblyReference.cache
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.GeneratedMSBuildEditorConfig.editorconfig
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.AssemblyInfoInputs.cache
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.AssemblyInfo.cs
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.csproj.CoreCompileInputs.cache
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\Aspire\references\ExpressionDBBlazorWasmApp.ProjectMetadata.g.cs
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\Aspire\references\ExpressionDBWebAPI.ProjectMetadata.g.cs
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\Aspire\references\_AppHost.ProjectMetadata.g.cs
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.sourcelink.json
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAp.0B630A40.Up2Date
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\refint\AspireAppHost.dll
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.pdb
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.genruntimeconfig.cache
+C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\ref\AspireAppHost.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.exe
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.deps.json
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.runtimeconfig.json
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.pdb
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Aspire.Hosting.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Aspire.Hosting.AppHost.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Fractions.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Google.Protobuf.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\IdentityModel.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\IdentityModel.OidcClient.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\KubernetesClient.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Polly.Core.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\YamlDotNet.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\cs\Aspire.Hosting.resources.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\de\Aspire.Hosting.resources.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\es\Aspire.Hosting.resources.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\fr\Aspire.Hosting.resources.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\it\Aspire.Hosting.resources.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\ja\Aspire.Hosting.resources.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\ko\Aspire.Hosting.resources.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\pl\Aspire.Hosting.resources.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\pt-BR\Aspire.Hosting.resources.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\ru\Aspire.Hosting.resources.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\tr\Aspire.Hosting.resources.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\zh-Hans\Aspire.Hosting.resources.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\zh-Hant\Aspire.Hosting.resources.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.csproj.AssemblyReference.cache
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.GeneratedMSBuildEditorConfig.editorconfig
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.AssemblyInfoInputs.cache
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.AssemblyInfo.cs
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.csproj.CoreCompileInputs.cache
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\Aspire\references\ExpressionDBBlazorWasmApp.ProjectMetadata.g.cs
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\Aspire\references\ExpressionDBWebAPI.ProjectMetadata.g.cs
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\Aspire\references\_AppHost.ProjectMetadata.g.cs
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.sourcelink.json
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAp.0B630A40.Up2Date
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\refint\AspireAppHost.dll
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.pdb
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.genruntimeconfig.cache
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\ref\AspireAppHost.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.exe
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.deps.json
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.runtimeconfig.json
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\AspireAppHost.pdb
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Aspire.Hosting.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Aspire.Hosting.AppHost.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Fractions.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Google.Protobuf.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.AspNetCore.Server.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Core.Api.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Net.Client.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Net.ClientFactory.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Grpc.Net.Common.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\IdentityModel.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\IdentityModel.OidcClient.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\KubernetesClient.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\Polly.Core.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\YamlDotNet.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\cs\Aspire.Hosting.resources.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\de\Aspire.Hosting.resources.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\es\Aspire.Hosting.resources.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\fr\Aspire.Hosting.resources.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\it\Aspire.Hosting.resources.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\ja\Aspire.Hosting.resources.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\ko\Aspire.Hosting.resources.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\pl\Aspire.Hosting.resources.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\pt-BR\Aspire.Hosting.resources.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\ru\Aspire.Hosting.resources.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\tr\Aspire.Hosting.resources.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\zh-Hans\Aspire.Hosting.resources.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\bin\Debug\net8.0\zh-Hant\Aspire.Hosting.resources.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.csproj.AssemblyReference.cache
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.AssemblyInfoInputs.cache
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.AssemblyInfo.cs
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.csproj.CoreCompileInputs.cache
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\Aspire\references\ExpressionDBBlazorWasmApp.ProjectMetadata.g.cs
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\Aspire\references\ExpressionDBWebAPI.ProjectMetadata.g.cs
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\Aspire\references\_AppHost.ProjectMetadata.g.cs
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.sourcelink.json
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAp.0B630A40.Up2Date
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\refint\AspireAppHost.dll
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.pdb
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\AspireAppHost.genruntimeconfig.cache
+C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\github\SUNTORY_OSAKA_MaterialHandlingManagementApp\AspireAppHost\obj\Debug\net8.0\ref\AspireAppHost.dll

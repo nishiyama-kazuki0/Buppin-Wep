@@ -1,0 +1,206 @@
+﻿@inherits HtTitleValueBase
+@using ExpressionDBBlazorShared.Validator;
+@using ExpressionDBBlazorShared.Services;
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Web
+@inject IJSRuntime JS
+
+<RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Start" Wrap="FlexWrap.NoWrap" Gap="0">
+    @{
+        bool bBara = Title.Contains(SharedConst.STR_HT_BARA_COLOR_CONTAINS);
+        string titleText = (Title ?? string.Empty).Replace("\\n", "\n");
+    }
+
+    <RadzenRow class="rz-text-align-left" AlignItems="AlignItems.Center" Gap="0.5rem" RowGap="0.5rem" Style="width:100%">
+        <!-- ラベル列（フォントは既存ポリシーを継承） -->
+        <RadzenColumn Size="@(ColumnSize)">
+            <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.P"
+                        style=@($"font-size:{FontSizeLabel};font-weight:{FontWeightBold};")>
+                @if (titleText.Contains("\n"))
+                {
+                    var lines = titleText.Split("\n");
+                    @for (int i = 0; i < lines.Length; i++)
+                    {
+                        <div>
+                            @if ((IsDispRequiredMark || Required) && i == lines.Length - 1)
+                            {
+                                @lines[i]<span style="color: red;">@RequiredDisplaySuffix</span>
+                            }
+                            else
+                            {
+                                @lines[i]
+                            }
+                        </div>
+                    }
+                }
+                else
+                {
+                    @if (IsDispRequiredMark || Required)
+                    {
+                        @titleText<span style="color: red;">@RequiredDisplaySuffix</span>
+                    }
+                    else
+                    {
+                        @titleText
+                    }
+                }
+            </RadzenText>
+        </RadzenColumn>
+
+        <!-- 値列（RadzenDatePicker） -->
+        <RadzenColumn Size="@(Textnewline ? 12 : 12 - ColumnSize)">
+            <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Start" Wrap="FlexWrap.NoWrap" Gap="0">
+
+                <RadzenDatePicker
+                    id="@Id"
+                    Name="@Name"
+                    Disabled="@Disabled"
+
+                    @bind-Value="_inputValue"          @* 内部では DateTime? *@
+                    TValue="DateTime?"
+                    DateFormat="@DispFormat"
+
+                    TimeOnly="@TimeOnly"
+                    ShowTime="@ShowTime"
+                    ShowSeconds="@ShowSeconds"
+                    HoursStep="@HoursStep"
+                    MinutesStep="@MinutesStep"
+                    SecondsStep="@SecondsStep"
+                    AllowClear="@AllowClear"
+
+                    Class="w-100"
+                    Style=@($"width:100%;font-size:{FontSizeTextBox};font-weight:{FontWeightBold};text-align:{ValueTextAlign};{(bBara && Disabled ? "color:#ff0000" : "")}")
+                    Change="OnPickerChange"
+                    InputAttributes="InputAttrs"
+                    @onkeydown="OnKeyDown"
+                    @onfocus="OnFocus" />
+
+                @if (Required)
+                {
+                    <RequiredValidator For="() => _inputValue" ItemName="@(Title.Replace("\\n", string.Empty))" />
+                }
+
+                <RadzenBadge IsPill="true" Visible="@IsMixed" BadgeStyle="BadgeStyle.Warning"
+                             Text="混載"
+                             Style=@($"background-color:{BackColorBadge};font-size:{FontSizeBadge};line-height:{LineHeightBadge};") />
+            </RadzenStack>
+        </RadzenColumn>
+    </RadzenRow>
+</RadzenStack>
+
+@code {
+    // ========== 値の受け渡し（親は string、内部は DateTime?） ==========
+    private DateTime? _initialValue = null;
+    /// <summary>初期値（文字列）。ValueFormat か DispFormat どちらでも解釈</summary>
+    [Parameter]
+    public string InitialValue
+    {
+        get => _initialValue == null ? string.Empty : _initialValue?.ToString(ValueFormat)!;
+        set => _initialValue = TryParseToDateTime(value, out var dt) ? dt : (DateTime?)null;
+    }
+
+    private DateTime? _inputValue = null;
+    /// <summary>バインド対象の入力値（文字列）。ValueFormat で保持する想定</summary>
+    [Parameter]
+    public string? InputValue
+    {
+        get => _inputValue == null ? string.Empty : _inputValue?.ToString(ValueFormat)!;
+        set => _inputValue = TryParseToDateTime(value, out var dt) ? dt : (DateTime?)null;
+    }
+
+    // ========== フォーマット ==========
+    /// <summary>値フォーマット（保存用）例: "HHmm" / "yyyyMMdd"</summary>
+    [Parameter] public string ValueFormat { get; set; } = "HHmm";
+    /// <summary>表示フォーマット（画面表示）例: "HH:mm" / "yyyy/MM/dd"</summary>
+    [Parameter] public string DispFormat { get; set; } = "HH:mm";
+
+    // ========== ピッカー挙動 ==========
+    [Parameter] public bool TimeOnly { get; set; } = true;
+    [Parameter] public bool ShowTime { get; set; } = true;
+    [Parameter] public bool ShowSeconds { get; set; } = false;
+    [Parameter] public string HoursStep { get; set; } = "1";
+    [Parameter] public string MinutesStep { get; set; } = "1";
+    [Parameter] public string SecondsStep { get; set; } = "1";
+    [Parameter] public bool AllowClear { get; set; } = true;
+
+    // ========== その他既存互換 ==========
+    [Parameter] public bool IsMixed { get; set; } = false;
+    [Parameter] public bool Textnewline { get; set; } = false;
+    [Parameter] public string? ValueTextAlign { get; set; } = "left";
+
+    // 既存のイベント（文字列／DateTime の両対応を用意）
+    [Parameter] public EventCallback<string> Change { get; set; }
+    [Parameter] public EventCallback<DateTime> Change2 { get; set; }
+
+
+    [Parameter]
+    public bool IsDispRequiredMark { get; set; } = false;
+
+    // 入力(input)要素へ直接スタイルを適用し、CSS無しでフォント統一
+    private IReadOnlyDictionary<string, object> InputAttrs =>
+        new Dictionary<string, object>
+        {
+            { "style", $"font-size:{FontSizeTextBox}; font-family: inherit; font-weight: inherit; color: inherit;" },
+            { "autofocus", Focus ? "autofocus" : null }
+        };
+
+    // ========== ライフサイクル ==========
+    protected override void OnParametersSet()
+    {
+        // 初期値が指定され、まだ _inputValue が未設定なら初期化
+        if (_inputValue == null && _initialValue != null)
+        {
+            _inputValue = _initialValue;
+        }
+    }
+
+    // ========== イベントハンドラ ==========
+    private async Task OnPickerChange(DateTime? newValue)
+    {
+        _inputValue = newValue;
+
+        // 親へは string（ValueFormat）で返す
+        if (Change.HasDelegate)
+        {
+            var s = _inputValue?.ToString(ValueFormat) ?? string.Empty;
+            await Change.InvokeAsync(s);
+        }
+        // DateTime が必要な場合はこちら
+        if (Change2.HasDelegate && _inputValue.HasValue)
+        {
+            await Change2.InvokeAsync(_inputValue.Value);
+        }
+    }
+
+    private async Task OnKeyDown(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter" && !string.IsNullOrEmpty(NextId))
+        {
+            try { await JS.InvokeVoidAsync("htFocusById", NextId); } catch { /* no-op */ }
+        }
+    }
+
+    private async void OnFocus(FocusEventArgs e)
+    {
+        ChildBaseService.LastFocusId = Id;
+        try { await JS.InvokeVoidAsync("selectText", Id); } catch { /* 初回未登録時は無視 */ }
+    }
+
+    // ========== ユーティリティ ==========
+    private bool TryParseToDateTime(string? s, out DateTime dt)
+    {
+        dt = default;
+        if (string.IsNullOrWhiteSpace(s)) return false;
+
+        // 1) ValueFormat で解釈
+        if (DateTime.TryParseExact(s, ValueFormat, null, System.Globalization.DateTimeStyles.None, out dt))
+            return true;
+
+        // 2) DispFormat で解釈
+        if (DateTime.TryParseExact(s, DispFormat, null, System.Globalization.DateTimeStyles.None, out dt))
+            return true;
+
+        // 3) 最後の保険（ロケール依存、推奨しないが空文字対策）
+        return DateTime.TryParse(s, out dt);
+    }
+}

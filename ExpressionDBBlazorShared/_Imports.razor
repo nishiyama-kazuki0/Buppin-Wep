@@ -1,0 +1,36 @@
+﻿@using System.Net.Http
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.AspNetCore.Components.Routing
+@using Microsoft.AspNetCore.Components.Web
+@using Microsoft.AspNetCore.Components.Web.Virtualization
+@using Microsoft.JSInterop
+@using ExpressionDBBlazorShared
+@using ExpressionDBBlazorShared.Shared
+@using ExpressionDBBlazorShared.Shared.HtTitleValue
+@using ExpressionDBBlazorShared.Services
+@using ExpressionDBBlazorShared.Data
+@using SharedModels
+@using Radzen.Blazor
+@using Radzen
+@using Blazored.LocalStorage
+@using Blazored.SessionStorage
+@using BlazorDownloadFile
+@using Sotsera.Blazor.Toaster
+@using Sotsera.Blazor.Toaster.Core.Models
+@using Toolbelt.Blazor.ViewTransition
+@using ExpressionDBBlazorShared.Util
+@*@using  AKSoftware.Localization.MultiLanguages;
+@inject ILanguageContainerService languageContainer*@
+@inject NotificationService NotificationService
+@inject DialogService DialogService
+@*@inject DbManageService DbManageService*@
+@inject ChildBaseService ChildBaseService
+@inject NavigationManager NavigationManager
+@inject TooltipService TooltipService
+@inject ILocalStorageService LocalStorage
+@inject ISessionStorageService SessionStorage
+@inject IBlazorDownloadFileService BlazorDownloadFileService
+@inject CommonWebComService WebComService
+@inject DeviceInfoService DeviceInfo
+@inject SystemParameterService SystemParamService
+@inject IToaster ToasterService

@@ -1,0 +1,24 @@
+﻿@page "/mobile_ship_menu"
+@inherits ChildPageBaseMobile
+
+@*HT画面：HTメニュー/出庫メニュー*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+        <RadzenIcon Icon="info" />
+        <RadzenText Text="出荷作業状況" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px"></RadzenText>
+    </RadzenRow>
+
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+            <HtTitleValueTextBox Title="作業件数" Value="@WorkCnt" ValueTextAlign="right" />
+            <HtTitleValueTextBox Title="倉庫配送先数" Value="@DeliveryCnt" ValueTextAlign="right" />
+        </RadzenStack >
+    </RadzenCard>
+ 
+    <RadzenCard>
+        <ButtonHTMenuRadzen ClassName="@ClassName">
+        </ButtonHTMenuRadzen>
+    </RadzenCard>
+</EditForm>

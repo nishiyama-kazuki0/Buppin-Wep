@@ -1,0 +1,49 @@
+﻿@inherits CompBase
+@using ExpressionDBBlazorShared.Validator;
+@using ExpressionDBBlazorShared.Services;
+<style>
+    .@(GetType().Name) .rz-dropdown-label.rz-inputtext {
+        font-size: @($"{CompFontSize}");
+        font-weight: @($"{CompFontWeight}");
+    }
+</style>
+<RadzenDropDownDataGrid Disabled="@Disabled"
+                        class="@Class"
+                        style="@Style"
+                        @ref="grid"
+                        Chips="true"
+                        AllowFiltering="true"
+                        FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive"
+                        AllowFilteringByAllStringColumns="@FilteringAll"
+                        AllowClear="true"
+                        @bind-Value=@Values
+                        Multiple="true"
+                        Placeholder=@Placeholder
+                        Data="@Data"
+                        TextProperty=@TextProperty
+                        ValueProperty=@ValueProperty>
+    <Columns>
+
+        @*チェックボックスはフィルター検索から除外させるためFilterableをfalseにする*@
+        <RadzenDropDownDataGridColumn Width=@CheckBoxWidth Sortable="false" Filterable="false">
+            <HeaderTemplate>
+                <RadzenCheckBox TriState="false" TValue="bool" Value="@(Data.Any(c => Values != null && Values.Contains((string)c.Value)))"
+                                Change="@(args => Values = args ? grid.View.Cast<dynamic>().Select(c => (string)c.Value) : Values = Enumerable.Empty<string>())" />
+            </HeaderTemplate>
+            <Template Context="data">
+                <RadzenCheckBox TriState="false" Value="@(Values != null && Values.Contains((string)data.Value))"
+                                TValue="bool" Change=@(args => grid.SelectItem(data)) @onclick:stopPropagation />
+            </Template>
+        </RadzenDropDownDataGridColumn>
+
+        @*データカラム*@
+        @foreach (var column in this.Columns)
+        {
+            <RadzenDropDownDataGridColumn  Property="@column.Property" Title="@column.Title" Type="@column.Type" TextAlign="@column.TextAlign" Width="@($"{column.Width.ToString()}px")" />
+        }
+    </Columns>
+</RadzenDropDownDataGrid>
+@if (Required)
+{
+    <RequiredValidator For="() => Values" ItemName=@Title />
+}

@@ -1,0 +1,246 @@
+{
+  "Version": 1,
+  "Hash": "g0dfn2xRjElztxyAgcBtklfzqSbj/lXkW0R3/o/90qQ=",
+  "Source": "ExpressionDBWebAPI",
+  "BasePath": "_content/ExpressionDBWebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.getproperty.script\\1.2.0\\staticwebassets\\Toolbelt.Blazor.GetProperty.Script.lib.module.js",
+      "SourceId": "Toolbelt.Blazor.GetProperty.Script",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.getproperty.script\\1.2.0\\staticwebassets\\",
+      "BasePath": "_content/Toolbelt.Blazor.GetProperty.Script",
+      "RelativePath": "Toolbelt.Blazor.GetProperty.Script.lib.module.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "JSModule",
+      "AssetTraitValue": "JSLibraryModule",
+      "Fingerprint": "8bgjjt0fay",
+      "Integrity": "rN9ebccf1yzi+bWyyip51JJuAKONWUHDBKWnKUpDWAA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.getproperty.script\\1.2.0\\staticwebassets\\Toolbelt.Blazor.GetProperty.Script.lib.module.js"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.viewtransition\\1.0.3\\staticwebassets\\script.js",
+      "SourceId": "Toolbelt.Blazor.ViewTransition",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.viewtransition\\1.0.3\\staticwebassets\\",
+      "BasePath": "_content/Toolbelt.Blazor.ViewTransition",
+      "RelativePath": "script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z524fdjtve",
+      "Integrity": "CelfgRuXrd+xDV/UXAOf4S4CYAcbtbPDsEi8BjGkz9w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.viewtransition\\1.0.3\\staticwebassets\\script.js"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.viewtransition\\1.0.3\\staticwebassets\\script.min.js",
+      "SourceId": "Toolbelt.Blazor.ViewTransition",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.viewtransition\\1.0.3\\staticwebassets\\",
+      "BasePath": "_content/Toolbelt.Blazor.ViewTransition",
+      "RelativePath": "script.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1cwvku1jct",
+      "Integrity": "cVFUbnNf1a5+GJS3btwhrnv95ePLF+UwtEbIhAKtpkc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.viewtransition\\1.0.3\\staticwebassets\\script.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBWebAPI\\obj\\Release\\net8.0\\jsmodules\\jsmodules.build.manifest.json",
+      "SourceId": "ExpressionDBWebAPI",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBWebAPI\\obj\\Release\\net8.0\\jsmodules\\",
+      "BasePath": "_content/ExpressionDBWebAPI",
+      "RelativePath": "ExpressionDBWebAPI.modules.json",
+      "AssetKind": "Build",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "JSModule",
+      "AssetTraitValue": "JSModuleManifest",
+      "Fingerprint": "1k7jenhlys",
+      "Integrity": "AYfWq0QKtftfuVn9Qn6H19PCqkUQfJL5oFBnaAIX2KU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "obj\\Release\\net8.0\\jsmodules\\jsmodules.build.manifest.json"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "_content/Toolbelt.Blazor.GetProperty.Script/Toolbelt.Blazor.GetProperty.Script.lib.module.js",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.getproperty.script\\1.2.0\\staticwebassets\\Toolbelt.Blazor.GetProperty.Script.lib.module.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "183"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rN9ebccf1yzi+bWyyip51JJuAKONWUHDBKWnKUpDWAA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Nov 2023 18:49:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rN9ebccf1yzi+bWyyip51JJuAKONWUHDBKWnKUpDWAA="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Toolbelt.Blazor.ViewTransition/script.js",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.viewtransition\\1.0.3\\staticwebassets\\script.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "601"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CelfgRuXrd+xDV/UXAOf4S4CYAcbtbPDsEi8BjGkz9w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 29 Oct 2023 07:07:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CelfgRuXrd+xDV/UXAOf4S4CYAcbtbPDsEi8BjGkz9w="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Toolbelt.Blazor.ViewTransition/script.min.js",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.viewtransition\\1.0.3\\staticwebassets\\script.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "206"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cVFUbnNf1a5+GJS3btwhrnv95ePLF+UwtEbIhAKtpkc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 29 Oct 2023 07:07:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cVFUbnNf1a5+GJS3btwhrnv95ePLF+UwtEbIhAKtpkc="
+        }
+      ]
+    },
+    {
+      "Route": "ExpressionDBWebAPI.modules.json",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBWebAPI\\obj\\Release\\net8.0\\jsmodules\\jsmodules.build.manifest.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AYfWq0QKtftfuVn9Qn6H19PCqkUQfJL5oFBnaAIX2KU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 02 Feb 2026 01:31:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AYfWq0QKtftfuVn9Qn6H19PCqkUQfJL5oFBnaAIX2KU="
+        }
+      ]
+    }
+  ]
+}

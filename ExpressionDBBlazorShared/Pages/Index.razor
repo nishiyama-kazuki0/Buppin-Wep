@@ -1,0 +1,19 @@
+﻿@inherits ChildPageBasePC
+@page "/"
+
+@* <h1>WMS app Home.</h1> *@
+@if(!DeviceInfo.IsHandy())
+{
+<div class="row justify-content-center">
+    <div class="justify-content-center ">
+        <RadzenCard class="d-flex p-0 rz-border-radius-4 rz-shadow-0 " 
+                            Style="margin-top: 4rem; width: 100%; flex-direction: column; overflow: hidden; align-items: stretch;"
+                            Variant="Variant.Text">
+            <RadzenStack AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Center">
+                <RadzenImage Path="_content/ExpressionDBBlazorShared/WMS_logo_home.jpg"  Style="width:80%;height:auto;"/>
+            </RadzenStack>
+        </RadzenCard>
+    </div>
+</div>
+}
+@* <SurveyPrompt Title="How is Blazor working for you?" /> *@

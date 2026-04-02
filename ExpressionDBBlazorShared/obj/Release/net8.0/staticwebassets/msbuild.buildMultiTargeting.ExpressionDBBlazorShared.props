@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\ExpressionDBBlazorShared.props" />
+</Project>

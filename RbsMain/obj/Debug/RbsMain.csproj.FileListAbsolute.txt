@@ -1,0 +1,10 @@
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\RbsMain\bin\Debug\RbsMain.exe.config
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\RbsMain\bin\Debug\RbsMain.exe
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\RbsMain\bin\Debug\RbsMain.pdb
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\RbsMain\obj\Debug\RbsMain.csproj.AssemblyReference.cache
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\RbsMain\obj\Debug\RbsMain.RbsMain.resources
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\RbsMain\obj\Debug\RbsMain.Properties.Resources.resources
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\RbsMain\obj\Debug\RbsMain.csproj.GenerateResource.cache
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\RbsMain\obj\Debug\RbsMain.csproj.CoreCompileInputs.cache
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\RbsMain\obj\Debug\RbsMain.exe
+C:\サントリー\SUNTORY_OSAKA_MaterialHandlingManagementApp\RbsMain\obj\Debug\RbsMain.pdb

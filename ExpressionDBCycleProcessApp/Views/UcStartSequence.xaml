@@ -1,0 +1,124 @@
+﻿<UserControl 
+    x:Class="ExpressionDBCycleProcessApp.Views.UcStartSequence"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:i="http://schemas.microsoft.com/xaml/behaviors"
+    xmlns:local="clr-namespace:ExpressionDBCycleProcessApp.Views"
+    >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- ヘッダー部 -->
+        <StackPanel
+            Orientation="Horizontal">
+
+            <ComboBox
+                ItemsSource="{Binding Areas}"
+                SelectedItem="{Binding SelectedArea.Value}"
+                DisplayMemberPath="AreaName"
+                Width="200"
+                Margin="5" />
+
+            <!-- GroupKey -->
+            <Label Content="抽出キー"/>
+            <ComboBox
+                ItemsSource="{Binding GroupKeys}" 
+                Text="{Binding SelectedItemsText.Value, Mode=OneWay}"
+                Width="200" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center"
+                IsEditable="True"
+                StaysOpenOnEdit="True"
+                IsReadOnly="True">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <CheckBox Content="{Binding Name}" 
+                              IsChecked="{Binding IsSelected.Value, Mode=TwoWay}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+
+            <Button 
+                Content="更新" 
+                Command="{Binding CommandRefresh}"
+                HorizontalAlignment="Left"/>
+            <Button 
+                Content="TSV出力" 
+                Command="{Binding CommandCsvOutput}"
+                HorizontalAlignment="Left"/>
+            <TextBlock Text="{Binding Count.Value}" />
+            <TextBlock Text="件" />
+
+            <!-- 詳細表示 -->
+            <CheckBox
+                Content="詳細表示"
+                IsChecked="{Binding IsDetailExpanded.Value,Mode=TwoWay}"
+                    />
+        </StackPanel>
+
+        <Grid
+           Grid.Row="1"
+           >
+            <!-- 一覧 -->
+            <DataGrid
+                ItemsSource="{Binding Items}"
+                SelectionMode="Single"
+                IsReadOnly="True"
+                AutoGenerateColumns="False"
+               >
+                <!-- Ctrl + C のショートカットキーでコピーコマンドを実行 -->
+                <DataGrid.InputBindings>
+                    <KeyBinding Key="C" Modifiers="Control" Command="{Binding GridCellTextCopy.Command}" />
+                </DataGrid.InputBindings>
+                <i:Interaction.Behaviors>
+                    <local:FocusedCellValueBehavior FocusedCellValue="{Binding GridCellTextCopy.FocusedCell.Value, Mode=TwoWay}" />
+                </i:Interaction.Behaviors>
+
+                <!-- 選択状態の色設定 -->
+                <DataGrid.CellStyle>
+                    <Style TargetType="DataGridCell">
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Background" Value="Orange" />
+                            </Trigger>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter Property="Background" Value="Navy" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </DataGrid.CellStyle>
+
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Area" Binding="{Binding AreaName}" />
+                    <DataGridTextColumn Header="FieldName" Binding="{Binding FieldName}" />
+                    <DataGridTextColumn Header="FieldName2" Binding="{Binding FieldName2}" />
+                    <DataGridTextColumn Header="Address" Binding="{Binding Address}" Width="70" />
+                    <!-- 開始ボタン -->
+                    <DataGridTemplateColumn Header="起動" Width="40">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"
+                                    Content="開始"
+                                    Command="{Binding CommandStart}"
+                                    />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTemplateColumn>
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <local:UcJudgeItem DataContext="{Binding}" />
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>                
+               
+            </DataGrid>
+        </Grid>
+    </Grid>
+</UserControl>

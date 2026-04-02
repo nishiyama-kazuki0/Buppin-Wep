@@ -1,0 +1,13 @@
+﻿/*
+	Radzenのスタイルシートの宣言を上書きするために
+	Index.htmlでRadzenスタイルシートより後に宣言したもの
+*/
+
+/*
+	メッセージダイアログなどを
+	より前面に出すだめのz-index指定
+	使い方はCommonService.DialogShowYesNoを参照
+*/
+.dialog-more-front {
+	z-index: 2000 ;
+}

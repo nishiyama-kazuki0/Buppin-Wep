@@ -1,0 +1,30 @@
+●フォルダ構成
+・下記のフォルダ構成を想定する
+　構成が変わった場合はバッチファイルのパス指定を見直すこと
+
+app
+├ cycleprocess
+├ hulftif
+├ wasm
+└ webapi
+
+batRelease
+└ batファイル各種
+
+history
+├ cycleprocess
+├ hulftif
+├ wasm
+└ webapi
+
+●動作
+appフォルダ内のそれぞれのアプリフォルダにリリースするファイルを
+格納後、batReleaseフォルダ内の各アプリ毎のバッチファイルを実行する
+「C:\app\～」の各アプリ毎のフォルダにコピーされる。
+
+※コピーしないファイル(例外指定)が可能。
+　batReleaseフォルダのexclude.txtに例外対象を指定する。
+
+コピー後、それぞれのフォルダを圧縮して日時を付与。
+historyフォルダへ移動する。
+

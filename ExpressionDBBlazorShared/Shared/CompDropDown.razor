@@ -1,0 +1,29 @@
+﻿@inherits CompBase
+@using ExpressionDBBlazorShared.Validator;
+@using ExpressionDBBlazorShared.Services;
+<style>
+    .rz-dropdown-items li {
+        font-size: @($"{CompFontSize}");
+        font-weight: @($"{CompFontWeight}");
+    }
+
+    .@(GetType().Name) .rz-dropdown-filter.rz-inputtext {
+        font-size: @($"{CompFontSize}");
+        font-weight: @($"{CompFontWeight}");
+    }
+</style>
+<RadzenDropDown 
+    Disabled="@Disabled" 
+    style="@Style" 
+    class="@Class" 
+    @bind-Value=@InputValue 
+    Data="@Data" 
+    ValueProperty="@ValueProperty" 
+    TextProperty="@TextProperty" 
+    AllowClear="@AllowClear" 
+    AllowFiltering="@AllowFiltering"
+    Change="@OnChange"/>
+@if (Required)
+{
+    <RequiredValidator For="() => InputValue" ItemName=@Title />
+}

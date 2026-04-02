@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="ExpressionDBCycleProcessApp.Views.UcJudgeItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ExpressionDBCycleProcessApp.Views"
+             xmlns:vm="clr-namespace:ExpressionDBCycleProcessApp.ViewModels"
+             >
+    <UserControl.Resources>
+        <!-- UserViewModel 用テンプレート -->
+        <DataTemplate DataType="{x:Type vm:UcJudgeItemViewModel}">
+            <StackPanel
+                Orientation="Horizontal" Margin="5">
+                <TextBlock Text="AraName" FontSize="16" Margin="5"/>
+                <TextBlock Text="{Binding AreaName}" FontWeight="Bold" Margin="5"/>
+                <TextBlock Text="Address" Margin="5"/>
+                <TextBlock Text="{Binding Address}" Margin="0,0,5,0"/>
+                
+            </StackPanel>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vm:SequenceActionViewModel}">
+            <local:UcSequenceAction
+                DataContext="{Binding}"
+                />
+        </DataTemplate>
+
+    </UserControl.Resources>    
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- ヘッダー部 -->
+        <StackPanel
+            Orientation="Horizontal">
+        </StackPanel>
+
+        <Grid
+           Grid.Row="1"
+           >
+            <!-- 一覧 -->
+            <ListView
+                ItemsSource="{Binding SequenceActions}"
+               >
+            </ListView>
+        </Grid>
+    </Grid>
+</UserControl>

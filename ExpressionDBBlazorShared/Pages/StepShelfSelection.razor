@@ -1,0 +1,90 @@
+﻿@inherits StepItemBase
+
+@*HT画面：物品登録*@
+
+<EditForm Model="@this" @ref="@editForm"@onkeydown="@(e => OnKeyDown(e, _compInfo))">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+
+    <CompGroupField @attributes="@(GetAttributes(STR_ATTRIBUTE_SEARCH))" />
+
+    @*検索条件*@
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+        <RadzenIcon Icon="input" />
+        <RadzenText Text="棚選択" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px;"></RadzenText>
+    </RadzenRow>
+
+
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            <HtTitleValueTextBox Focus="true" Disabled="false" Title="実施棚番" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).棚番)"
+            Change="@棚"
+            MaxLength="SharedConst.LEN_PALLET_NO" Required="false" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+
+        </RadzenStack>
+    </RadzenCard>
+
+
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+        <RadzenIcon Icon="info" />
+        <RadzenText Text="棚一覧" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px;"></RadzenText>
+    </RadzenRow>
+
+    <DataGridExtend4 @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID))" @bind-SelectedData="@_gridSelectedData" OnCellRenderCallback="@CellRender" Click="OnDbClick"/>
+</EditForm>
+
+@code
+{
+    //セルをダブりクリックした場合
+    private async Task OnDbClick(string code)
+    {
+
+        await Task.Delay(0);
+        if (_gridSelectedData is { Count: > 0 })
+        {
+            var row = _gridSelectedData[0];
+
+            // 列名「棚番」を model.棚番 にセット
+            if (row.TryGetValue("棚", out var value) &&
+                value is not null &&
+                value is not DBNull)
+            {
+                model!.棚番 = value.ToString();
+            }
+        }
+    }
+
+    private ComponentProgramInfo _compInfo = new();
+
+
+    public async Task OnKeyDown(KeyboardEventArgs e, ComponentProgramInfo info)
+    {
+        //
+        if (e.Key == "Enter" )
+        {
+            // await base.グリッド更新(info);
+
+            // ClassNameSelect custom = new();
+            // Dictionary<string, (object, WhereParam)> items = ComService.GetCompItemInfoValues(_searchCompItems);
+            // foreach (KeyValuePair<string, (object, WhereParam)> item in items)
+            // {
+            //     custom.whereParam.Add(item.Key, item.Value.Item2);
+            // }
+
+            // await RefreshGridData(custom.whereParam);
+
+            //  // 画面を更新する
+           
+            
+            await グリッド更新(new ComponentProgramInfo() { ComponentName = STR_ATTRIBUTE_GRID });
+
+        }
+
+        
+    }
+
+      
+
+
+}
+

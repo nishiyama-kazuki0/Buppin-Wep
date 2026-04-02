@@ -1,0 +1,112 @@
+﻿<UserControl x:Class="ExpressionDBCycleProcessApp.Views.UcCommunicationArea2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:vm="clr-namespace:ExpressionDBCycleProcessApp.ViewModels"
+             xmlns:local="clr-namespace:ExpressionDBCycleProcessApp.Views"
+             >
+    <UserControl.Resources>
+        <DataTemplate DataType="{x:Type vm:CBitViewModel}">
+            <local:UcCBit />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:CDwordViewModel}">
+            <local:UcCDword />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:CWordViewModel}">
+            <local:UcCWord />
+        </DataTemplate>
+    </UserControl.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!-- ヘッダ部 -->
+        <StackPanel
+            Orientation="Horizontal">
+            <TextBox 
+            Text="{Binding FilePath.Value}" 
+                MaxWidth="400"
+            />
+            <Button            
+            Content="インポート"
+            Command="{Binding CommandImport}"
+            HorizontalAlignment="Left"
+            />
+
+            <Button 
+            Content="デバイス値取得" 
+            Command="{Binding CommandGetDeviceValues}"
+            />
+        </StackPanel>
+
+        <Grid
+            Grid.Row="1"
+            >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <!-- Splitter 1 -->
+            <GridSplitter
+                Grid.Column="1"
+                Width="5"
+                Background="Gray"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                ResizeBehavior="PreviousAndNext"
+                ShowsPreview="True" />
+
+            <DataGrid
+                Grid.Row="1"
+                Margin="2"
+                ItemsSource="{Binding FieldInfos}"
+                SelectedItem="{Binding SelectedFieldInfo.Value}"
+                VerticalScrollBarVisibility="Visible"
+                HorizontalScrollBarVisibility="Visible"
+                SelectionMode="Extended"
+                IsReadOnly="True"
+                AutoGenerateColumns="False"
+                >
+                <DataGrid.Columns>
+                    <DataGridTextColumn IsReadOnly="True" Header="Name2" Binding="{Binding Name2}" Width="Auto" />
+                    <DataGridTextColumn IsReadOnly="True" Header="Type" Binding="{Binding Type}" Width="Auto" />
+                    <DataGridTextColumn IsReadOnly="True" Header="Address" Binding="{Binding DeviceName}" Width="Auto" />
+                    <DataGridTextColumn IsReadOnly="True" Header="Area" Binding="{Binding Area}" Width="Auto" />
+                    <DataGridTextColumn IsReadOnly="True" Header="Name" Binding="{Binding Name}" Width="Auto" />
+                    <DataGridTextColumn IsReadOnly="True" Header="Value" Binding="{Binding Value.Value}" Width="60" />
+                    <DataGridTextColumn IsReadOnly="True" Header="Comment1" Binding="{Binding Comment1}" Width="120" />
+                    <DataGridTextColumn IsReadOnly="True" Header="Comment2" Binding="{Binding Comment2}" Width="120" />
+                    <DataGridTextColumn IsReadOnly="True" Header="Summary" Binding="{Binding Summary}" />
+                </DataGrid.Columns>
+                <DataGrid.CellStyle>
+                    <Style TargetType="DataGridCell">
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Background" Value="Orange" />
+                            </Trigger>
+                            <Trigger Property="IsFocused" Value="True">
+                                <Setter Property="Background" Value="Navy" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </DataGrid.CellStyle>
+                <DataGrid.RowStyle>
+                    <Style TargetType="DataGridRow">
+                        <Style.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter Property="Background" Value="Green" />
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </DataGrid.RowStyle>
+            </DataGrid>
+            <ContentControl
+                Grid.Column="2"
+                Content="{Binding DeviceVm.Value}" />
+        </Grid>
+    </Grid>
+</UserControl>

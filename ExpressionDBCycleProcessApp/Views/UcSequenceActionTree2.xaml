@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="ExpressionDBCycleProcessApp.Views.UcSequenceActionTree2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ExpressionDBCycleProcessApp.Views"
+             >
+    <Grid
+        >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- ヘッダ部 -->
+        <StackPanel
+            Orientation="Horizontal">
+
+            <!-- IsNotIdleOnly -->
+            <CheckBox
+                Content="待機以外を含む行のみ表示" 
+                IsChecked="{Binding IsNotIdleOnly.Value}"/>
+
+            <Button Content="表示更新" Command="{Binding CommandRefresh}" />
+            <CheckBox
+                Content="詳細表示"
+                IsChecked="{Binding IsDetailExpanded.Value,Mode=TwoWay}"
+                    />
+        </StackPanel>
+
+        <!-- ツリー表示部 -->
+        <TreeView
+            Grid.Row="1"
+            ItemsSource="{Binding Nodes}"
+            >
+            <TreeView.Resources>
+                <Style TargetType="TreeViewItem">
+                    <Setter Property="IsExpanded" 
+                            Value="{Binding IsExpanded.Value, Mode=TwoWay}" />
+                    <Setter Property="IsSelected" 
+                            Value="{Binding IsSelected.Value, Mode=TwoWay}" />
+                </Style>
+            </TreeView.Resources>
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate
+                    ItemsSource="{Binding Children}"
+                    >
+                    <local:UcSequenceAction DataContext="{Binding}"/>
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+
+        <!-- 選択したSequenceAction -->
+    </Grid>
+</UserControl>

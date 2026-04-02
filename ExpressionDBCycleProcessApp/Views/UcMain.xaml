@@ -1,0 +1,69 @@
+﻿<UserControl x:Class="ExpressionDBCycleProcessApp.Views.UcMain"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ExpressionDBCycleProcessApp.Views"
+             >
+    <StackPanel
+        HorizontalAlignment="Left">
+
+        <CheckBox
+            Content="シーケンス実行中"
+            IsChecked="{Binding IsSequenceRunning.Value, Mode=TwoWay}" 
+            />
+
+        <!-- 発振管予熱開始 -->
+        <Button
+            HorizontalAlignment="Left"
+            Content="発振管予熱開始"
+            Command="{Binding CommandPreheatingStart}" 
+            />
+        <!-- 発振管予熱終了 -->
+        <Button
+            HorizontalAlignment="Left"
+            Content="発振管予熱終了"
+            Command="{Binding CommandPreheatingStop}" />
+
+        <!--  -->
+        <GroupBox
+            Header="状態の保存">
+
+            <StackPanel
+                Orientation="Horizontal">
+                <StackPanel
+                    Orientation="Horizontal">
+                    <Label Content="保存フォルダ" />
+                    <TextBox
+                        Width="400"
+                        Text="{Binding SaveDataFolder.Value,Mode=TwoWay}"/>
+                </StackPanel>
+                <Button
+                    Content="状態の保存"
+                    Command="{Binding CommandSave}" />
+                <!--  -->
+                <Button
+                    Content="状態を保存して待機状態へ移行"
+                    Command="{Binding CommandSaveAndStandby}" />
+            </StackPanel>
+        </GroupBox>
+        <!-- 状態の復元  -->
+        <GroupBox
+            Header="状態の復元">
+            <StackPanel
+                Orientation="Horizontal">
+
+                <StackPanel
+                    Orientation="Horizontal">
+                    <Label Content="読込フォルダ" />
+                    <TextBox
+                        Width="400"
+                        Text="{Binding LoadDataFolder.Value,Mode=TwoWay}"/>
+                </StackPanel>
+                <Button
+                    Content="保存した状態から復元"
+                    Command="{Binding CommandLoad}" />
+            </StackPanel>
+        </GroupBox>
+    </StackPanel>
+</UserControl>

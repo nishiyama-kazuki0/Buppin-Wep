@@ -1,0 +1,38 @@
+﻿@inherits ChildPageBaseMobile
+
+<div id="InitFocusMark" tabindex="0" />
+@*   チャットのリストを表示する。一覧が更新されたときはページ一番下までスクロールする*@
+@foreach (var m in _chatService.GetMessagesList())
+{
+    <RadzenRow class="rz-text-align-left d-flex justify-content-center" 
+        AlignItems="AlignItems.Start" 
+        JustifyContent="@(m.Type==ChatSendAndReceiveType.UserInput? JustifyContent.End : JustifyContent.Start)" 
+        Gap="1.5rem" 
+        RowGap="1.5rem">
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Start" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+            <RadzenText TextStyle="TextStyle.Body1" TagName="TagName.P" style=@($"font-size:{FontSizeLabel};font-weight:{FontWeightBold};")>
+                @($"{m.Time} {( m.Type == ChatSendAndReceiveType.UserInput ? "User" : "AI Assistant")}")
+            </RadzenText>
+            <RadzenCard Variant="Variant.Filled">
+                <RadzenText TextStyle="TextStyle.Body1" TagName="TagName.P" style=@($"font-size:{FontSizeLabel};font-weight:{FontWeightBold};")>
+                    @((MarkupString)m.Message.Replace("\\n", "\n").Replace("\n", "<br/>"))
+                </RadzenText>
+            </RadzenCard>
+        </RadzenStack>
+    </RadzenRow>
+    
+}
+@*   チャットの内容を入力できるリッチテキストボックス、送信ボタンを配置実装を行う。*@
+<RadzenRow class="rz-text-align-left d-flex justify-content-center" 
+    AlignItems="AlignItems.Start" 
+    JustifyContent="JustifyContent.Start" 
+    Gap="1.5rem" 
+    RowGap="1.5rem">
+    <RadzenTextArea Placeholder="Enter here..." @bind-Value = "@_inputMessage" class="w-100"  />
+</RadzenRow>
+<ButtonFuncRadzen @attributes="@(GetAttributes(STR_ATTRIBUTE_FUNC))"
+                  IsBusyDialog="false"
+                  OnClickResultF1="@OnClickResultF1"
+                  OnClickResultF3="@OnClickResultF3"
+                  OnClickResultF4="@OnClickResultF4">
+</ButtonFuncRadzen>

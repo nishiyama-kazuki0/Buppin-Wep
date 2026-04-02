@@ -6,10 +6,10 @@ set remoteUser=Administrator
 set remmotePassword=zenn0h-wm$
 
 rem コピーしたいファイルが配置されているパス
-set sourcePath=ZennohBlazorWasmApp\bin\Release\net7.0\publish
+set sourcePath=ExpressionDBBlazorWasmApp\bin\Release\net7.0\publish
 
 rem コピー先のパス
-set targetPath=\\ZENNOH-WMS-TEST\wwwroot
+set targetPath=\\ExpressionDB-WMS-TEST\wwwroot
 
 
 rem 共有フォルダのアクセスを行う

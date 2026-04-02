@@ -1,0 +1,168 @@
+﻿@using Radzen
+@using System.Linq
+@using System.Linq.Dynamic.Core
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.JSInterop
+@using Microsoft.AspNetCore.Components.Rendering
+@typeparam TValue
+@inherits CustomHTDropDownBase<TValue>
+
+@if (Visible)
+{
+    <div @ref="@Element" @attributes="Attributes" class="@GetCssClass()" onmousedown="Radzen.activeElement = null" @onclick="@((args) => OnClick(args))" @onclick:preventDefault @onclick:stopPropagation style="@Style" tabindex="@(Disabled ? "-1" : $"{TabIndex}")"
+    @onkeydown="@((args) => OnKeyPress(args))" id="@GetId()" @onfocus="@((args) => OnFocus(args))" @onfocusout="@((args) => OnFocusOut(args))" @ontouchend="@((args) => OnTouchEnd(args))">
+        <div class="rz-helper-hidden-accessible">
+            <input disabled="@Disabled" aria-haspopup="listbox" readonly="" type="text" tabindex="-1"
+                   name="@Name" value="@(internalValue != null ? internalValue : "")"
+                   aria-label="@(!Multiple && internalValue != null ? internalValue : "")" />
+        </div>
+
+        @if (ValueTemplate != null && selectedItem != null)
+        {
+            <label class="rz-dropdown-label rz-inputtext " style="width:100%;">
+                @ValueTemplate(selectedItem)
+            </label>
+        }
+        else if (Template != null && selectedItem != null)
+        {
+            <label class="rz-dropdown-label rz-inputtext ">
+                @Template(selectedItem)
+            </label>
+        }
+        else if (selectedItem != null && !Multiple)
+        {
+            <label class="rz-dropdown-label rz-inputtext ">
+                @GetItemOrValueFromProperty(selectedItem, TextProperty)
+            </label>
+        }
+        else if (Chips && selectedItems.Count > 0 && selectedItems.Count < MaxSelectedLabels)
+        {
+            <div class="rz-dropdown-chips-wrapper">
+                @foreach (var item in selectedItems)
+                {
+                    <div class="rz-chip">
+                        <span class="rz-chip-text">
+                            @if (Template != null)
+                            {
+                                @Template(item)
+                            }
+                            else
+                            {
+                                @GetItemOrValueFromProperty(item, TextProperty)
+                            }
+                        </span>
+                        <button type=button class="rz-button rz-button-sm rz-button-icon-only rz-light @(Disabled ?"rz-state-disabled":"")" @onclick:preventDefault @onclick:stopPropagation @onclick="() => OnChipRemove(item)"><RadzenIcon Icon="close" /></button>
+                    </div>
+                }
+            </div>
+        }
+        else if (selectedItems.Count > 0)
+        {
+            <label class="rz-dropdown-label rz-inputtext ">
+                @if (selectedItems.Count < MaxSelectedLabels)
+                {
+                    @if (Template == null)
+                    {
+                        @(string.Join(Separator, selectedItems.Select(i => GetItemOrValueFromProperty(i, TextProperty))))
+                    }
+                    else
+                    {
+                        var last = selectedItems.LastOrDefault();
+
+                        foreach (var item in selectedItems)
+                        {
+                            @Template(item)
+
+                            @(item != last ? Separator : "")
+                        }
+                    }
+                }
+                else
+                {
+                    @($"{selectedItems.Count} {SelectedItemsText}")
+                }
+            </label>
+        }
+        else if (!string.IsNullOrEmpty(Placeholder))
+        {
+            <label class="rz-dropdown-label rz-inputtext  rz-placeholder">
+                @Placeholder
+            </label>
+        }
+        else
+        {
+            <label class="rz-dropdown-label rz-inputtext ">
+                &nbsp;
+            </label>
+        }
+
+        <div class="rz-dropdown-trigger  rz-corner-right">
+            <span class="rz-dropdown-trigger-icon  rzi rzi-chevron-down"></span>
+        </div>
+
+        <div id="@PopupID" class="@(Multiple ? "rz-multiselect-panel    " : "rz-dropdown-panel    ")"
+             style="display:none; box-sizing: border-box">
+            @if (AllowFiltering && !Multiple)
+            {
+                <div class="rz-dropdown-filter-container">
+                    <input id="@SearchID" @ref="@search" tabindex="@(Disabled ? "-1" : $"{TabIndex}")" placeholder="@FilterPlaceholder" class="rz-dropdown-filter rz-inputtext   " autocomplete="off" type="text"
+                    @onchange="@((ChangeEventArgs args) => OnFilter(args))" @onkeydown="@((args) => OnFilterKeyPress(args))" value="@searchText"
+                    @oninput=@(args => { searchText = $"{args.Value}"; SearchTextChanged.InvokeAsync(searchText);}) />
+                    <span class="rz-dropdown-filter-icon rzi rzi-search"></span>
+                </div>
+            }
+            @if (Multiple && (AllowSelectAll || AllowFiltering))
+            {
+                <div class=" rz-multiselect-header rz-helper-clearfix" @onclick:preventDefault>
+                    @if (AllowSelectAll)
+                    {
+                        <div class="rz-chkbox" title="@(!AllowFiltering ? "" : SelectAllText)" @onclick="@SelectAll">
+                            <div class="rz-helper-hidden-accessible">
+                                <input readonly="readonly" type="checkbox">
+                            </div>
+                            <div class="@(IsAllSelected() ? "rz-chkbox-box    rz-state-active" : "rz-chkbox-box   ")">
+                                <span class="@(IsAllSelected() ? "rz-chkbox-icon  rzi rzi-check" : "rz-chkbox-icon ")"></span>
+                            </div>
+                        </div>
+                    }
+                    @if (AllowSelectAll && !AllowFiltering && !string.IsNullOrEmpty(SelectAllText))
+                    {
+                        <span style="cursor:pointer" @onclick="@SelectAll">@SelectAllText</span>
+                    }
+                    @if (AllowFiltering)
+                    {
+                        <div class="rz-multiselect-filter-container">
+                            <input id="@SearchID" tabindex="@(Disabled ? "-1" : $"{TabIndex}")" class="rz-inputtext" role="textbox" type="text"
+                                   onclick="Radzen.preventDefaultAndStopPropagation(event)"
+                            @ref="@search" @oninput=@(args => { searchText = $"{args.Value}"; SearchTextChanged.InvokeAsync(searchText);})
+                            @onchange="@((args) => OnFilter(args))" @onkeydown="@((args) => OnFilterKeyPress(args))" value="@searchText" />
+                            <span class="rz-multiselect-filter-icon rzi rzi-search"></span>
+                        </div>
+                    }
+                    <a class="rz-multiselect-close " @onclick="@ClearAll" @onclick:stopPropagation="true">
+                        <span class="rzi rzi-times"></span>
+                    </a>
+                </div>
+            }
+            <div class="@(Multiple ? "rz-multiselect-items-wrapper" : "rz-dropdown-items-wrapper")" style="@PopupStyle">
+                @if (Data != null && Data.Cast<object>().Any())
+                {
+                    <ul @ref="list" class="@(Multiple ? "rz-multiselect-items rz-multiselect-list" : "rz-dropdown-items rz-dropdown-list")" role="listbox">
+                        @if (View != null)
+                        {
+                            @RenderItems()
+                        }
+                    </ul>
+                }
+                else
+                {
+                    @EmptyTemplate
+                }
+            </div>
+        </div>
+        @if (AllowClear && (!Multiple && HasValue || Multiple && selectedItems.Count > 0))
+        {
+            <i class="rz-dropdown-clear-icon rzi rzi-times" @onclick="@ClearAll" @onclick:stopPropagation="true"></i>
+        }
+    </div>
+}

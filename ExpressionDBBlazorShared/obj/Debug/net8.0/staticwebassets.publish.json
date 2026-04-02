@@ -1,0 +1,4621 @@
+{
+  "Version": 1,
+  "Hash": "lfc5rfuJb47l0PRAS84tDWgRoBDtAgCV5bDxKQEFSXQ=",
+  "Source": "ExpressionDBBlazorShared",
+  "BasePath": "_content/ExpressionDBBlazorShared",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ExpressionDBBlazorShared\\wwwroot",
+      "Source": "ExpressionDBBlazorShared",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\blazor.dynamicjs\\0.13.0\\staticwebassets\\helper.js",
+      "SourceId": "Blazor.DynamicJS",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\blazor.dynamicjs\\0.13.0\\staticwebassets\\",
+      "BasePath": "_content/Blazor.DynamicJS",
+      "RelativePath": "helper.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jbmvvo5tup",
+      "Integrity": "v/EqpoqpDgYGkKY4Lrfh74X2XQNNuJqwDYctkUBesYw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\blazor.dynamicjs\\0.13.0\\staticwebassets\\helper.js"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\blazordownloadfile\\2.4.0.2\\staticwebassets\\BlazorDownloadFileScript.js",
+      "SourceId": "BlazorDownloadFile",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\blazordownloadfile\\2.4.0.2\\staticwebassets\\",
+      "BasePath": "_content/BlazorDownloadFile",
+      "RelativePath": "BlazorDownloadFileScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yoor2mamdm",
+      "Integrity": "PtApvXsjtN3h6TrGmJjCQsaFMN/pyLARBUCEQhLn7Oc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\blazordownloadfile\\2.4.0.2\\staticwebassets\\BlazorDownloadFileScript.js"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\dark.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/dark.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ijys1mht55",
+      "Integrity": "IllBVEyrOIr19dGvKkAOoHOS97K6x9OoMGgsml26Nmk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\dark.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\dark-base.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/dark-base.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n08zonzjlf",
+      "Integrity": "qSh8k7POqcnSGyh/VKuhj/WaHKSGS04KPASbAG4j2GM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\dark-base.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\dark-wcag.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/dark-wcag.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f9yvf3g7j5",
+      "Integrity": "M9oCY0HEHaFPTMj7CLTxNBT7/8jUvcI3/3q27/kphek=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\dark-wcag.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\default.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/default.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tupg4am3a5",
+      "Integrity": "5fLw0cOmvcolNF9zyn2Yp7m4MAuPZsuVlKcXzvY2ePE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\default.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\default-base.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/default-base.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "efs7yssqf6",
+      "Integrity": "qh2GuyhCjFtXrppOpWBxUlZd39dmNzDebBH6pTaAtbk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\default-base.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\default-wcag.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/default-wcag.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "796b73bq82",
+      "Integrity": "lYiMLG73UrqjeD3Xr0zwkygnPDSAQXeAo1554Yjqjkc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\default-wcag.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\humanistic.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/humanistic.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6mgvyjuzx2",
+      "Integrity": "ImwYmAumyK296M0YMsnontJzoSYgTdnwZUG3e6ZAoCI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\humanistic.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\humanistic-base.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/humanistic-base.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "odpg7pa0hx",
+      "Integrity": "fO+0vM2dyKZuJiI4iSMqXl8k1HsmFcVTneK0c5HAcIQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\humanistic-base.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\humanistic-dark.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/humanistic-dark.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bvwkyqq0he",
+      "Integrity": "Z417f6hrQhQIVr/BsCMHBwomP/jjJvN52e9UQQvG5Hg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\humanistic-dark.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\humanistic-dark-base.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/humanistic-dark-base.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "n1kej166tq",
+      "Integrity": "+9Mgubtp18xMXULWh0dyBWTVE2ASr8JfiToAt221a3w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\humanistic-dark-base.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\humanistic-dark-wcag.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/humanistic-dark-wcag.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "a5szytxnku",
+      "Integrity": "wsCFo85Tm++Hir55ycJcA850vMHr3ejT4YmaO32HaNc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\humanistic-dark-wcag.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\humanistic-wcag.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/humanistic-wcag.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x6merli1rk",
+      "Integrity": "J8kJYxpBFMrMjHMBSdDlq1lYqyntxOrDZ8AW5FrxH8U=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\humanistic-wcag.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\material.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/material.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ainjujdb1p",
+      "Integrity": "PmgRO3MnDXqHJZfC2sngpbeXBa3YKTWOzZZgM1F5+c0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\material.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\material-base.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/material-base.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "bl0xmpupyt",
+      "Integrity": "P3uzDDmmvnQXD1Ll0I+WfilWJIM4ahrvOiASYjQA3rk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\material-base.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\material-dark.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/material-dark.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2rfu0zokm7",
+      "Integrity": "wmhNA4ocx3+YgEQPZiOU5WzoZzdE1laS6IIVoKeSojw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\material-dark.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\material-dark-base.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/material-dark-base.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zy4c9g5dcr",
+      "Integrity": "1eIJHOnD8YLO9IbVX/2PLUo4E4VXSgsUl7wD2eZw/gE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\material-dark-base.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\material-dark-wcag.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/material-dark-wcag.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "22pb44itlf",
+      "Integrity": "mscmBJFsTrAe0H/SoknylPnukiQX2yfQ/zSnbR4B75k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\material-dark-wcag.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\material-wcag.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/material-wcag.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pblx1qaqft",
+      "Integrity": "y6x9nQqkv3mW+Dvmm6Pvh+h0ixHfY0RLzrX6ZlktoG4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\material-wcag.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\software.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/software.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ccdu1pggu7",
+      "Integrity": "DEQoIp0L5LYw5Ka8P3Lgmdj8cegLD+HmjGvWdSOARRg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\software.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\software-base.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/software-base.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xme1uzu5q6",
+      "Integrity": "WWqzY0fjcgVh6rf5JAzgpEo96JSKz59J6qopBpQ4SmA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\software-base.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\software-dark.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/software-dark.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jmuu274zb9",
+      "Integrity": "i7RxBpX3vz4/1xFi7JhS2TJFTgrxgdvIJGL63v1/65c=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\software-dark.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\software-dark-base.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/software-dark-base.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5wvm88zst8",
+      "Integrity": "C11yHRZRaUyMsnghXfbnI1o2JocFWyrg73daNAMI3eM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\software-dark-base.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\software-dark-wcag.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/software-dark-wcag.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "557e8lceon",
+      "Integrity": "VyhJgq8po3mud6FSP2a9ENksqEZN5jW2kGxLQC+F154=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\software-dark-wcag.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\software-wcag.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/software-wcag.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9fpk6led9e",
+      "Integrity": "tRcVAq9DGc0nyvTuxUpiBTY8PaxnC6deHLSE8Ri1PMg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\software-wcag.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\standard.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/standard.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xoupbqu1ve",
+      "Integrity": "oRo6wq3j+OAtGR+8vvJPtIBjy3YRIZU4l73FZMC/4T4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\standard.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\standard-base.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/standard-base.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "a73czua787",
+      "Integrity": "NjY3qg0VMVJ8sggJZWHD6ewzLsktaO6pPgPPgxDzrZQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\standard-base.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\standard-dark.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/standard-dark.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "gi3koikshg",
+      "Integrity": "yC5SN7FAys4uufJsv4C1SWGbvDYX9OlQyO1aOp3hFHo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\standard-dark.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\standard-dark-base.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/standard-dark-base.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x62j22f6c2",
+      "Integrity": "J3TOCXMZQ83OV1fs5ZE/fNHDL8PvWAZVkfAp1eK1ct0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\standard-dark-base.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\standard-dark-wcag.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/standard-dark-wcag.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7bt2cgjiuc",
+      "Integrity": "HYNTnwNf3xj899KPdiKwmD1e5t3XRg9VaQgB1ZOvKeI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\standard-dark-wcag.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\standard-wcag.css",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "css/standard-wcag.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "kp0ueqs315",
+      "Integrity": "GFU2mt0A9T8j9YMwMQqIUmdziKNDuPppDCn2o37LV2E=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\standard-wcag.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\fonts\\MaterialSymbolsOutlined.woff2",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "fonts/MaterialSymbolsOutlined.woff2",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mv86jbv18h",
+      "Integrity": "jl6yGniuOaLQTXd36jhE7+/dH86dwgPNpHgSvBiQxxM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\fonts\\MaterialSymbolsOutlined.woff2"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\fonts\\RobotoFlex.woff2",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "fonts/RobotoFlex.woff2",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tdgcpklreb",
+      "Integrity": "D4n6QkbzuJDYChkHTPMXLxJlSC/5uucOpe2kU+JCJRs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\fonts\\RobotoFlex.woff2"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\fonts\\SourceSans3VF-Italic.ttf.woff2",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "fonts/SourceSans3VF-Italic.ttf.woff2",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sw3iuqo2hf",
+      "Integrity": "tJWavAVpOS+HxsasYS+Q4/4BBNKDckGJt9i29hrzR9M=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\fonts\\SourceSans3VF-Italic.ttf.woff2"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\fonts\\SourceSans3VF-Upright.ttf.woff2",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "fonts/SourceSans3VF-Upright.ttf.woff2",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "nqmp3d2aoy",
+      "Integrity": "XxZWb3pA05szmtJr4VH6Whqx8MJXTHouYZdlWEoay9g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\fonts\\SourceSans3VF-Upright.ttf.woff2"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\Radzen.Blazor.js",
+      "SourceId": "Radzen.Blazor",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\",
+      "BasePath": "_content/Radzen.Blazor",
+      "RelativePath": "Radzen.Blazor.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "asg63rlwxd",
+      "Integrity": "huYFz8vMByvyOjPJPJZZTLSRs+jmgVo9bAzWwbg4Tcs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\Radzen.Blazor.js"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\sotsera.blazor.toaster\\3.0.0\\staticwebassets\\toastr.min.css",
+      "SourceId": "Sotsera.Blazor.Toaster",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\sotsera.blazor.toaster\\3.0.0\\staticwebassets\\",
+      "BasePath": "_content/Sotsera.Blazor.Toaster",
+      "RelativePath": "toastr.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "3acyh5zjal",
+      "Integrity": "VbhCKrByojupqJZ6O4OPa5Buv1jso4PT7GH0z/XdIUs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\sotsera.blazor.toaster\\3.0.0\\staticwebassets\\toastr.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.getproperty.script\\1.2.0\\staticwebassets\\Toolbelt.Blazor.GetProperty.Script.lib.module.js",
+      "SourceId": "Toolbelt.Blazor.GetProperty.Script",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.getproperty.script\\1.2.0\\staticwebassets\\",
+      "BasePath": "_content/Toolbelt.Blazor.GetProperty.Script",
+      "RelativePath": "Toolbelt.Blazor.GetProperty.Script.lib.module.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "JSModule",
+      "AssetTraitValue": "JSLibraryModule",
+      "Fingerprint": "8bgjjt0fay",
+      "Integrity": "rN9ebccf1yzi+bWyyip51JJuAKONWUHDBKWnKUpDWAA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.getproperty.script\\1.2.0\\staticwebassets\\Toolbelt.Blazor.GetProperty.Script.lib.module.js"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.viewtransition\\1.0.3\\staticwebassets\\script.js",
+      "SourceId": "Toolbelt.Blazor.ViewTransition",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.viewtransition\\1.0.3\\staticwebassets\\",
+      "BasePath": "_content/Toolbelt.Blazor.ViewTransition",
+      "RelativePath": "script.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "z524fdjtve",
+      "Integrity": "CelfgRuXrd+xDV/UXAOf4S4CYAcbtbPDsEi8BjGkz9w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.viewtransition\\1.0.3\\staticwebassets\\script.js"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.viewtransition\\1.0.3\\staticwebassets\\script.min.js",
+      "SourceId": "Toolbelt.Blazor.ViewTransition",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.viewtransition\\1.0.3\\staticwebassets\\",
+      "BasePath": "_content/Toolbelt.Blazor.ViewTransition",
+      "RelativePath": "script.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1cwvku1jct",
+      "Integrity": "cVFUbnNf1a5+GJS3btwhrnv95ePLF+UwtEbIhAKtpkc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.viewtransition\\1.0.3\\staticwebassets\\script.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\obj\\Debug\\net8.0\\jsmodules\\jsmodules.publish.manifest.json",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\obj\\Debug\\net8.0\\jsmodules\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "jsmodules.publish.manifest.json",
+      "AssetKind": "Publish",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "JSModule",
+      "AssetTraitValue": "JSModuleManifest",
+      "Fingerprint": "1k7jenhlys",
+      "Integrity": "AYfWq0QKtftfuVn9Qn6H19PCqkUQfJL5oFBnaAIX2KU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "obj\\Debug\\net8.0\\jsmodules\\jsmodules.publish.manifest.json"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\app.css",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "css/app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iiwedjhqd7",
+      "Integrity": "GoW9lmu3IPRhG+mqQebTtxp9jExjr2bfBqr0Y9XRH+0=",
+      "CopyToOutputDirectory": "Always",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\app.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "css/bootstrap/bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6gzpyzhau4",
+      "Integrity": "SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "css/bootstrap/bootstrap.min.css#[.{fingerprint}]?.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8inm30yfxf",
+      "Integrity": "gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\mat_app.css",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "css/mat_app#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "110tlkjx9r",
+      "Integrity": "m+WC/1aIDjz/+Dav790tm0ZRw0+Gut+rTwgPZ09qx4w=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\mat_app.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cmapd0fi15",
+      "Integrity": "BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.eot",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0uw8dim9nl",
+      "Integrity": "OK3poGPgzKI2NzNgP07XMbJa3Dz6USoUh/chSkSvQpc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.otf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wk8x8xm0ah",
+      "Integrity": "sDUtuZAEzWZyv/U1xl/9D3ehyU69JE+FvAcu5HQ+/a0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sjnzgf7e1h",
+      "Integrity": "+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.ttf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0ufsf3tm4c",
+      "Integrity": "KOqWm3PzO14I0lOVpr/zkvT95mLdkGIZXc1MeYqbTPU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "css/open-iconic/font/fonts/open-iconic#[.{fingerprint}]?.woff",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h4d0pazwgy",
+      "Integrity": "cZPqVlRJfSNW0KaQ4+UPOXZ/v/QzXlejRDwUNdZIofI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "css/open-iconic/FONT-LICENSE#[.{fingerprint}]?",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "48tmkg660f",
+      "Integrity": "jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "css/open-iconic/ICON-LICENSE#[.{fingerprint}]?",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4dwjve0o0b",
+      "Integrity": "aF5g/izareSj02F3MPSoTGNbcMBl9nmZKDe04zjU/ss=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\README.md",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "css/open-iconic/README#[.{fingerprint}]?.md",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "psxpu4y82n",
+      "Integrity": "p/oxU91iBE+uaDr3kYOyZPuulf4YcPAMNIz6PRA/tb0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\radzen_override.css",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "css/radzen_override#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "h712bhej1f",
+      "Integrity": "Yx7BxnGqXJGozeaqhD9MSMBLNu+aBlbGvNm88uV22zs=",
+      "CopyToOutputDirectory": "Always",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\radzen_override.css"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\favicon.ico",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "favicon#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "61n19gt1b8",
+      "Integrity": "Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\js\\FileDownload.js",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "js/FileDownload#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xnrhuy43jt",
+      "Integrity": "TUyFv/GTmsEDzLF/L468J+605O+4FyRvbO/gGWmliS8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\FileDownload.js"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\js\\keydown-script.js",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "js/keydown-script#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "c5q7jzr2gx",
+      "Integrity": "4PC3NJMn01L15cyYg8fC/UlBLcUii198txcBJBdcWvk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\keydown-script.js"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\js\\quagga-script.js",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "js/quagga-script#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m3tjyro0s5",
+      "Integrity": "EkjOvphbeIYFJqmaWhTQ8m0FulvUdXk4Ohk0LyM2dCM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\quagga-script.js"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\js\\scan-script.js",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "js/scan-script#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hubnvqf4o1",
+      "Integrity": "R02570xjtMiQnKDMbWiuxKoJzluNAkoJLdF5Po+Rkrc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\scan-script.js"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\WMS_logo.jpg",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "WMS_logo#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uyay8k1m5s",
+      "Integrity": "BtQ3eb5CLGxcYgB/Xhy2Lvi5WmdecypEGEmngFeN3jQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\WMS_logo.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\WMS_logo_home.jpg",
+      "SourceId": "ExpressionDBBlazorShared",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\",
+      "BasePath": "_content/ExpressionDBBlazorShared",
+      "RelativePath": "WMS_logo_home#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fh93ml5r5h",
+      "Integrity": "w6zquqnYQUd+0sM1gcqY90JGaHE4J2qcOP/mideuRSA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\WMS_logo_home.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "_content/Blazor.DynamicJS/helper.js",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\blazor.dynamicjs\\0.13.0\\staticwebassets\\helper.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11369"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"v/EqpoqpDgYGkKY4Lrfh74X2XQNNuJqwDYctkUBesYw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 03 Mar 2023 03:36:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-v/EqpoqpDgYGkKY4Lrfh74X2XQNNuJqwDYctkUBesYw="
+        }
+      ]
+    },
+    {
+      "Route": "_content/BlazorDownloadFile/BlazorDownloadFileScript.js",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\blazordownloadfile\\2.4.0.2\\staticwebassets\\BlazorDownloadFileScript.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "12550"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PtApvXsjtN3h6TrGmJjCQsaFMN/pyLARBUCEQhLn7Oc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 24 Apr 2022 17:40:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PtApvXsjtN3h6TrGmJjCQsaFMN/pyLARBUCEQhLn7Oc="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/dark.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\dark.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "610447"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IllBVEyrOIr19dGvKkAOoHOS97K6x9OoMGgsml26Nmk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IllBVEyrOIr19dGvKkAOoHOS97K6x9OoMGgsml26Nmk="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/dark-base.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\dark-base.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "607606"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qSh8k7POqcnSGyh/VKuhj/WaHKSGS04KPASbAG4j2GM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qSh8k7POqcnSGyh/VKuhj/WaHKSGS04KPASbAG4j2GM="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/dark-wcag.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\dark-wcag.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2648"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M9oCY0HEHaFPTMj7CLTxNBT7/8jUvcI3/3q27/kphek=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-M9oCY0HEHaFPTMj7CLTxNBT7/8jUvcI3/3q27/kphek="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/default.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\default.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "610111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5fLw0cOmvcolNF9zyn2Yp7m4MAuPZsuVlKcXzvY2ePE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5fLw0cOmvcolNF9zyn2Yp7m4MAuPZsuVlKcXzvY2ePE="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/default-base.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\default-base.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "607270"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qh2GuyhCjFtXrppOpWBxUlZd39dmNzDebBH6pTaAtbk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qh2GuyhCjFtXrppOpWBxUlZd39dmNzDebBH6pTaAtbk="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/default-wcag.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\default-wcag.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2589"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lYiMLG73UrqjeD3Xr0zwkygnPDSAQXeAo1554Yjqjkc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lYiMLG73UrqjeD3Xr0zwkygnPDSAQXeAo1554Yjqjkc="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/humanistic.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\humanistic.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "610052"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ImwYmAumyK296M0YMsnontJzoSYgTdnwZUG3e6ZAoCI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ImwYmAumyK296M0YMsnontJzoSYgTdnwZUG3e6ZAoCI="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/humanistic-base.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\humanistic-base.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "607211"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fO+0vM2dyKZuJiI4iSMqXl8k1HsmFcVTneK0c5HAcIQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fO+0vM2dyKZuJiI4iSMqXl8k1HsmFcVTneK0c5HAcIQ="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/humanistic-dark.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\humanistic-dark.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "610387"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Z417f6hrQhQIVr/BsCMHBwomP/jjJvN52e9UQQvG5Hg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Z417f6hrQhQIVr/BsCMHBwomP/jjJvN52e9UQQvG5Hg="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/humanistic-dark-base.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\humanistic-dark-base.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "607546"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+9Mgubtp18xMXULWh0dyBWTVE2ASr8JfiToAt221a3w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+9Mgubtp18xMXULWh0dyBWTVE2ASr8JfiToAt221a3w="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/humanistic-dark-wcag.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\humanistic-dark-wcag.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2658"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wsCFo85Tm++Hir55ycJcA850vMHr3ejT4YmaO32HaNc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wsCFo85Tm++Hir55ycJcA850vMHr3ejT4YmaO32HaNc="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/humanistic-wcag.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\humanistic-wcag.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2591"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J8kJYxpBFMrMjHMBSdDlq1lYqyntxOrDZ8AW5FrxH8U=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J8kJYxpBFMrMjHMBSdDlq1lYqyntxOrDZ8AW5FrxH8U="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/material.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\material.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "619143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PmgRO3MnDXqHJZfC2sngpbeXBa3YKTWOzZZgM1F5+c0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PmgRO3MnDXqHJZfC2sngpbeXBa3YKTWOzZZgM1F5+c0="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/material-base.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\material-base.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "616302"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"P3uzDDmmvnQXD1Ll0I+WfilWJIM4ahrvOiASYjQA3rk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-P3uzDDmmvnQXD1Ll0I+WfilWJIM4ahrvOiASYjQA3rk="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/material-dark.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\material-dark.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "618758"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wmhNA4ocx3+YgEQPZiOU5WzoZzdE1laS6IIVoKeSojw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wmhNA4ocx3+YgEQPZiOU5WzoZzdE1laS6IIVoKeSojw="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/material-dark-base.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\material-dark-base.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "615917"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1eIJHOnD8YLO9IbVX/2PLUo4E4VXSgsUl7wD2eZw/gE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1eIJHOnD8YLO9IbVX/2PLUo4E4VXSgsUl7wD2eZw/gE="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/material-dark-wcag.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\material-dark-wcag.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2598"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mscmBJFsTrAe0H/SoknylPnukiQX2yfQ/zSnbR4B75k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mscmBJFsTrAe0H/SoknylPnukiQX2yfQ/zSnbR4B75k="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/material-wcag.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\material-wcag.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2590"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y6x9nQqkv3mW+Dvmm6Pvh+h0ixHfY0RLzrX6ZlktoG4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-y6x9nQqkv3mW+Dvmm6Pvh+h0ixHfY0RLzrX6ZlktoG4="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/software.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\software.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "610110"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DEQoIp0L5LYw5Ka8P3Lgmdj8cegLD+HmjGvWdSOARRg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DEQoIp0L5LYw5Ka8P3Lgmdj8cegLD+HmjGvWdSOARRg="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/software-base.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\software-base.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "607269"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WWqzY0fjcgVh6rf5JAzgpEo96JSKz59J6qopBpQ4SmA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WWqzY0fjcgVh6rf5JAzgpEo96JSKz59J6qopBpQ4SmA="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/software-dark.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\software-dark.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "610416"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i7RxBpX3vz4/1xFi7JhS2TJFTgrxgdvIJGL63v1/65c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-i7RxBpX3vz4/1xFi7JhS2TJFTgrxgdvIJGL63v1/65c="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/software-dark-base.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\software-dark-base.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "607575"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"C11yHRZRaUyMsnghXfbnI1o2JocFWyrg73daNAMI3eM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-C11yHRZRaUyMsnghXfbnI1o2JocFWyrg73daNAMI3eM="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/software-dark-wcag.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\software-dark-wcag.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2655"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VyhJgq8po3mud6FSP2a9ENksqEZN5jW2kGxLQC+F154=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VyhJgq8po3mud6FSP2a9ENksqEZN5jW2kGxLQC+F154="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/software-wcag.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\software-wcag.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2650"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tRcVAq9DGc0nyvTuxUpiBTY8PaxnC6deHLSE8Ri1PMg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tRcVAq9DGc0nyvTuxUpiBTY8PaxnC6deHLSE8Ri1PMg="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/standard.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\standard.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "616537"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oRo6wq3j+OAtGR+8vvJPtIBjy3YRIZU4l73FZMC/4T4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:51:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oRo6wq3j+OAtGR+8vvJPtIBjy3YRIZU4l73FZMC/4T4="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/standard-base.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\standard-base.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "613696"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NjY3qg0VMVJ8sggJZWHD6ewzLsktaO6pPgPPgxDzrZQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NjY3qg0VMVJ8sggJZWHD6ewzLsktaO6pPgPPgxDzrZQ="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/standard-dark.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\standard-dark.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "613303"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yC5SN7FAys4uufJsv4C1SWGbvDYX9OlQyO1aOp3hFHo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:51:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-yC5SN7FAys4uufJsv4C1SWGbvDYX9OlQyO1aOp3hFHo="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/standard-dark-base.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\standard-dark-base.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "616144"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J3TOCXMZQ83OV1fs5ZE/fNHDL8PvWAZVkfAp1eK1ct0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J3TOCXMZQ83OV1fs5ZE/fNHDL8PvWAZVkfAp1eK1ct0="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/standard-dark-wcag.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\standard-dark-wcag.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2596"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HYNTnwNf3xj899KPdiKwmD1e5t3XRg9VaQgB1ZOvKeI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:50:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HYNTnwNf3xj899KPdiKwmD1e5t3XRg9VaQgB1ZOvKeI="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/css/standard-wcag.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\css\\standard-wcag.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2591"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GFU2mt0A9T8j9YMwMQqIUmdziKNDuPppDCn2o37LV2E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:51:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GFU2mt0A9T8j9YMwMQqIUmdziKNDuPppDCn2o37LV2E="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/fonts/MaterialSymbolsOutlined.woff2",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\fonts\\MaterialSymbolsOutlined.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3208232"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jl6yGniuOaLQTXd36jhE7+/dH86dwgPNpHgSvBiQxxM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Aug 2024 15:22:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jl6yGniuOaLQTXd36jhE7+/dH86dwgPNpHgSvBiQxxM="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/fonts/RobotoFlex.woff2",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\fonts\\RobotoFlex.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "747316"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"D4n6QkbzuJDYChkHTPMXLxJlSC/5uucOpe2kU+JCJRs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Aug 2024 15:22:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-D4n6QkbzuJDYChkHTPMXLxJlSC/5uucOpe2kU+JCJRs="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/fonts/SourceSans3VF-Italic.ttf.woff2",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\fonts\\SourceSans3VF-Italic.ttf.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "137996"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"tJWavAVpOS+HxsasYS+Q4/4BBNKDckGJt9i29hrzR9M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Aug 2024 15:22:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-tJWavAVpOS+HxsasYS+Q4/4BBNKDckGJt9i29hrzR9M="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/fonts/SourceSans3VF-Upright.ttf.woff2",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\fonts\\SourceSans3VF-Upright.ttf.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "170188"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XxZWb3pA05szmtJr4VH6Whqx8MJXTHouYZdlWEoay9g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 Aug 2024 15:22:58 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XxZWb3pA05szmtJr4VH6Whqx8MJXTHouYZdlWEoay9g="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Radzen.Blazor/Radzen.Blazor.js",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\radzen.blazor\\5.3.5\\staticwebassets\\Radzen.Blazor.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "88332"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"huYFz8vMByvyOjPJPJZZTLSRs+jmgVo9bAzWwbg4Tcs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 22 Oct 2024 06:38:34 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-huYFz8vMByvyOjPJPJZZTLSRs+jmgVo9bAzWwbg4Tcs="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Sotsera.Blazor.Toaster/toastr.min.css",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\sotsera.blazor.toaster\\3.0.0\\staticwebassets\\toastr.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6973"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VbhCKrByojupqJZ6O4OPa5Buv1jso4PT7GH0z/XdIUs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 03 Jan 2020 17:02:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VbhCKrByojupqJZ6O4OPa5Buv1jso4PT7GH0z/XdIUs="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Toolbelt.Blazor.GetProperty.Script/Toolbelt.Blazor.GetProperty.Script.lib.module.js",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.getproperty.script\\1.2.0\\staticwebassets\\Toolbelt.Blazor.GetProperty.Script.lib.module.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "183"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"rN9ebccf1yzi+bWyyip51JJuAKONWUHDBKWnKUpDWAA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 15 Nov 2023 18:49:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-rN9ebccf1yzi+bWyyip51JJuAKONWUHDBKWnKUpDWAA="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Toolbelt.Blazor.ViewTransition/script.js",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.viewtransition\\1.0.3\\staticwebassets\\script.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "601"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CelfgRuXrd+xDV/UXAOf4S4CYAcbtbPDsEi8BjGkz9w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 29 Oct 2023 07:07:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CelfgRuXrd+xDV/UXAOf4S4CYAcbtbPDsEi8BjGkz9w="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Toolbelt.Blazor.ViewTransition/script.min.js",
+      "AssetFile": "C:\\Users\\G2507\\.nuget\\packages\\toolbelt.blazor.viewtransition\\1.0.3\\staticwebassets\\script.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "206"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cVFUbnNf1a5+GJS3btwhrnv95ePLF+UwtEbIhAKtpkc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 29 Oct 2023 07:07:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cVFUbnNf1a5+GJS3btwhrnv95ePLF+UwtEbIhAKtpkc="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.css",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5710"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GoW9lmu3IPRhG+mqQebTtxp9jExjr2bfBqr0Y9XRH+0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GoW9lmu3IPRhG+mqQebTtxp9jExjr2bfBqr0Y9XRH+0="
+        }
+      ]
+    },
+    {
+      "Route": "css/app.iiwedjhqd7.css",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5710"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GoW9lmu3IPRhG+mqQebTtxp9jExjr2bfBqr0Y9XRH+0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iiwedjhqd7"
+        },
+        {
+          "Name": "label",
+          "Value": "css/app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GoW9lmu3IPRhG+mqQebTtxp9jExjr2bfBqr0Y9XRH+0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.6gzpyzhau4.css",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6gzpyzhau4"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "162726"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7/p4nS6D/0="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.8inm30yfxf.map",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8inm30yfxf"
+        },
+        {
+          "Name": "label",
+          "Value": "css/bootstrap/bootstrap.min.css.map"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/bootstrap/bootstrap.min.css.map",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "449111"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/plain"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gBwg2tmA0Ci2u54gMF1jNCVku6vznarkLS6D76htNNQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/mat_app.110tlkjx9r.css",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\mat_app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "183"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m+WC/1aIDjz/+Dav790tm0ZRw0+Gut+rTwgPZ09qx4w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "110tlkjx9r"
+        },
+        {
+          "Name": "label",
+          "Value": "css/mat_app.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-m+WC/1aIDjz/+Dav790tm0ZRw0+Gut+rTwgPZ09qx4w="
+        }
+      ]
+    },
+    {
+      "Route": "css/mat_app.css",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\mat_app.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "183"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"m+WC/1aIDjz/+Dav790tm0ZRw0+Gut+rTwgPZ09qx4w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-m+WC/1aIDjz/+Dav790tm0ZRw0+Gut+rTwgPZ09qx4w="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/css/open-iconic-bootstrap.min.cmapd0fi15.css",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cmapd0fi15"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/css/open-iconic-bootstrap.min.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.0ufsf3tm4c.ttf",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38256"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KOqWm3PzO14I0lOVpr/zkvT95mLdkGIZXc1MeYqbTPU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0ufsf3tm4c"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/fonts/open-iconic.ttf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-KOqWm3PzO14I0lOVpr/zkvT95mLdkGIZXc1MeYqbTPU="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.0uw8dim9nl.eot",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28196"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-fontobject"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OK3poGPgzKI2NzNgP07XMbJa3Dz6USoUh/chSkSvQpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0uw8dim9nl"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/fonts/open-iconic.eot"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OK3poGPgzKI2NzNgP07XMbJa3Dz6USoUh/chSkSvQpc="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.eot",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "28196"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/vnd.ms-fontobject"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OK3poGPgzKI2NzNgP07XMbJa3Dz6USoUh/chSkSvQpc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OK3poGPgzKI2NzNgP07XMbJa3Dz6USoUh/chSkSvQpc="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.h4d0pazwgy.woff",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14984"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cZPqVlRJfSNW0KaQ4+UPOXZ/v/QzXlejRDwUNdZIofI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h4d0pazwgy"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/fonts/open-iconic.woff"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cZPqVlRJfSNW0KaQ4+UPOXZ/v/QzXlejRDwUNdZIofI="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.otf",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20996"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sDUtuZAEzWZyv/U1xl/9D3ehyU69JE+FvAcu5HQ+/a0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sDUtuZAEzWZyv/U1xl/9D3ehyU69JE+FvAcu5HQ+/a0="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.sjnzgf7e1h.svg",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55332"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sjnzgf7e1h"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/fonts/open-iconic.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.svg",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55332"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.ttf",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38256"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/x-font-ttf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"KOqWm3PzO14I0lOVpr/zkvT95mLdkGIZXc1MeYqbTPU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-KOqWm3PzO14I0lOVpr/zkvT95mLdkGIZXc1MeYqbTPU="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.wk8x8xm0ah.otf",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20996"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/otf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"sDUtuZAEzWZyv/U1xl/9D3ehyU69JE+FvAcu5HQ+/a0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wk8x8xm0ah"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/font/fonts/open-iconic.otf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-sDUtuZAEzWZyv/U1xl/9D3ehyU69JE+FvAcu5HQ+/a0="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/font/fonts/open-iconic.woff",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "14984"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cZPqVlRJfSNW0KaQ4+UPOXZ/v/QzXlejRDwUNdZIofI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cZPqVlRJfSNW0KaQ4+UPOXZ/v/QzXlejRDwUNdZIofI="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/FONT-LICENSE",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/FONT-LICENSE.48tmkg660f",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4103"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "48tmkg660f"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/FONT-LICENSE"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-jA4J4h/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/ICON-LICENSE",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1093"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aF5g/izareSj02F3MPSoTGNbcMBl9nmZKDe04zjU/ss=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aF5g/izareSj02F3MPSoTGNbcMBl9nmZKDe04zjU/ss="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/ICON-LICENSE.4dwjve0o0b",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1093"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aF5g/izareSj02F3MPSoTGNbcMBl9nmZKDe04zjU/ss=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4dwjve0o0b"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/ICON-LICENSE"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aF5g/izareSj02F3MPSoTGNbcMBl9nmZKDe04zjU/ss="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/README.md",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\README.md",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3615"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p/oxU91iBE+uaDr3kYOyZPuulf4YcPAMNIz6PRA/tb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-p/oxU91iBE+uaDr3kYOyZPuulf4YcPAMNIz6PRA/tb0="
+        }
+      ]
+    },
+    {
+      "Route": "css/open-iconic/README.psxpu4y82n.md",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\open-iconic\\README.md",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3615"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"p/oxU91iBE+uaDr3kYOyZPuulf4YcPAMNIz6PRA/tb0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "psxpu4y82n"
+        },
+        {
+          "Name": "label",
+          "Value": "css/open-iconic/README.md"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-p/oxU91iBE+uaDr3kYOyZPuulf4YcPAMNIz6PRA/tb0="
+        }
+      ]
+    },
+    {
+      "Route": "css/radzen_override.css",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\radzen_override.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "347"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yx7BxnGqXJGozeaqhD9MSMBLNu+aBlbGvNm88uV22zs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yx7BxnGqXJGozeaqhD9MSMBLNu+aBlbGvNm88uV22zs="
+        }
+      ]
+    },
+    {
+      "Route": "css/radzen_override.h712bhej1f.css",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\css\\radzen_override.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "347"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Yx7BxnGqXJGozeaqhD9MSMBLNu+aBlbGvNm88uV22zs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h712bhej1f"
+        },
+        {
+          "Name": "label",
+          "Value": "css/radzen_override.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Yx7BxnGqXJGozeaqhD9MSMBLNu+aBlbGvNm88uV22zs="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.61n19gt1b8.ico",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "61n19gt1b8"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "js/FileDownload.js",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\js\\FileDownload.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TUyFv/GTmsEDzLF/L468J+605O+4FyRvbO/gGWmliS8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Feb 2026 05:36:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TUyFv/GTmsEDzLF/L468J+605O+4FyRvbO/gGWmliS8="
+        }
+      ]
+    },
+    {
+      "Route": "js/FileDownload.xnrhuy43jt.js",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\js\\FileDownload.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "395"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TUyFv/GTmsEDzLF/L468J+605O+4FyRvbO/gGWmliS8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Feb 2026 05:36:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xnrhuy43jt"
+        },
+        {
+          "Name": "label",
+          "Value": "js/FileDownload.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TUyFv/GTmsEDzLF/L468J+605O+4FyRvbO/gGWmliS8="
+        }
+      ]
+    },
+    {
+      "Route": "js/keydown-script.c5q7jzr2gx.js",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\js\\keydown-script.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5202"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4PC3NJMn01L15cyYg8fC/UlBLcUii198txcBJBdcWvk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "c5q7jzr2gx"
+        },
+        {
+          "Name": "label",
+          "Value": "js/keydown-script.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4PC3NJMn01L15cyYg8fC/UlBLcUii198txcBJBdcWvk="
+        }
+      ]
+    },
+    {
+      "Route": "js/keydown-script.js",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\js\\keydown-script.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5202"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4PC3NJMn01L15cyYg8fC/UlBLcUii198txcBJBdcWvk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4PC3NJMn01L15cyYg8fC/UlBLcUii198txcBJBdcWvk="
+        }
+      ]
+    },
+    {
+      "Route": "js/quagga-script.js",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\js\\quagga-script.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5399"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EkjOvphbeIYFJqmaWhTQ8m0FulvUdXk4Ohk0LyM2dCM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 25 Dec 2025 05:41:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EkjOvphbeIYFJqmaWhTQ8m0FulvUdXk4Ohk0LyM2dCM="
+        }
+      ]
+    },
+    {
+      "Route": "js/quagga-script.m3tjyro0s5.js",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\js\\quagga-script.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5399"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EkjOvphbeIYFJqmaWhTQ8m0FulvUdXk4Ohk0LyM2dCM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 25 Dec 2025 05:41:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m3tjyro0s5"
+        },
+        {
+          "Name": "label",
+          "Value": "js/quagga-script.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EkjOvphbeIYFJqmaWhTQ8m0FulvUdXk4Ohk0LyM2dCM="
+        }
+      ]
+    },
+    {
+      "Route": "js/scan-script.hubnvqf4o1.js",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\js\\scan-script.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "492"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R02570xjtMiQnKDMbWiuxKoJzluNAkoJLdF5Po+Rkrc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hubnvqf4o1"
+        },
+        {
+          "Name": "label",
+          "Value": "js/scan-script.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R02570xjtMiQnKDMbWiuxKoJzluNAkoJLdF5Po+Rkrc="
+        }
+      ]
+    },
+    {
+      "Route": "js/scan-script.js",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\js\\scan-script.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "492"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R02570xjtMiQnKDMbWiuxKoJzluNAkoJLdF5Po+Rkrc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R02570xjtMiQnKDMbWiuxKoJzluNAkoJLdF5Po+Rkrc="
+        }
+      ]
+    },
+    {
+      "Route": "jsmodules.publish.manifest.json",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\obj\\Debug\\net8.0\\jsmodules\\jsmodules.publish.manifest.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "102"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"AYfWq0QKtftfuVn9Qn6H19PCqkUQfJL5oFBnaAIX2KU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 26 Feb 2026 10:22:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-AYfWq0QKtftfuVn9Qn6H19PCqkUQfJL5oFBnaAIX2KU="
+        }
+      ]
+    },
+    {
+      "Route": "WMS_logo.jpg",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\WMS_logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "105569"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BtQ3eb5CLGxcYgB/Xhy2Lvi5WmdecypEGEmngFeN3jQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BtQ3eb5CLGxcYgB/Xhy2Lvi5WmdecypEGEmngFeN3jQ="
+        }
+      ]
+    },
+    {
+      "Route": "WMS_logo.uyay8k1m5s.jpg",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\WMS_logo.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "105569"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BtQ3eb5CLGxcYgB/Xhy2Lvi5WmdecypEGEmngFeN3jQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uyay8k1m5s"
+        },
+        {
+          "Name": "label",
+          "Value": "WMS_logo.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BtQ3eb5CLGxcYgB/Xhy2Lvi5WmdecypEGEmngFeN3jQ="
+        }
+      ]
+    },
+    {
+      "Route": "WMS_logo_home.fh93ml5r5h.jpg",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\WMS_logo_home.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91915"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w6zquqnYQUd+0sM1gcqY90JGaHE4J2qcOP/mideuRSA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fh93ml5r5h"
+        },
+        {
+          "Name": "label",
+          "Value": "WMS_logo_home.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-w6zquqnYQUd+0sM1gcqY90JGaHE4J2qcOP/mideuRSA="
+        }
+      ]
+    },
+    {
+      "Route": "WMS_logo_home.jpg",
+      "AssetFile": "C:\\Users\\G2507\\OneDrive - 株式会社立花エレテック\\ドキュメント\\github\\SUNTORY_OSAKA_MaterialHandlingManagementApp\\ExpressionDBBlazorShared\\wwwroot\\WMS_logo_home.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91915"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"w6zquqnYQUd+0sM1gcqY90JGaHE4J2qcOP/mideuRSA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 22 Oct 2025 08:57:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-w6zquqnYQUd+0sM1gcqY90JGaHE4J2qcOP/mideuRSA="
+        }
+      ]
+    }
+  ]
+}

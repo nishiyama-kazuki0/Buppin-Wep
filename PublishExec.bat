@@ -9,7 +9,7 @@ set profileName=FolderProfile.pubxml
 rem set profileName=IISProfile.pubxml
 
 rem 発行を行うプロジェクト名
-set projectfileName=ZennohBlazorWasmApp
+set projectfileName=ExpressionDBBlazorWasmApp
 
 rem ログファイル名
  set LogFileName=PublishExecute_Log
@@ -17,7 +17,7 @@ rem ログファイルを削除
  del %~dp0\%LogFileName%.log
 
 rem ビルドの前にプロジェクトクリーンを行っておく
-rem dotnet clean ..\ZennohBlazorShared\ZennohBlazorShared.csproj
+rem dotnet clean ..\ExpressionDBBlazorShared\ExpressionDBBlazorShared.csproj
 rem dotnet clean %targetPath%\%projectfileName%\%projectfileName%.csproj
 
 rem プロジェクトをリリースビルド

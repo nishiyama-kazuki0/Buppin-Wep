@@ -1,0 +1,40 @@
+﻿@inherits StepItemBase
+
+@*HT画面：物品登録*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+
+    @*検索条件*@
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+        <RadzenIcon Icon="input" />
+        <RadzenText Text="入力" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px;"></RadzenText>
+    </RadzenRow>
+
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            <HtTitleValueTextBox Id="PalletNo" NextId="棚" Focus="true" Disabled="false" Title="管理番号" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).PalletNo)"
+                                 Change="@OnChangePalletNo"
+                                 MaxLength="SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+
+            <HtTitleValueTextBox Id="棚" NextId="PalletNo" Focus="true" Disabled="true" Title="棚" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).棚)"
+                                 Change="@棚"
+                                 MaxLength="SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+
+
+           
+@*             <HtTitleValueDropDown Id="AreaCd" NextId="ZoneCd" Disabled="false" Title="倉庫" Data="@dropdownArea" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).AreaCd)" Change="@OnChangeArea" />
+ *@           @*  <HtTitleValueDropDown Id="ZoneCd" NextId="PalletNo" Disabled="false" Title="ｿﾞｰﾝ" Data="@dropdownZone" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).ZoneCd)" Change="@OnChangeZone" />
+ *@
+        </RadzenStack>
+    </RadzenCard>
+
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+        <RadzenIcon Icon="info" />
+        <RadzenText Text="物品一覧" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px;"></RadzenText>
+    </RadzenRow>
+
+    <DataGridExtend4 @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID))" @bind-SelectedData="@_gridSelectedData" OnCellRenderCallback="@CellRender" />
+
+</EditForm>

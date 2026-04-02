@@ -1,0 +1,108 @@
+﻿@using Blazor.DynamicJS;
+@using ExpressionDBBlazorShared.Services;
+@using ExpressionDBBlazorShared.Data;
+@implements IAsyncDisposable
+@code
+{
+    [Inject]
+    protected CommonService ComService { get; set; } = null!;
+    [Inject]
+    private ILocalStorageService? _localStorage { get; set; }
+    [Inject]
+    private ISessionStorageService? _sessionStorage { get; set; }
+
+    // HT関連設定情報
+    public int ColumnSize { get; set; } = 5;
+    public string FontSizeLabel { get; set; } = "125%";
+    public string FontSizeTextBox { get; set; } = "150%";
+    public string FontSizeComb { get; set; } = "130%";
+    public string FontWeightBold { get; set; } = "bold";
+    public string BackColorBadge { get; set; } = "#ffa000";
+    public string FontSizeBadge { get; set; } = "150%";
+    public string LineHeightBadge { get; set; } = "150%";
+    public string HightComb { get; set; } = "32px";
+    public string CaseBaraMargin { get; set; } = "3px";
+    public string RequiredDisplaySuffix { get; set; } = "＊";
+
+    [Parameter]
+    public string Title { get; set; } = string.Empty;
+    [Parameter]
+    public string Value { get; set; } = string.Empty;
+
+    /// <summary>
+    /// データ変更イベントのコールバック
+    /// </summary>
+    [Parameter]
+    public EventCallback<string> ValueChanged { get; set; }
+    [Parameter]
+    public bool Disabled { get; set; } = true;
+    [Parameter]
+    public string Name { get; set; } = string.Empty;
+    [Parameter]
+    public string Id { get; set; } = string.Empty;
+    [Parameter]
+    public string NextId { get; set; } = string.Empty;
+    [Parameter]
+    public bool Focus { get; set; } = false;
+    /// <summary>
+    /// 必須フラグ
+    /// </summary>
+    [Parameter]
+    public bool Required { get; set; } = false;
+
+    //Blazor.DynamicJS
+    [Inject]
+    protected IJSRuntime? JS { get; set; }
+    protected DynamicJSRuntime? _js;
+    public ValueTask DisposeAsync()
+    {
+        return _js?.DisposeAsync() ?? ValueTask.CompletedTask;
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        await Task.Delay(0);
+        try
+        {
+
+            SystemParameterService sysParams = SystemParamService; 
+
+                ColumnSize = sysParams.ColumnSize;
+                FontSizeLabel = sysParams.FontSizeLabel;
+                FontSizeTextBox = sysParams.FontSizeTextBox;
+                FontSizeComb = sysParams.FontSizeComb;
+                FontWeightBold = sysParams.FontWeightBold;
+                BackColorBadge = sysParams.BackColorBadge;
+                FontSizeBadge = sysParams.FontSizeBadge;
+                LineHeightBadge = sysParams.LineHeightBadge;
+                HightComb = sysParams.HightComb;
+                CaseBaraMargin = sysParams.CaseBaraMargin;
+                RequiredDisplaySuffix = sysParams.RequiredDisplaySuffixHT;
+        }
+        catch(Exception ex) 
+        {
+            _ = WebComService.PostLogAsync(ex.Message); 
+        }
+    }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await base.OnAfterRenderAsync(firstRender);
+
+        if (!firstRender)
+        {
+            return;
+        }
+
+        _js = await JS!.CreateDymaicRuntimeAsync();
+        if (Focus && !string.IsNullOrEmpty(Id))
+        {
+            dynamic window = _js!.GetWindow();
+            dynamic element = window.document.getElementById(Id);
+            if (element is not null)
+            {
+                element.focus(); // カーソルを合わせる
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+﻿@inherits CompBase
+@using ExpressionDBBlazorShared.Validator;
+@using ExpressionDBBlazorShared.Services;
+<RadzenTextBox 
+    Disabled="@Disabled" 
+    style="@Style" 
+    class="@Class" 
+    @bind-Value="@InputValue" 
+    MaxLength="@MaxLength" />
+@if (Required)
+{
+    <RequiredValidator For="() => InputValue" ItemName=@Title />
+}
+@if (Min is not null || Max is not null)
+{
+    <NumericRangeValidator For="() => InputValue" ItemName=@Title Min=@Min Max=@Max />
+}
+@if (!string.IsNullOrEmpty(RegexPattern))
+{
+    <RegexValidator For="() => InputValue" ItemName=@Title PatternString=@RegexPattern />
+}
+@if (!Disabled && IsByteLength)
+{
+    <ByteLengthValidator For="() => InputValue" ItemName=@Title MaxLength=@MaxLength />
+}

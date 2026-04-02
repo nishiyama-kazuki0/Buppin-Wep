@@ -1,0 +1,21 @@
+﻿@inherits DialogCommonGridInputContent
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    @if (Mode == enumDialogMode.Edit)
+    {
+        <CompGroupField @attributes="AttributesInfo" />
+    }
+    <CompGroupField @attributes="AttributesInput" />
+    @if (ProductionPlan == "手動投入")
+    {
+@* 手動投入時のgridデータバインド未完 *@
+         <DataGridExtend2 @ref="@_gridObject" @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID))" @bind-SelectedData="@_gridSelectedData" />
+    }
+@* 手動投入時のﾎﾞﾀﾝ内容の切替(ストアド・引数の個数)未完 *@
+    <ButtonFuncRadzen @attributes="AttributesFuncButton"
+                      IsBusyDialog="false"
+                      OnClickResultF1="@OnClickResultF1"
+                      OnClickResultF4="@OnClickResultF4"
+                      OnClickResultF2="@OnClickResultF2" />
+</EditForm>

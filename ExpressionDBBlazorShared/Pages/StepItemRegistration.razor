@@ -1,0 +1,208 @@
+﻿@inherits StepItemBase
+
+
+@*HT画面：物品登録*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+
+    @*検索条件*@
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+        <RadzenIcon Icon="input" />
+        <RadzenText Text="入力" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px;"></RadzenText>
+    </RadzenRow>
+
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            <!-- 既存の入力UIはそのまま -->
+            <HtTitleValueTextBox Id="PalletNo" NextId="AreaCd" Focus="true" Disabled="true" Title="管理番号" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).PalletNo)"
+            Change="@OnChangePalletNo"
+            MaxLength="SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+
+
+            <HtTitleValueTextBox3 Id="社員コード" NextId="管理責任者" Focus="true" Disabled="false" Title="社員コード" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).社員コード)"
+            Change="@社員コード"
+            MaxLength="SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO"
+            Code="@EmployeeCode"Click="@OnSearch"/>
+
+            @*    <HtTitleValueTextBox Id="社員コード" NextId="管理責任者" Focus="true" Disabled="false" Title="社員コード" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).社員コード)"
+                                  Change="@社員コード"
+                                  MaxLength="SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO"
+                                 /> *@
+
+            <HtTitleValueTextBox Id="管理責任者" NextId="部署" Focus="true" Disabled="false" Title="管理責任者" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).管理責任者)"
+            Change="@管理責任者N"
+            MaxLength="SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+
+            <HtTitleValueDropDown Id="部署" NextId="仕掛番号" Disabled="false" Title="部署" Data="@dropdownArea" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).部署)"
+            Change="@部署N" Required="false" />
+
+            <HtTitleValueTextBox Id="仕掛番号" NextId="プロジェクト名" Focus="true" Disabled="false" Title="仕掛番号" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).仕掛番号)"
+            Change="@仕掛番号"
+            MaxLength="SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+
+            <HtTitleValueTextBox Id="プロジェクト名" NextId="内容" Focus="true" Disabled="false" Title="プロジェクト名" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).プロジェクト名)"
+            Change="@プロジェクト名"
+            MaxLength="SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+
+            <HtTitleValueTextBox Id="内容" NextId="社員コード" Focus="true" Disabled="false" Title="内容" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).内容)"
+            Change="@内容"
+            MaxLength="SharedConst.文字数制限" Required="false" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+
+            @* <HtTitleValueTextBox Id="保管開始日" NextId="保管終了日" Focus="true" Disabled="false" Title="保管開始日" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).保管開始日)"
+                                 Change="@保管開始日"
+                                 MaxLength="SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+
+            <HtTitleValueTextBox Id="保管終了日" NextId="社員コード" Focus="true" Disabled="false" Title="保管終了日" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).保管終了日)"
+                                 Change="@保管終了日"
+                                 MaxLength="SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+ *@
+
+
+
+            @* ラベル（左）＋ DatePicker（右） *@
+            <RadzenRow Style="align-items:center; margin-bottom:0px;font-size:20px;font-weight:bold;">
+                <!-- 左ラベル列：他の項目と同じ class を指定（例：ht-title） -->
+                <RadzenColumn Size="3" Style="text-align:left;">
+
+                    <label class="ht-title">保管開始日<span class="req" style="color:red;">*</span></label>
+                </RadzenColumn>
+
+                <!-- 右入力列：幅いっぱいに DatePicker -->
+                <RadzenColumn Size="9">
+                    <RadzenDatePicker @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).保管開始日2)"
+                    DateFormat="yyyy/MM/dd"
+                    TValue="DateTime?"
+                    Min="Today"
+                    Change="OnChange"
+                    Style="width:100%; height:36px;padding-left:92px;border-color: transparent; box-shadow: none; outline: none;"
+                    InputAttributes="@(new Dictionary<string, object> { ["maxlength"] = "10" })" />@* 文字数制限 *@
+                </RadzenColumn>
+            </RadzenRow>
+
+
+
+
+            @* ラベル（左）＋ DatePicker（右） *@
+            <RadzenRow Style="align-items:center; margin-bottom:0px;font-size:20px;font-weight:bold;">
+                <!-- 左ラベル列：他の項目と同じ class を指定（例：ht-title） -->
+                <RadzenColumn Size="3" Style="text-align:left;">
+
+                    <label class="ht-title">保管終了日<span class="req" style="color:red;">*</span></label>
+                </RadzenColumn>
+
+                <!-- 右入力列：幅いっぱいに DatePicker -->
+                <RadzenColumn Size="9">
+                    <RadzenDatePicker class="no-focus-green" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).保管終了日2)"
+                    DateFormat="yyyy/MM/dd"
+                    TValue="DateTime?"
+                    Min="@Today"
+                    Max="@OneYearLater"
+                    Style="width:100%; height:36px;padding-left:92px;border-color: transparent; box-shadow: none; outline: none;font-weight:bold;" 
+                    InputAttributes="@(new Dictionary<string, object> { ["maxlength"] = "10" })" />
+
+                </RadzenColumn>
+            </RadzenRow>
+
+
+
+        </RadzenStack>
+
+
+    </RadzenCard>
+
+    @if (showGrid4)
+    {
+        <CompGroupField @attributes="@(GetAttributes(STR_ATTRIBUTE_SEARCH))" />
+
+        <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+            <RadzenIcon Icon="info" />
+            <RadzenText Text="社員一覧" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px;"></RadzenText>
+        </RadzenRow>
+
+        <DataGridExtend4 @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID))" @bind-SelectedData="@_gridSelectedData" OnCellRenderCallback="@CellRender"Click="@OnDbClick" />
+
+
+    }
+    @if(!showGrid4)
+    {
+        showGrid4 = false;
+
+    }
+
+
+
+</EditForm>
+
+
+
+@code {
+    // 下限：今日（ローカル日付）
+    private DateTime Today => DateTime.Today;
+
+    private DateTime TodayPast = DateTime.Today;
+
+    // 上限：今日から1年後
+    private DateTime OneYearLater => DateTime.Today.AddYears(1);
+
+    // バインド先
+    private DateTime? 保管終了日2 { get; set; }
+
+
+    bool showGrid4 = false;
+
+    bool showSearch = false;
+
+    //手入力で過去日付入力された場合
+    private void OnChange(DateTime? value)
+    {
+        if (value is null) { 保管終了日2 = null; return; }
+        保管終了日2 = value < Today ? Today : value;
+    }
+
+
+
+    string EmployeeCode;
+    // 追加：検索クリック（ダイアログ起動や検索API呼び出し）
+    private async Task OnSearch社員コード()
+    {
+
+    }
+
+
+
+    private async Task OnSearch(string code)
+    {
+        // string Code = model!.社員コード;
+        // EmployeeCode =Code;
+        showGrid4 = !showGrid4;
+
+        if(showGrid4 == true)
+        {
+            
+            Attributes[STR_ATTRIBUTE_FUNC]["button5text"] = "検索[F5]";
+
+            UpdateFuncButton(Attributes[STR_ATTRIBUTE_FUNC]);
+        }
+        if(showGrid4 == false)
+        {
+            Attributes[STR_ATTRIBUTE_FUNC]["button5text"] = "";
+            UpdateFuncButton(Attributes[STR_ATTRIBUTE_FUNC]);
+        }
+
+        await Task.Delay(0);
+
+
+    }
+
+    
+
+
+    
+
+}
+
+
+
+

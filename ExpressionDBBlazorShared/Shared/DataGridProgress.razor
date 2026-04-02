@@ -1,0 +1,227 @@
+﻿
+<div class="row" style="margin-bottom: 1rem">
+    <div class="col-12 col-md-6">
+        @*上段左半分*@
+    </div>
+    <div class="col-12 col-md-6 justify-content-start justify-content-md-end" style="display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem">
+        @*上段右半分*@
+        @*@if (AllowDataExport){
+
+        }*@
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        @if (VisbleLegend)
+        {
+            @*凡例*@
+            <RadzenCard>
+                <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Start" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+                    <RadzenRow class="rz-text-align-left d-flex justify-content-center" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" Gap="0.5rem" RowGap="0.5rem">
+                        @{
+                            List<ComponentColumnsInfo> lstProgress = this.Columns.Where(_ => _.Property.Contains(KEY_PROGRESS) && KEY_PROGRESS != _.Property).ToList();
+                            for (int i = 0; i < lstProgress.Count(); i++)
+                            {
+                                int indxStyle = i % PROGRESS_STYLES.Count();
+                                string strLegendText = lstProgress[i].Property.Replace(KEY_PROGRESS, "");
+                                <span style="display: flex; flex-wrap: nowrap;">
+                                <RadzenProgressBar ProgressBarStyle="@PROGRESS_STYLES[indxStyle]" Value="100.0" ShowValue="false" style=@($"width:{LegendMarkWidth}px") />
+                                <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.P" style=@($"width:{LegendTextWidth}px")>@strLegendText</RadzenText>
+                                </span>
+                            }
+                        }
+                    </RadzenRow>
+                </RadzenStack>
+            </RadzenCard>
+        }
+        <RadzenDataGrid Data="@Data"
+            ColumnWidth="200px"
+            AllowFiltering="@AllowFiltering"
+            FilterMode="@FilterMode"
+            AllowColumnReorder="@AllowColumnReorder"
+            AllowColumnResize="@AllowColumnResize"
+            AllowPaging="@AllowPageing"
+            AllowSorting="@AllowSorting"
+            AllowMultiColumnSorting="@AllowMultiColumnSorting"
+            ShowMultiColumnSortingIndex="@AllowMultiColumnSorting"
+            ShowPagingSummary="@ShowPagingSummary"
+            PagerHorizontalAlign="@PagerHorizontalAlign"
+            Count=Data.Count()
+            TItem="IDictionary<string, object>"
+            SelectionMode="@SelectionMode"
+            Value="@SelectedData"
+            AllowColumnPicking="@AllowColumnPicking"
+            Density="@Density"
+            PageSize="@PageSize"
+            @attributes="AttributesStringText"
+            EditMode="DataGridEditMode.Single"
+            CellRender="@OnCellRender"
+            ValueChanged="@OnValueChanged">
+            @*ヘッダテンプレート無し*@
+            <Columns>
+                @*チェックボックスカラム*@
+                @if (SelectionMode == DataGridSelectionMode.Multiple)
+                {
+                    <RadzenDataGridColumn TItem="IDictionary<string, object>" Title="check" Width="40px" Sortable="false" Filterable="false" Reorderable="false" Resizable="false">
+                        <HeaderTemplate>
+                            <RadzenCheckBox TriState="false" TValue="bool" Value="@(Data.Any(i => SelectedData != null && SelectedData.Contains(i)))"
+                                            Change="@(args => OnValueChanged(args ? Data.ToList() : null))" />
+                        </HeaderTemplate>
+                        <Template Context="data">
+                            <RadzenCheckBox TriState="false" Value="@(SelectedData != null && SelectedData.Contains(data))"
+                                            TValue="bool" Change="@ChangeSelectCheckClick" />
+                        </Template>
+                    </RadzenDataGridColumn>
+                }
+                else
+                {
+
+                }
+
+                @*データカラム*@
+                @foreach (var col in this.Columns)
+                {
+                    if (KEY_PROGRESS == col.TypeText)
+                    {
+                        @*プログレスバーカラム*@
+                        string strTitle = string.IsNullOrEmpty(col.Title) ? col.Property : col.Title;
+                        <RadzenDataGridColumn TItem="IDictionary<string, object>" Width="@GetColumnWidthExpression(col.Width)"
+                                              Property="@GetColumnPropertyExpression(col.Property, col.Type)" Title="@strTitle" Type="@col.Type" TextAlign="@col.TextAlign"
+                                              Sortable="@col.Sortable" Filterable="@col.Filterable" Reorderable="@col.Reorderable" Resizable="@col.Resizable"
+                                              FormatString="@col.FormatString" Pickable="(col.Width!=0)" Visible="(col.Width!=0)">
+                            <HeaderTemplate>
+                                @*ヘッダーは項目名なし*@
+                            </HeaderTemplate>
+                            <Template>
+                                @{
+                                    List<ComponentColumnsInfo> lstProgress = this.Columns.Where(_ => _.Property.Contains(KEY_PROGRESS) && KEY_PROGRESS != _.Property).ToList();
+                                    for (int i = 0; i < lstProgress.Count(); i++)
+                                    {
+                                        int indxStyle = i % PROGRESS_STYLES.Count();
+                                        string strToolTip = lstProgress[i].Property.Replace(KEY_PROGRESS, "");
+                                        string strValue = string.Empty;
+                                        double dblValue = 0.0;
+                                        if (context.ContainsKey(lstProgress[i].Property))
+                                        {
+                                            strValue = context[lstProgress[i].Property] is null ? string.Empty : context[lstProgress[i].Property].ToString();
+                                        }
+                                        if (!double.TryParse(strValue, out dblValue))
+                                        {
+                                            continue;
+                                        }
+                                        <RadzenProgressBar ProgressBarStyle="@PROGRESS_STYLES[indxStyle]" Value="dblValue" ShowValue="true" Style="color:Black" MouseEnter="@(args => ShowTooltip(args, strToolTip, new TooltipOptions(){ Position = TooltipPosition.Left }) )" />
+                                    }
+                                }
+                            </Template>
+                        </RadzenDataGridColumn>
+                    }
+                    else
+                    {
+                        @*通常のカラム*@
+                        string strTitle = string.IsNullOrEmpty(col.Title) ? col.Property : col.Title;
+                        <RadzenDataGridColumn TItem="IDictionary<string, object>" Width="@GetColumnWidthExpression(col.Width)"
+                                              Property="@GetColumnPropertyExpression(col.Property, col.Type)" Title="@strTitle" Type="@col.Type" TextAlign="@col.TextAlign"
+                                              Sortable="@col.Sortable" Filterable="@col.Filterable" Reorderable="@col.Reorderable" Resizable="@col.Resizable"
+                                              FormatString="@col.FormatString" Pickable="(col.Width!=0)" Visible="(col.Width!=0)">
+                            @* col.key内に改行コードが含まれていれば、改行してヘッダー名を表示する*@
+                            <HeaderTemplate>
+                                @{
+                                    strTitle = strTitle.Replace("\\n", "\n");
+                                }
+                                @if (strTitle.Contains("\n"))
+                                {
+                                    string[] lines = strTitle.Split("\n");
+                                    @for (int i = 0; lines.Length > i; i++)
+                                    {
+                                        <div>
+                                            <RadzenText Text="@lines[i]" TextStyle="TextStyle.Subtitle2" style=@($"font-size:{DataGridColumnFontSize};font-weight:{DataGridCellFontWeight};") />
+                                        </div>
+                                    }
+                                }
+                                else
+                                {
+                                    <RadzenText Text="@strTitle" TextStyle="TextStyle.Subtitle2" style=@($"font-size:{DataGridColumnFontSize};font-weight:{DataGridCellFontWeight};") />
+                                }
+                            </HeaderTemplate>
+                            <Template>
+                                @{
+                                    string strValue = string.Empty;
+                                    if (context.ContainsKey(col.Property))
+                                    {
+                                        strValue = context[col.Property] is null ? "" : context[col.Property].ToString();
+                                    }
+                                    strValue = strValue.Replace("\\n", "\n");
+
+                                    // ゼロサプレス
+                                    if (col.FormatString == SharedConst.FORMAT_ZERO_SUPPRESS)
+                                    {
+                                        strValue = strValue.TrimStart('0');
+                                    }
+                                }
+                                @if (strValue.Contains("\n"))
+                                {
+                                    string[] lines = strValue.Split("\n");
+                                    @for (int i = 0; lines.Length > i; i++)
+                                    {
+                                        <div>
+                                            <RadzenText Text="@lines[i]" TextStyle="TextStyle.Body2" style=@($"font-size:{DataGridCellFontSize};font-weight:{DataGridCellFontWeight};") />
+                                        </div>
+                                    }
+                                }
+                                else
+                                {
+                                    if (col.InlineEdit && col.Type == typeof(int))
+                                    {
+                                        // DEFINE_COMPONENT_COLUMNSのIS_INLINE_EDITがtrue、且つCOMPONET_DATA_TYPEがSystem.Int32の場合のみ
+                                        // セルの値をRadzenNumericで数値入力できるものとする。
+                                        int intValue = 0;
+                                        if (int.TryParse(strValue, out int value))
+                                        {
+                                            intValue = value;
+                                        }
+                                        int? intMax = null;
+                                        try
+                                        {
+                                            intMax = (int?)col.ValueMax;
+                                        }
+                                        catch { }
+                                        int? intMin = null;
+                                        try
+                                        {
+                                            intMin = (int?)col.ValueMin;
+                                        }
+                                        catch { }
+                                        <RadzenNumeric ShowUpDown="false" TValue="int" Value="@intValue" Max="@intMax" Min="@intMin" TextAlign="TextAlign.Right"
+                                        ValueChanged="@(args => OnCellChanged_Numeric(context, col.Property, args))"></RadzenNumeric>
+                                    }
+                                    else
+                                    {
+                                        if (!string.IsNullOrEmpty(col.FormatString))
+                                        {
+                                            if(col.Type == typeof(int))
+                                            {
+                                                if (int.TryParse(strValue, out int value))
+                                                {
+                                                    strValue = string.Format(col.FormatString, value);
+                                                }
+                                            }
+                                            else if (col.Type == typeof(Decimal))
+                                            {
+                                                if (Decimal.TryParse(strValue, out Decimal value))
+                                                {
+                                                    strValue = string.Format(col.FormatString, value);
+                                                }
+                                            }
+                                        }
+                                        <RadzenText Text="@strValue" TextStyle="TextStyle.Body2" style=@($"font-size:{DataGridCellFontSize};font-weight:{DataGridCellFontWeight};") />
+                                    }
+                                }
+                            </Template>
+                        </RadzenDataGridColumn>
+                    }
+                }
+            </Columns>
+        </RadzenDataGrid>
+    </div>
+</div>
+

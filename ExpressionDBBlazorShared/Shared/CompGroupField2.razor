@@ -1,0 +1,84 @@
+﻿@using System.ComponentModel.DataAnnotations;
+@using ExpressionDBBlazorShared.Services;
+@if (string.IsNullOrWhiteSpace(IconName) && string.IsNullOrWhiteSpace(GroupTitle))
+{
+    <RadzenCard>
+        @*全体を行で区切る*@
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Start" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+            @foreach (var listItems in CopmItems)
+            {
+                <RadzenRow class="rz-text-align-left d-flex justify-content-center" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" Gap="0.5rem" RowGap="0.5rem">
+                    
+                        @foreach (var item in listItems)
+                        {
+                            <span style="display: flex; flex-wrap: nowrap;justify-content: center; align-items: center;">
+                                @if (item.DispTitleLabel)
+                                {
+                                    @if (item.DispRequiredSuffix)
+                                    {
+                                    <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.P" style=@($"width:{LabelWidth};font-size:{LabelFontSize};font-weight:{LabelFontWeight};")>@item.TitleLabel<span style=@($"color: {RequiredDisplaySuffixColorPC};")>@RequiredDisplaySuffix</span></RadzenText>
+                                    }
+                                    else
+                                    {
+                                        <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.P" style=@($"width:{LabelWidth};font-size:{LabelFontSize};font-weight:{LabelFontWeight};")>@item.TitleLabel</RadzenText>
+                                    }
+                                }
+                                <DynamicComponent Type="@item.CompType" Parameters="@item.CompParam" @ref="@item.CompObj" />
+                            </span>
+                        }
+
+                </RadzenRow>
+            }
+        </RadzenStack>
+    </RadzenCard>
+}
+else
+{
+    <RadzenFieldset AllowCollapse="@AllowCollapse" Visible="@Visible" @attributes="AttributesStringText">
+        <HeaderTemplate>
+            <span class="d-inline-flex align-items-center align-middle">
+                <RadzenIcon Icon="@IconName" class="me-1" /><span style=@($"font-size:{TitleFontSize};font-weight:{TitleFontWeight};")>@GroupTitle</span>
+            </span>
+        </HeaderTemplate>
+        <ChildContent>
+            <RadzenCard>
+                <RadzenButton Icon="search"
+                              Size="ButtonSize.Medium"
+                              ButtonStyle="ButtonStyle.Light"
+                              Click="@OnClickInternal"
+                              Style=""
+                              aria-label="社員コード検索" />
+                @*全体を行で区切る*@
+                <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Start" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+                    @foreach (var listItems in CopmItems)
+                    {
+                        <RadzenRow class="rz-text-align-left d-flex justify-content-center" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" Gap="0.5rem" RowGap="0.5rem">
+                                @foreach (var item in listItems)
+                                {
+                                <span style="display: flex; flex-wrap: nowrap;justify-content: center; align-items: center;">
+                                    @if (item.DispTitleLabel)
+                                    {
+                                        @if (item.DispRequiredSuffix)
+                                        {
+                                            
+                                            <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.P" style=@($"width:{LabelWidth};font-size:{LabelFontSize};font-weight:{LabelFontWeight};")>@item.TitleLabel<span style=@($"color: {RequiredDisplaySuffixColorPC};")>@RequiredDisplaySuffix</span></RadzenText>
+                                        }
+                                        else
+                                        {
+                                            <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.P" style=@($"width:{LabelWidth};font-size:{LabelFontSize};font-weight:{LabelFontWeight};")>@item.TitleLabel</RadzenText>
+                                        }
+                                    }
+                                    <DynamicComponent Type="@item.CompType" Parameters="@item.CompParam" @ref="@item.CompObj" />
+                                </span>
+                                }
+                        </RadzenRow>
+                    }
+                </RadzenStack>
+            </RadzenCard>
+        </ChildContent>
+        <SummaryTemplate>
+            @*折りたたんだ時のコンテンツ*@
+        </SummaryTemplate>
+    </RadzenFieldset>
+
+}

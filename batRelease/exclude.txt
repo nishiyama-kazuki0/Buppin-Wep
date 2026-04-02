@@ -1,0 +1,6 @@
+appsettings.json
+appsettings.json.gz
+web.config
+exclude.txt
+*.exe.config
+HULFTIF.exe.config

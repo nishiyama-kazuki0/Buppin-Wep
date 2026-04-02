@@ -1,0 +1,53 @@
+﻿@inject NavigationManager Navigation
+@using ExpressionDBBlazorShared.Data
+@inject CommonService ComService
+
+<RadzenMenu>
+    @foreach (var menu in this.MenuItems)
+    {
+        <RadzenMenuItem
+            Text=@menu.menuName
+            Icon=@menu.iconName>
+            @foreach (var subMenu in menu.subMenuList)
+            {
+                <RadzenMenuItem
+                    Text=@subMenu.menuName
+                    Path=@subMenu.menuUrlString
+                    Icon=@subMenu.iconName>
+                </RadzenMenuItem>
+            }
+        </RadzenMenuItem>
+    }
+</RadzenMenu>
+
+@code
+{
+    /// <summary>
+    /// HT端末かどうか
+    /// </summary>
+    [Parameter]
+    public bool IsHandy { get; set; } = false;
+
+    [CascadingParameter]
+    public Guid Key { get; set; }
+    [Inject] IJSRuntime JS { get; set; }
+
+    List<MenuInfo> MenuItems = new List<MenuInfo>();
+
+    bool navSubMenuOpenState;
+
+    /// <summary>
+    /// 初期表示イベント
+    /// </summary>
+    /// <returns></returns>
+    protected override async Task OnInitializedAsync()
+    {
+        await GetMenuItems();
+    }
+
+    /// <summary>
+    /// メニュー一覧を取得する
+    /// </summary>
+    /// <returns></returns>
+    async Task GetMenuItems() => MenuItems = await ComService.GetMenuInfoListNavAsync(IsHandy);
+}

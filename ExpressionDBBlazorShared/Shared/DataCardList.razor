@@ -1,0 +1,31 @@
+﻿@using ExpressionDBBlazorShared.Util
+<RadzenDataList @ref="radzenData"
+                AllowVirtualization=@AllowVirtualization
+                Style="@(AllowVirtualization ? $"height:{HT_DataCardListHeight};overflow:auto;" : "")"
+                WrapItems="@(!AllowVirtualization)"
+                AllowPaging="@(!AllowVirtualization)"
+                Data="@CardValues"
+                TItem="IDictionary<string, DataCardListInfo>"
+                PageSize="@PageSize"
+                PagerHorizontalAlign="@PagerHorizontalAlign"
+                ShowPagingSummary="@ShowPagingSummary"
+                @attributes="AttributesStringText"
+                PagerPosition="@PagerPosition"
+                Page="@OnPageChanged">
+    <Template Context="cardData">
+        <DataCardContent Values="@cardData" TotalNum="@CardValues.Count"></DataCardContent>
+        @if (IsInCaseBara)
+        {
+            <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5" Style=@($"margin-left: {HT_InsideDataCardContentMarginLeft};margin-right: {HT_InsideDataCardContentMarginRight};margin-top: {HT_InsideDataCardContentMarginTop};")>
+                @{
+                    decimal casemax = ConvertUtil.ConvertDecimal("9".PadLeft(SharedConst.LEN_CASE, '9'));
+                    decimal baramax = ConvertUtil.ConvertDecimal("9".PadLeft(SharedConst.LEN_BARA, '9'));
+                }
+                <HtTitleValueTextBoxCaseBara Id="@Id" Id2="@Id2" NextId="@(string.IsNullOrEmpty(NextId) ? Id : NextId)" Focus="@FirstFocus" Title="ｹｰｽ/ﾊﾞﾗ数"
+                        Disabled="false" CaseTitle="ｹｰｽ数" Value="@InCase" ValueChanged="OnValueChanged" Min="0" Max="casemax" MaxLength="@SharedConst.LEN_CASE"
+                        Disabled2="@(PackingQuantity == SharedConst.STR_HT_CASE_PACKING_QUANTITY_CONST)"
+                        BaraTitle="ﾊﾞﾗ数" Value2="@InBara" Value2Changed="OnValue2Changed" Min2="0" Max2="baramax" MaxLength2="@SharedConst.LEN_BARA" RegexPattern="@SharedConst.STR_VARIDATE_NUM" RegexPattern2="@SharedConst.STR_VARIDATE_NUM"/>
+            </RadzenStack>
+        }
+    </Template>
+</RadzenDataList>

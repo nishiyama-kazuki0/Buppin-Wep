@@ -1,0 +1,43 @@
+﻿@inherits CompBase
+@using ExpressionDBBlazorShared.Validator;
+@using ExpressionDBBlazorShared.Services;
+<style>
+    .@(GetType().Name) .rz-spinner-input {
+        font-size: @($"{CompFontSize}");
+        font-weight: @($"{CompFontWeight}");
+    }
+    .rz-dropdown-items li {
+        font-size: @($"{CompDropDownFontSize}");
+        font-weight: @($"{CompDropDownFontWeight}");
+    }
+    .@(GetType().Name) .rz-dropdown-filter.rz-inputtext {
+        font-size: @($"{CompDropDownFontSize}");
+        font-weight: @($"{CompDropDownFontWeight}");
+    }
+</style>
+<RadzenNumeric 
+    Disabled="@Disabled" 
+    class="@Class" 
+    style="@Style" 
+    TValue="decimal" 
+    @bind-Value="@_inputValue" 
+    Format="@Format" 
+    Step="@Step" 
+    Min="@Min" 
+    Max="@Max" />
+<RadzenDropDown 
+    Disabled="@Disabled"
+    style="@DropDownStyle"
+    @bind-Value="@DropInputValue" 
+    Data="@_dropData" 
+    ValueProperty="@_dropValueProperty" 
+    TextProperty="@_dropTextProperty" 
+    AllowClear="@_allowClear" />
+@if (Required)
+{
+    <RequiredValidator For="() => InputValue" ItemName=@Title />
+}
+@if (Min is not null || Max is not null)
+{
+    <NumericRangeValidator For="() => InputValue" ItemName=@Title Min=@Min Max=@Max FormatMinMax="@FormatMinMax" />
+}

@@ -1,0 +1,25 @@
+﻿@inherits CompBase
+@using ExpressionDBBlazorShared.Validator;
+@using ExpressionDBBlazorShared.Services;
+<RadzenFieldset>
+    <HeaderTemplate>
+        <span style=@($"font-size:{TitleFontSize};font-weight:{TitleFontWeight};")>@FieldsetText</span>
+    </HeaderTemplate>
+    <ChildContent>
+        <RadzenRadioButtonList
+            Disabled="@Disabled"
+            class="@Class"
+            style="@Style"
+            @bind-Value=@InputValue
+            Data="@Data"
+            ValueProperty="@ValueProperty"
+            TextProperty="@TextProperty"
+            Orientation="@Orientation">
+            <Items></Items>
+        </RadzenRadioButtonList>
+    </ChildContent>
+</RadzenFieldset>
+@if (Required)
+{
+    <RequiredValidator For="() => InputValue" ItemName=@Title />
+}

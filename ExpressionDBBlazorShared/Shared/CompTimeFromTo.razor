@@ -1,0 +1,41 @@
+﻿@inherits CompBase
+@using ExpressionDBBlazorShared.Validator;
+@using ExpressionDBBlazorShared.Services;
+<style>
+    .@(GetType().Name) .rz-calendar .rz-inputtext {
+        font-size: @($"{CompFontSize}");
+        font-weight: @($"{CompFontWeight}");
+    @(string.IsNullOrEmpty(CompHeight) ? "" : $"height: {CompHeight};")
+    }
+</style>
+<RadzenDatePicker 
+    Disabled="@Disabled" 
+    class="@Class" 
+    style="@Style" 
+    @bind-Value=@_inputValueFrom 
+    DateFormat="@DispFormat" 
+    TimeOnly="@TimeOnly" 
+    ShowTime="@ShowTime" 
+    ShowSeconds="@ShowSeconds" 
+    HoursStep="@HoursStep" 
+    MinutesStep="@MinutesStep" 
+    SecondsStep="@SecondsStep" 
+    AllowClear="@AllowClear" />
+<RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3" style="@SeparatorStyle">～</RadzenText>
+<RadzenDatePicker 
+    Disabled="@Disabled" 
+    class="@Class" 
+    style="@Style" 
+    @bind-Value=@_inputValueTo 
+    DateFormat="@DispFormat" 
+    TimeOnly="@TimeOnly" 
+    ShowTime="@ShowTime" 
+    ShowSeconds="@ShowSeconds" 
+    HoursStep="@HoursStep" 
+    MinutesStep="@MinutesStep" 
+    SecondsStep="@SecondsStep" 
+    AllowClear="@AllowClear" />
+@if (Required)
+{
+    <RequiredValidator For="() => Values" ItemName=@Title />
+}

@@ -1,0 +1,11 @@
+﻿@inherits ChildPageBasePC
+
+<EditForm Model="@this" @ref="@editForm">
+    @* <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") /> *@
+    <CompGroupField @attributes="@(GetAttributes(STR_ATTRIBUTE_SEARCH))" />
+    <DataGridExtend2 @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID))" />
+    <ButtonFuncRadzen @attributes="@(GetAttributes(STR_ATTRIBUTE_FUNC))"
+                      IsBusyDialog="false"
+                      OnClickResultF4="@OnClickResultF4">
+    </ButtonFuncRadzen>
+</EditForm>

@@ -1,0 +1,25 @@
+﻿@inherits HtTitleValueBase
+@using ExpressionDBBlazorShared.Validator;
+@using ExpressionDBBlazorShared.Services;
+
+<RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Wrap="FlexWrap.NoWrap" Gap="10">
+
+    <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.P" Text="@Title" style=@($"width=100px;font-size:{FontSizeLabel};") />
+    @{
+        bool bBara = Title.Contains(SharedConst.STR_HT_BARA_COLOR_CONTAINS);
+    }
+    <RadzenLabel Style=@($"width:100px;font-size: {FontSizeTextBox};{(bBara ? "color:#ff0000" : "")}") Text="@(bBara && Value == "0" ? "" : Value)" />
+    <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.P" Text="@Title2" style=@($"width=100px;font-size:{FontSizeLabel};") />
+    @{
+        bBara = Title2.Contains(SharedConst.STR_HT_BARA_COLOR_CONTAINS);
+    }
+    <RadzenLabel Style=@($"width:100px;font-size: {FontSizeTextBox};{(bBara ? "color:#ff0000" : "")}") Text="@(bBara && Value2 == "0" ? "" : Value2)" />
+
+</RadzenStack>
+@code
+{
+    [Parameter]
+    public string Title2 { get; set; } = string.Empty;
+    [Parameter]
+    public string Value2 { get; set; } = string.Empty;
+}

@@ -1,0 +1,37 @@
+﻿@inherits CompBase
+@using ExpressionDBBlazorShared.Validator;
+@using ExpressionDBBlazorShared.Services;
+<style>
+    .@(GetType().Name) .rz-dropdown-label.rz-inputtext {
+        font-size: @($"{CompFontSize}");
+        font-weight: @($"{CompFontWeight}");
+    }
+</style>
+<RadzenDropDownDataGrid Disabled="@Disabled"
+                        class="@Class"
+                        style="@Style"
+                        @ref="grid"
+                        Chips="true"
+                        AllowFiltering="true"
+                        FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive"
+                        AllowFilteringByAllStringColumns="@FilteringAll"
+                        AllowClear="true"
+@bind-Value=@_inputValue
+                        Multiple="false"
+                        Placeholder=@Placeholder
+                        Data="@Data"
+                        TextProperty=@TextProperty
+                        ValueProperty=@ValueProperty
+                        Change="@OnChange">
+    <Columns>
+        @*データカラム*@
+        @foreach (var column in this.Columns)
+        {
+            <RadzenDropDownDataGridColumn  Property="@column.Property" Title="@column.Title" Type="@column.Type" TextAlign="@column.TextAlign" Width="@($"{column.Width.ToString()}px")" />
+        }
+    </Columns>
+</RadzenDropDownDataGrid>
+@if (Required)
+{
+    <RequiredValidator For="() => InputValue" ItemName=@Title />
+}

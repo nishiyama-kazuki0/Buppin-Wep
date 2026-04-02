@@ -1,0 +1,893 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows,browser
+build_property.RootNamespace = ExpressionDBBlazorShared
+build_property.RootNamespace = ExpressionDBBlazorShared
+build_property.ProjectDir = C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\ExpressionDBBlazorShared\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\SUNTORY_OSAKA_MaterialHandlingManagementApp\ExpressionDBBlazorShared
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/wwwroot/新しいフォルダー/Component1.razor]
+build_metadata.AdditionalFiles.TargetPath = d3d3cm9vdFzmlrDjgZfjgYTjg5Xjgqnjg6vjg4Djg7xcQ29tcG9uZW50MS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Main.razor]
+build_metadata.AdditionalFiles.TargetPath = TWFpbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/AddShelf.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkU2hlbGYucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/AGVOrderInformationMaintenance.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQUdWT3JkZXJJbmZvcm1hdGlvbk1haW50ZW5hbmNlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/AGVTaskView.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQUdWVGFza1ZpZXcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/AlarmHistory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxhcm1IaXN0b3J5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/AlarmTaskView.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxhcm1UYXNrVmlldy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/AllEquipView.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxsRXF1aXBWaWV3LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/AllTaskView.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWxsVGFza1ZpZXcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/AutoWarehouseTaskView.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0b1dhcmVob3VzZVRhc2tWaWV3LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/BatchMaintenance.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmF0Y2hNYWludGVuYW5jZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/BatchMaintenanceDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmF0Y2hNYWludGVuYW5jZURldGFpbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/Component.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/Component1.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50MS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/Component2.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50Mi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/DailyUpdate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFpbHlVcGRhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/DefineStockTypes.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVmaW5lU3RvY2tUeXBlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/DepalletPlanResult.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYWxsZXRQbGFuUmVzdWx0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/DepalletThawingStatus.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVwYWxsZXRUaGF3aW5nU3RhdHVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/DevicePrinterSettings.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGV2aWNlUHJpbnRlclNldHRpbmdzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/EquipmentStatusMonitorMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXF1aXBtZW50U3RhdHVzTW9uaXRvck1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/FractionMaterialTransferPlanResult.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnJhY3Rpb25NYXRlcmlhbFRyYW5zZmVyUGxhblJlc3VsdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/HostCommunicationHistory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9zdENvbW11bmljYXRpb25IaXN0b3J5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/InventoryReceiptAndPayment.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW52ZW50b3J5UmVjZWlwdEFuZFBheW1lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/LogOperations.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nT3BlcmF0aW9ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MaterialInputEquipTaskView.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0ZXJpYWxJbnB1dEVxdWlwVGFza1ZpZXcucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MaterialInputPlanResult.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0ZXJpYWxJbnB1dFBsYW5SZXN1bHQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MaterialSupplyEquipTaskDepallet.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0ZXJpYWxTdXBwbHlFcXVpcFRhc2tEZXBhbGxldC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MaterialSupplyEquipTaskDryConveyor.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0ZXJpYWxTdXBwbHlFcXVpcFRhc2tEcnlDb252ZXlvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MaterialSupplyEquipTaskFrozenConveyor.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0ZXJpYWxTdXBwbHlFcXVpcFRhc2tGcm96ZW5Db252ZXlvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MaterialSupplyEquipTaskView.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0ZXJpYWxTdXBwbHlFcXVpcFRhc2tWaWV3LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MaterialSupplyPlanResult.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0ZXJpYWxTdXBwbHlQbGFuUmVzdWx0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MaterialTransferPlanResult.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWF0ZXJpYWxUcmFuc2ZlclBsYW5SZXN1bHQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MobileArrivalMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9iaWxlQXJyaXZhbE1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MobileGoodsReceipt.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9iaWxlR29vZHNSZWNlaXB0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MobileInventoryContorolMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9iaWxlSW52ZW50b3J5Q29udG9yb2xNZW51LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MobileInventoryWork.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9iaWxlSW52ZW50b3J5V29yay5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MobileItemDispatch.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9iaWxlSXRlbURpc3BhdGNoLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MobileItemRegistration.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9iaWxlSXRlbVJlZ2lzdHJhdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MobileMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9iaWxlTWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MobilePickMenuItem.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9iaWxlUGlja01lbnVJdGVtLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MobilePickMenuPallet.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9iaWxlUGlja01lbnVQYWxsZXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MobileShelfLocation.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9iaWxlU2hlbGZMb2NhdGlvbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MobileShipMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTW9iaWxlU2hpcE1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MstAffiliations.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXN0QWZmaWxpYXRpb25zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MstAreas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXN0QXJlYXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MstAutomatedStorageRacks.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXN0QXV0b21hdGVkU3RvcmFnZVJhY2tzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MstDevices.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXN0RGV2aWNlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MstInboundOutboundPrioritySettings.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXN0SW5ib3VuZE91dGJvdW5kUHJpb3JpdHlTZXR0aW5ncy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MstLocations.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXN0TG9jYXRpb25zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MstPersons.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXN0UGVyc29ucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MstProductionTaskRecipes.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXN0UHJvZHVjdGlvblRhc2tSZWNpcGVzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MstProducts.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXN0UHJvZHVjdHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MstSpecialtyPalletSettings.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXN0U3BlY2lhbHR5UGFsbGV0U2V0dGluZ3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MstStations.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXN0U3RhdGlvbnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/MstZones.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXN0Wm9uZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/PaletteInformationMaintenance.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFsZXR0ZUluZm9ybWF0aW9uTWFpbnRlbmFuY2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/PrinterSettings.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpbnRlclNldHRpbmdzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/ProductionAllocateResult.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdGlvbkFsbG9jYXRlUmVzdWx0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/ProductionBatchProgress.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZHVjdGlvbkJhdGNoUHJvZ3Jlc3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/RetrievalAllocate.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmV0cmlldmFsQWxsb2NhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/RetrievalPlan - コピー.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmV0cmlldmFsUGxhbiAtIOOCs+ODlOODvC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/RetrievalPlan.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmV0cmlldmFsUGxhbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/RetrievalPlan2.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmV0cmlldmFsUGxhbjIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/RetrievalPlanDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmV0cmlldmFsUGxhbkRldGFpbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/RetrievalReservation.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmV0cmlldmFsUmVzZXJ2YXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/RetrievalReservationDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmV0cmlldmFsUmVzZXJ2YXRpb25EZXRhaWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/RetrievalResult.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmV0cmlldmFsUmVzdWx0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/RetrievalResultDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmV0cmlldmFsUmVzdWx0RGV0YWlsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/ShipmentsProgress.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hpcG1lbnRzUHJvZ3Jlc3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/StepAddShelf.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RlcEFkZFNoZWxmLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/StepGoodsReceipt.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RlcEdvb2RzUmVjZWlwdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/StepInventoryWork.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RlcEludmVudG9yeVdvcmsucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/StepItemDispatch.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RlcEl0ZW1EaXNwYXRjaC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/StepItemRegistration.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RlcEl0ZW1SZWdpc3RyYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/StepShelfLocation.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RlcFNoZWxmTG9jYXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/StepShelfSelection.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RlcFNoZWxmU2VsZWN0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/StockDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvY2tEZXRhaWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/Stocks.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvY2tzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/StocksTotalling.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvY2tzVG90YWxsaW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/StoragePlan.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvcmFnZVBsYW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/StoragePlanDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvcmFnZVBsYW5EZXRhaWwucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/StorageReservation.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvcmFnZVJlc2VydmF0aW9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/StorageReservationDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvcmFnZVJlc2VydmF0aW9uRGV0YWlsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/StorageResult.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvcmFnZVJlc3VsdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/StorageResultDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RvcmFnZVJlc3VsdERldGFpbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/SystemParameters.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3lzdGVtUGFyYW1ldGVycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItem1FShareConveyorTask.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbTFGU2hhcmVDb252ZXlvclRhc2sucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItem5FDryConveyorTask.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbTVGRHJ5Q29udmV5b3JUYXNrLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItem5FFrozenConveyorTask.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbTVGRnJvemVuQ29udmV5b3JUYXNrLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemAGVStation.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbUFHVlN0YXRpb24ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemAGVTaskHistory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbUFHVlRhc2tIaXN0b3J5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemAGVTaskList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbUFHVlRhc2tMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemAGVTaskMaterialInput.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbUFHVlRhc2tNYXRlcmlhbElucHV0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemAGVTaskMaterialSupply.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbUFHVlRhc2tNYXRlcmlhbFN1cHBseS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemAlarmContent.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbUFsYXJtQ29udGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemAlarmTaskList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbUFsYXJtVGFza0xpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemAutoWarehouseDry.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbUF1dG9XYXJlaG91c2VEcnkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemAutoWarehouseFrozen.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbUF1dG9XYXJlaG91c2VGcm96ZW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemEquipAGV.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbUVxdWlwQUdWLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemEquipAutoWarehouse.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbUVxdWlwQXV0b1dhcmVob3VzZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemEquipConveyor.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbUVxdWlwQ29udmV5b3IucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemEquipRobot.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbUVxdWlwUm9ib3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemEquipThawing.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbUVxdWlwVGhhd2luZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemInventoryPallet.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbUludmVudG9yeVBhbGxldC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemInventoryStock.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbUludmVudG9yeVN0b2NrLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemInventoryStockPart.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbUludmVudG9yeVN0b2NrUGFydC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemMaterialInputEquip1.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbU1hdGVyaWFsSW5wdXRFcXVpcDEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemMaterialInputEquip2.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbU1hdGVyaWFsSW5wdXRFcXVpcDIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemMaterialInputEquipCleaningDryer.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbU1hdGVyaWFsSW5wdXRFcXVpcENsZWFuaW5nRHJ5ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemProductionBatchProgress1.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbVByb2R1Y3Rpb25CYXRjaFByb2dyZXNzMS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemProductionBatchProgress2.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbVByb2R1Y3Rpb25CYXRjaFByb2dyZXNzMi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemShipmentsProgressAreas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbVNoaXBtZW50c1Byb2dyZXNzQXJlYXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemShipmentsProgressCorners.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbVNoaXBtZW50c1Byb2dyZXNzQ29ybmVycy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemShipmentsProgressDeliveries.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbVNoaXBtZW50c1Byb2dyZXNzRGVsaXZlcmllcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemStocksTotallingNyukaNo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbVN0b2Nrc1RvdGFsbGluZ055dWthTm8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemStocksTotallingPalletNo.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbVN0b2Nrc1RvdGFsbGluZ1BhbGxldE5vLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemStocksTotallingProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbVN0b2Nrc1RvdGFsbGluZ1Byb2R1Y3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TabItemStocksTotallingZone.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFiSXRlbVN0b2Nrc1RvdGFsbGluZ1pvbmUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/TM_WorkerRegistration2.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVE1fV29ya2VyUmVnaXN0cmF0aW9uMi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/UnpackingTransfer.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVW5wYWNraW5nVHJhbnNmZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/WorkHistory.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya0hpc3RvcnkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Pages/WorkStatOrEndMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV29ya1N0YXRPckVuZE1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/ButtonFuncRadzen.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEJ1dHRvbkZ1bmNSYWR6ZW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/ButtonHTMenuRadzen.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEJ1dHRvbkhUTWVudVJhZHplbi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/ChildPageBase.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENoaWxkUGFnZUJhc2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/ChildPageBaseMobile.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENoaWxkUGFnZUJhc2VNb2JpbGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/ChildPageBasePC.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENoaWxkUGFnZUJhc2VQQy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompBase.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBCYXNlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompCheckBoxList.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBDaGVja0JveExpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompDateFromTo.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBEYXRlRnJvbVRvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompDatePicker.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBEYXRlUGlja2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompDatePickerImprovement.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBEYXRlUGlja2VySW1wcm92ZW1lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompDateTimeFromTo.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBEYXRlVGltZUZyb21Uby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompDateTimePicker.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBEYXRlVGltZVBpY2tlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompDropDown.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBEcm9wRG93bi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompDropDownDataGrid.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBEcm9wRG93bkRhdGFHcmlkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompDropDownDataGridSingle.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBEcm9wRG93bkRhdGFHcmlkU2luZ2xlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompGroupField.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBHcm91cEZpZWxkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompGroupFieldCustom.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBHcm91cEZpZWxkQ3VzdG9tLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompMenuButton.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBNZW51QnV0dG9uLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompNumeric.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBOdW1lcmljLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompRadioButtonList.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBSYWRpb0J1dHRvbkxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompSearchNumeric.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBTZWFyY2hOdW1lcmljLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompTextArea.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBUZXh0QXJlYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompTextBox.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBUZXh0Qm94LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompTextBoxZeroSuppress.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBUZXh0Qm94WmVyb1N1cHByZXNzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompTimeFromTo.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBUaW1lRnJvbVRvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CompTimePicker.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvbXBUaW1lUGlja2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/CustomLoginForm.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEN1c3RvbUxvZ2luRm9ybS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DataCardContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERhdGFDYXJkQ29udGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DataCardContentMessage.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERhdGFDYXJkQ29udGVudE1lc3NhZ2UucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DataCardList.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERhdGFDYXJkTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DataCardMessageList.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERhdGFDYXJkTWVzc2FnZUxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DataGridExtend2.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERhdGFHcmlkRXh0ZW5kMi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DataGridExtend3.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERhdGFHcmlkRXh0ZW5kMy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DataGridExtend4.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERhdGFHcmlkRXh0ZW5kNC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DataGridProgress.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERhdGFHcmlkUHJvZ3Jlc3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogAffiationFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0FmZmlhdGlvbkZpeENvbnRlbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogAGVOrderInformationMaintenanceContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0FHVk9yZGVySW5mb3JtYXRpb25NYWludGVuYW5jZUNvbnRlbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogAlarmInfo.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0FsYXJtSW5mby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogAreaFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0FyZWFGaXhDb250ZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogArrivalsDetailsFixSideContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0Fycml2YWxzRGV0YWlsc0ZpeFNpZGVDb250ZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogAutoWarehouseStocks.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0F1dG9XYXJlaG91c2VTdG9ja3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogBatchMaintenanceContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0JhdGNoTWFpbnRlbmFuY2VDb250ZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogBatchMaintenanceDetailFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0JhdGNoTWFpbnRlbmFuY2VEZXRhaWxGaXhDb250ZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogBatchMaintenanceFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0JhdGNoTWFpbnRlbmFuY2VGaXhDb250ZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogBusyContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0J1c3lDb250ZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogChatHelp.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0NoYXRIZWxwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogCommonGridInputContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0NvbW1vbkdyaWRJbnB1dENvbnRlbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogCommonInputContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0NvbW1vbklucHV0Q29udGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogDailyUpdateSettingFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0RhaWx5VXBkYXRlU2V0dGluZ0ZpeENvbnRlbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogDeliveriesFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0RlbGl2ZXJpZXNGaXhDb250ZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogDepalletThawingStatusFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0RlcGFsbGV0VGhhd2luZ1N0YXR1c0ZpeENvbnRlbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogDeviceFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0RldmljZUZpeENvbnRlbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogDevicePrinterSettingFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0RldmljZVByaW50ZXJTZXR0aW5nRml4Q29udGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogHtNotifyInfo.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0h0Tm90aWZ5SW5mby5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogInitialStockPartFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0luaXRpYWxTdG9ja1BhcnRGaXhDb250ZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogLocationFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ0xvY2F0aW9uRml4Q29udGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogMsgOKContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ01zZ09LQ29udGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogMsgPasswordContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ01zZ1Bhc3N3b3JkQ29udGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogMsgYesNoContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ01zZ1llc05vQ29udGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogPaletteInformationAddContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ1BhbGV0dGVJbmZvcm1hdGlvbkFkZENvbnRlbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogPaletteInformationMaintenanceContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ1BhbGV0dGVJbmZvcm1hdGlvbk1haW50ZW5hbmNlQ29udGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogPersonFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ1BlcnNvbkZpeENvbnRlbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogPersonFixContent2.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ1BlcnNvbkZpeENvbnRlbnQyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogPrinterSettingFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ1ByaW50ZXJTZXR0aW5nRml4Q29udGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogProductFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ1Byb2R1Y3RGaXhDb250ZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogProductionTaskRecipesFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ1Byb2R1Y3Rpb25UYXNrUmVjaXBlc0ZpeENvbnRlbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogShipmentsAllocateFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ1NoaXBtZW50c0FsbG9jYXRlRml4Q29udGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogSpecialtyPalletSettingsFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ1NwZWNpYWx0eVBhbGxldFNldHRpbmdzRml4Q29udGVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogStocksFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ1N0b2Nrc0ZpeENvbnRlbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogStockTypeFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ1N0b2NrVHlwZUZpeENvbnRlbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogSystemParameters.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ1N5c3RlbVBhcmFtZXRlcnMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogUserSetting.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ1VzZXJTZXR0aW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DialogZoneFixContent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERpYWxvZ1pvbmVGaXhDb250ZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/DropDwonDataGridExtend.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXERyb3BEd29uRGF0YUdyaWRFeHRlbmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/HtTitleValue/Component.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEh0VGl0bGVWYWx1ZVxDb21wb25lbnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/HtTitleValue/CustomHTDropDown.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEh0VGl0bGVWYWx1ZVxDdXN0b21IVERyb3BEb3duLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/HtTitleValue/CustomHTDropDownItem.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEh0VGl0bGVWYWx1ZVxDdXN0b21IVERyb3BEb3duSXRlbS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/HtTitleValue/HtTitleValueBase.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEh0VGl0bGVWYWx1ZVxIdFRpdGxlVmFsdWVCYXNlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/HtTitleValue/HtTitleValueDatePicker.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEh0VGl0bGVWYWx1ZVxIdFRpdGxlVmFsdWVEYXRlUGlja2VyLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/HtTitleValue/HtTitleValueDropDown.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEh0VGl0bGVWYWx1ZVxIdFRpdGxlVmFsdWVEcm9wRG93bi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/HtTitleValue/HtTitleValueLabel.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEh0VGl0bGVWYWx1ZVxIdFRpdGxlVmFsdWVMYWJlbC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/HtTitleValue/HtTitleValueTextBox.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEh0VGl0bGVWYWx1ZVxIdFRpdGxlVmFsdWVUZXh0Qm94LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/HtTitleValue/HtTitleValueTextBox2Line.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEh0VGl0bGVWYWx1ZVxIdFRpdGxlVmFsdWVUZXh0Qm94MkxpbmUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/HtTitleValue/HtTitleValueTextBoxCaseBara.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEh0VGl0bGVWYWx1ZVxIdFRpdGxlVmFsdWVUZXh0Qm94Q2FzZUJhcmEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/NavHorizonMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdkhvcml6b25NZW51LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/StepItemBase.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN0ZXBJdGVtQmFzZS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/StepsExtend.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN0ZXBzRXh0ZW5kLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/TabItemBase.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFRhYkl0ZW1CYXNlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/TabsExtend.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFRhYnNFeHRlbmQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/Shared/UploadDialog.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFVwbG9hZERpYWxvZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/SUNTORY_OSAKA_MaterialHandlingManagementApp/ExpressionDBBlazorShared/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 

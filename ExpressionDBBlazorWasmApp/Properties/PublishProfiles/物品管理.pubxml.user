@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+このファイルは、Web プロジェクトの公開 / パッケージ処理で使用されます。この MSBuild ファイルを編集すると、
+この処理の動作をカスタマイズできます。詳細については、https://go.microsoft.com/fwlink/?LinkID=208121 を参照してください。 
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\G2507\OneDrive - 株式会社立花エレテック\ドキュメント\物品管理Webアプリ</_PublishTargetUrl>
+    <History>False|2026-02-26T10:10:30.7712879Z||;False|2026-02-26T19:08:56.0516900+09:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

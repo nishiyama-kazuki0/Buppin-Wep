@@ -1,0 +1,18 @@
+﻿@inherits TabItemBase
+
+@*バッチ進捗照会1*@
+
+<style>
+    /* データを空白折り返し(Wrap)するように設定 */
+    .rz-cell-data {
+        overflow: visible !important;
+        white-space: normal !important;
+    }
+</style>
+
+<EditForm Model="@(this)" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <CompGroupField @attributes="@(GetAttributes(STR_ATTRIBUTE_SEARCH))" />
+    @* <DataGridProgress @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID_ALL))" /> *@
+    <DataGridProgress @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID))" @bind-SelectedData="@_gridSelectedData" />
+</EditForm>
