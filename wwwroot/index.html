@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>ExpressionDB-WMS</title>
+	<base href="/" />
+	<link rel="stylesheet" href="_content/ExpressionDBBlazorShared/css/bootstrap/bootstrap.min.css" />
+	<link href="_content/ExpressionDBBlazorShared/css/app.css" rel="stylesheet" />
+	<link href="ExpressionDBBlazorWasmApp.styles.css" rel="stylesheet" />
+	<link href="manifest.json" rel="manifest" />
+	<link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+	<link href="_content/Sotsera.Blazor.Toaster/toastr.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="_content/Radzen.Blazor/css/humanistic-base.css">
+	<link rel="stylesheet" href="_content/Radzen.Blazor/css/humanistic.css">
+	<link href="_content/ExpressionDBBlazorShared/css/radzen_override.css" rel="stylesheet" />
+	<script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
+	<script src="_content/BlazorInputFile/inputfile.js"></script>
+	<!--<meta http-equiv="Cache-Control" content="no-cache">--><!--ブラウザ側でキャッシュを残さない対応-->
+	<style>
+		.centered-text {
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+    <script type="text/javascript" src="_content/ExpressionDBBlazorShared/js/scan-script.js"></script>
+    <script type="text/javascript" src="_content/ExpressionDBBlazorShared/js/keydown-script.js"></script>
+    <!--Keyence HTJSの表示-->
+    <script type="text/javascript" src="lib/kjs/kjs-modules.js"></script>
+    <!--QuaggaJS-->
+    <script type="text/javascript" src="lib/quagga/quagga.min.js"></script>
+    <script type="text/javascript" src="_content/ExpressionDBBlazorShared/js/quagga-script.js"></script>
+
+
+    <!--<div id="app">Loading...</div>-->
+    <div id="app">
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
+        <div class="centered-text">
+            ダウンロードが終わらない場合は、
+            <br />
+            ブラウザを終了し再度WMSページにアクセスください。
+        </div>
+    </div>
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="" class="reload">Reload</a>
+        <a class="dismiss">🗙</a>
+    </div>
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
+
+</body>
+
+</html>

@@ -1,0 +1,12 @@
+wwwroot\appsettings.Development.json
+wwwroot\appsettings.json
+wwwroot\download.js
+wwwroot\favicon.ico
+wwwroot\icon-192.png
+wwwroot\icon-512.png
+wwwroot\index.html
+wwwroot\lib\kjs\kjs-modules.js
+wwwroot\lib\quagga\quagga.min.js
+wwwroot\manifest.json
+wwwroot\module.js
+wwwroot\originalfavicon.ico
