@@ -1,0 +1,10 @@
+﻿@inherits ChildPageBaseMobile
+
+<div id="InitFocusMark" tabindex="0" />
+<DataCardMessageList @ref="@cardMessageList" CardValues="@_cardMessageValuesList" />
+<ButtonFuncRadzen @attributes="@(GetAttributes(STR_ATTRIBUTE_FUNC))"
+                  IsBusyDialog="false"
+                  IsHandy="true"
+                  OnClickResultF4="@OnClickResultF4"
+                  OnClickHtNotify="@OnClickHtNotify">
+</ButtonFuncRadzen>

@@ -1,0 +1,10 @@
+﻿@inherits ChildPageBasePC
+
+<EditForm Model="@(this)" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <CompGroupField @attributes="@(GetAttributes(STR_ATTRIBUTE_SEARCH))" />
+    <ButtonFuncRadzen @ref="ButtonFuncRadzen" @attributes="@(GetAttributes(STR_ATTRIBUTE_FUNC))"
+                      OnClickResultF1="@OnClickResultF1"
+                      OnClickResultF4="@OnClickResultF4">
+    </ButtonFuncRadzen>
+</EditForm>

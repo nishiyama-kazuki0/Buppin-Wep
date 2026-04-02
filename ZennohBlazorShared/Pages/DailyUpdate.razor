@@ -1,0 +1,42 @@
+﻿@page "/daily_update"
+@inherits ChildPageBasePC
+
+<RadzenFieldset AllowCollapse="false">
+    <HeaderTemplate>
+        <span class="d-inline-flex align-items-center align-middle">
+            <RadzenIcon Icon="info" class="me-1" /><span style=@($"font-size:{TitleFontSize};font-weight:{TitleFontWeight};")>日次</span>
+        </span>
+    </HeaderTemplate>
+    <ChildContent>
+        <RadzenCard>
+            <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Start" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+                <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="15">
+                    <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="10">
+                        <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.P" style=@($"width:{LabelWidth};font-size:{LabelFontSize};font-weight:{LabelFontWeight};")>システム状態</RadzenText>
+                        <RadzenTextBox Disabled="true" Value="@SystemStatus" style="@TextBoxStyle" />
+                    </RadzenStack>
+                </RadzenStack>
+                <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="15">
+                    <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="10">
+                        <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.P" style=@($"width:{LabelWidth};font-size:{LabelFontSize};font-weight:{LabelFontWeight};")>作業日</RadzenText>
+                        <RadzenTextBox Disabled="true" Value="@WorkDate" style="@TextBoxStyle" />
+                    </RadzenStack>
+                </RadzenStack>
+                <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="15">
+                    <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" Wrap="FlexWrap.NoWrap" Gap="10">
+                        <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.P" style=@($"width:{LabelWidth};font-size:{LabelFontSize};font-weight:{LabelFontWeight};")>自動日次処理</RadzenText>
+                        <RadzenTextBox Disabled="true" Value="@AutoProcStatus" style="@TextBoxStyle" />
+                        <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.P" style=@($"width:{LabelWidth};font-size:{LabelFontSize};font-weight:{LabelFontWeight};")>次回自動処理日時</RadzenText>
+                        <RadzenTextBox Disabled="true" Value="@NextProcTime" style="@TextBoxStyle" />
+                    </RadzenStack>
+                </RadzenStack>
+                <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="15">
+                    <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="10">
+                        <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.P" style=@($"width:{LabelWidth};font-size:{LabelFontSize};font-weight:{LabelFontWeight};")>前回処理日時</RadzenText>
+                        <RadzenTextBox Disabled="true" Value="@LastProcTime" style="@TextBoxStyle" />
+                    </RadzenStack>
+                </RadzenStack>
+            </RadzenStack>
+        </RadzenCard>
+    </ChildContent>
+</RadzenFieldset>

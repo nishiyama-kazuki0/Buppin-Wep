@@ -1,0 +1,36 @@
+﻿@inherits StepItemBase
+
+@*HT画面：出庫作業/コーナー割付/倉庫配送先選択*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <RadzenCard>
+            <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+            <HtTitleValueTextBox Title="ﾊﾟﾚｯﾄNo." @bind-Value="@(((StepItemCornerAllocationsViewModel?)PageVm!).PalletNo)" Textnewline=true/>
+            <RadzenAlert Variant="Variant.Filled"
+                AlertStyle="AlertStyle.Warning"
+                Size="AlertSize.Small"
+                Shade="Shade.Light"
+                AllowClose=false
+                Title="@(((StepItemCornerAllocationsViewModel?)PageVm)!.AlertTitle)"
+                Text="@(((StepItemCornerAllocationsViewModel?)PageVm)!.AlertText)"
+                Visible="@(((StepItemCornerAllocationsViewModel?)PageVm)!.IsAlert)" />
+            <HtTitleValueDropDown Id="DeliveryCd" NextId="AreaCd" Focus="true" Disabled="false" Title="倉庫配送先" Data="@dropdownHaiso" @bind-Value="@(((StepItemCornerAllocationsViewModel)PageVm!).DeliveryCd)" Change="@OnChangeDelivery" Required="true" Textnewline=true />
+            <HtTitleValueTextBox Title="ｺｰﾅｰ" Value="@(((StepItemCornerAllocationsViewModel?)PageVm!).Corner)" Textnewline=true/>
+            <HtTitleValueDropDown Id="AreaCd" NextId="ZoneCd" Disabled="false" Title="倉庫" Data="@dropdownArea" @bind-Value="@(((StepItemCornerAllocationsViewModel)PageVm!).AreaCd)" Change="@OnChangeArea" Required="true" Textnewline=true />
+            <HtTitleValueDropDown Id="ZoneCd" NextId=@(IsLocationTextEnable()
+                                  ? "DeliveryCd":"Location")
+                Disabled="false" Title="ｿﾞｰﾝ" Data="@dropdownZone" @bind-Value="@(((StepItemCornerAllocationsViewModel)PageVm!).ZoneCd)" Change="@OnChangeZone" Textnewline=true />
+
+             @if (IsLocationTextEnable())
+            {
+                <HtTitleValueTextBox Title="ﾛｹｰｼｮﾝ" Value="@(GetLocationName())" Id="Location" Required="false" Disabled = "true" />
+            }
+            else
+            {
+                <HtTitleValueDropDown Id="Location" NextId="DeliveryCd" Disabled="false" Title="ﾛｹｰｼｮﾝ" Data="@dropdownLocation" @bind-Value="@(((StepItemCornerAllocationsViewModel)PageVm!).LocationCd)" Change="@OnChangeLocation" Textnewline=true />
+            }
+
+        </RadzenStack>
+    </RadzenCard>
+</EditForm>

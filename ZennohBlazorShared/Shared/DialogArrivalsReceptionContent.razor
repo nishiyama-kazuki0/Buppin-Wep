@@ -1,0 +1,12 @@
+﻿@inherits ChildPageBasePC
+
+<EditForm Model="@(this)" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <CompGroupField @attributes="@(GetAttributes(STR_ATTRIBUTE_SEARCH))" />
+    <ButtonFuncRadzen @ref="ButtonFuncRadzen" @attributes="@(GetAttributes(STR_ATTRIBUTE_FUNC))"
+                      OnClickResultF2="@OnClickResultF2"
+                      OnClickResultF5="@OnClickResultF5"
+                      OnClickResultF12="@OnClickResultF12">
+    </ButtonFuncRadzen>
+    <DataGridExtend2 @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID))" @bind-SelectedData="@_gridSelectedData" />
+</EditForm>

@@ -1,0 +1,49 @@
+﻿@inherits StepItemBase
+
+@*HT画面：店別仕分【摘取】/仕分入力*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+        <RadzenIcon Icon="info" />
+        <RadzenText Text="入力情報" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px"></RadzenText>
+    </RadzenRow>
+
+    <RadzenCard>
+         <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            <HtTitleValueTextBox Disabled="true" Title="納品先" Value="@(((StepItemSortingByStoreDeliveryViewModel?)PageVm!).Delivery)" />
+            <HtTitleValueTextBox Disabled="true" Title="ﾊﾟﾚｯﾄNo" Value="@(((StepItemSortingByStoreDeliveryViewModel?)PageVm!).PalletNo)" />
+            <HtTitleValueTextBox Disabled="true" Title="品名" Value="@(((StepItemSortingByStoreDeliveryViewModel?)PageVm!).ProductName)" />
+            <HtTitleValueTextBox Disabled="true" Title="等階級" Value="@(((StepItemSortingByStoreDeliveryViewModel?)PageVm!).GradeClass)" />
+            <HtTitleValueTextBox Disabled="true" Title="入数" Value="@(((StepItemSortingByStoreDeliveryViewModel?)PageVm!).PackingQuantity )" />
+            <HtTitleValueTextBoxCaseBara Title="ｹｰｽ/ﾊﾞﾗ\n指示数"
+                Value="@(((StepItemSortingByStoreDeliveryViewModel)PageVm!).InstCase)" 
+                Value2="@(((StepItemSortingByStoreDeliveryViewModel)PageVm!).InstBara)" />
+            <HtTitleValueTextBoxCaseBara Title="ｹｰｽ/ﾊﾞﾗ\n済数"
+                Value="@(((StepItemSortingByStoreDeliveryViewModel)PageVm!).SumiCase)" 
+                Value2="@(((StepItemSortingByStoreDeliveryViewModel)PageVm!).SumiBara)" />
+
+        </RadzenStack>
+    </RadzenCard>
+
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+        <RadzenIcon Icon="edit" />
+        <RadzenText Text="数量入力" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px"></RadzenText>
+    </RadzenRow>
+            
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            @{
+                decimal casemax = ComService.ConvertDecimal("9".PadLeft(SharedConst.LEN_CASE, '9'));
+                decimal baramax = ComService.ConvertDecimal("9".PadLeft(SharedConst.LEN_BARA, '9'));
+            }
+            <HtTitleValueTextBoxCaseBara Id="Case" Id2="Bara" NextId="Case" Focus="true" Title="ｹｰｽ/ﾊﾞﾗ数"
+                Disabled="false" CaseTitle="ｹｰｽ数" @bind-Value="@(((StepItemSortingByStoreDeliveryViewModel)PageVm!).Case)" Min="0" Max="casemax" MaxLength="@SharedConst.LEN_CASE"
+                Disabled2="@(((StepItemSortingByStoreDeliveryViewModel)PageVm!).PackingQuantity == SharedConst.STR_HT_CASE_PACKING_QUANTITY_CONST)"
+                BaraTitle="ﾊﾞﾗ数" @bind-Value2="@(((StepItemSortingByStoreDeliveryViewModel)PageVm!).Bara)" Min2="0" Max2="baramax" MaxLength2="@SharedConst.LEN_BARA" RegexPattern="@SharedConst.STR_VARIDATE_NUM" RegexPattern2="@SharedConst.STR_VARIDATE_NUM"/>
+
+        </RadzenStack>
+    </RadzenCard>
+</EditForm>

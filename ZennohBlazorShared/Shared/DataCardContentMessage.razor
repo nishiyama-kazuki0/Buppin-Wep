@@ -1,0 +1,37 @@
+﻿<RadzenCard Style=@($"margin-left: {DataCardContentMarginLeft};margin-right: {DataCardContentMarginRight};margin-bottom: {DataCardContentMarginBottom};margin-top: {DataCardContentMarginTop}")>
+    @*     <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Normal" Wrap="FlexWrap.NoWrap" Gap="5"> *@
+        <RadzenRow class="rz-text-align-left" AlignItems="AlignItems.Center" Gap="0.5rem" RowGap="0.5rem">
+            <RadzenColumn Size="3">
+                <RadzenText TextStyle="TextStyle.Body1" TagName="TagName.P"  style=@($"font-size:{FontSizeLabel};font-weight:{FontWeightBold};")>
+                    @Values.OccurredTime
+                </RadzenText>
+            </RadzenColumn>
+            <RadzenColumn Size="2">
+                @if (0 == Values.ResultCategory)
+                {
+                    <RadzenBadge BadgeStyle="BadgeStyle.Info" IsPill=true style="display: flex;justify-content: center;align-items: center">
+                        <RadzenIcon Icon="info"></RadzenIcon>
+                    </RadzenBadge>
+                }
+                else if (2 == Values.ResultCategory)
+                {
+                    <RadzenBadge BadgeStyle="BadgeStyle.Warning" IsPill=true style="display: flex;justify-content: center;align-items: center">
+                        <RadzenIcon Icon="warning"></RadzenIcon>
+                    </RadzenBadge>
+                }
+                else if (9 == Values.ResultCategory)
+                {
+                    <RadzenBadge BadgeStyle="BadgeStyle.Danger" IsPill=true style="display: flex;justify-content: center;align-items: center">
+                        <RadzenIcon Icon="cancel"></RadzenIcon>
+                    </RadzenBadge>
+                }
+            </RadzenColumn>
+            <RadzenColumn>
+                <RadzenText TextStyle="TextStyle.Body1" TagName="TagName.P" style=@($"font-size:{FontSizeLabel};font-weight:{FontWeightBold};")>
+                    @((MarkupString)Values.Message.Replace("\\n", "\n").Replace("\n", "<br/>"))
+                </RadzenText>
+            </RadzenColumn>
+        </RadzenRow>
+@*     </RadzenStack> *@
+</RadzenCard>
+

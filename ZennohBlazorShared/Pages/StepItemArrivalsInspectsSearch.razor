@@ -1,0 +1,39 @@
+﻿@inherits StepItemBase
+
+@*HT画面：入庫作業/入荷検品/入荷-明細No.読取*@
+
+@*検索条件*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+            
+            <HtTitleValueDropDown Id="AreaCd" NextId="ZoneCd" Focus="true" Disabled="false" Title="倉庫" Data="@dropdownArea" @bind-Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).AreaCd)" Change="@OnChangeArea" Required="true" />
+            <HtTitleValueDropDown Id="ZoneCd" NextId=@(IsLocationTextEnable()
+                                  ? "ArrivalDetailNo":"Location")
+                Disabled="false" Title="ｿﾞｰﾝ" Data="@dropdownZone" @bind-Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).ZoneCd)" Change="@OnChangeZone" Required="true" />
+             @if (IsLocationTextEnable())
+            {
+                <HtTitleValueTextBox Title="ﾛｹｰｼｮﾝ" Value="@(GetLocationName())" Id="Location" Required="false" Disabled = "true" />
+            }
+            else
+            {
+                <HtTitleValueDropDown Id="Location" NextId="ArrivalDetailNo" Disabled="false" Title="ﾛｹｰｼｮﾝ" Data="@dropdownLocation" @bind-Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).LocationCd)" Change="@OnChangeLocation" />
+            }
+            @* <HtTitleValueTextBox Id="CarNumber" NextId="ArrivalDetailNo" Disabled="false" Title="車番" @bind-Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).CarNumberDisp)" Change="@OnChangeCarNumber" MaxLength="SharedConst.LEN_CAR_NUMBER" /> *@
+            @* <HtTitleValueDropDown Id="ArrivalDetailNo" NextId="AreaCd" Disabled="false" Title=@($"入荷-明細\nNo.") Data="@dropdownArrivalDetailNo" @bind-Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).ArrivalDetailNoDisp)" Required="true" /> *@
+            <HtTitleValueTextBox Id="ArrivalDetailNo" NextId="AreaCd" Disabled="false" Title=@($"入荷-明細\nNo.") @bind-Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).ArrivalDetailNoDisp)" Change="@OnChangeArrivalNo" MaxLength="SharedConst.LEN_NYUKA_MEISAI_NO" Required="true" />
+
+        </RadzenStack>
+    </RadzenCard>
+    
+    @*入荷検品済みのグリッド表示*@
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+        <RadzenIcon Icon="view_list" />
+        <RadzenText Text="検品実績" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px"></RadzenText>
+    </RadzenRow>
+
+    <DataGridExtend2 @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID))" OnCellRenderCallback="@CellRender" />
+   
+</EditForm>

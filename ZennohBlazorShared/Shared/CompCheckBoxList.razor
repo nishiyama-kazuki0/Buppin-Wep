@@ -1,0 +1,24 @@
+﻿@inherits CompBase
+@using ZennohBlazorShared.Validator;
+<RadzenFieldset>
+    <HeaderTemplate>
+        <span style=@($"font-size:{TitleFontSize};font-weight:{TitleFontWeight};")>@FieldsetText</span>
+    </HeaderTemplate>
+    <ChildContent>
+        <RadzenCheckBoxList
+            Disabled="@Disabled"
+            class="@Class"
+            style="@Style"
+            @bind-Value=@InputValues
+            Data="@Data"
+            ValueProperty="@ValueProperty"
+            TextProperty="@TextProperty"
+            Orientation="@Orientation">
+            <Items></Items>
+        </RadzenCheckBoxList>
+    </ChildContent>
+</RadzenFieldset>
+@if (Required)
+{
+    <RequiredValidator For="() => InputValues" ItemName=@Title />
+}

@@ -1,0 +1,51 @@
+﻿@inherits StepItemBase
+
+@*HT画面：在庫作業/パレット分割/先パレットNo.読取*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px" >
+        <RadzenIcon Icon="info"  Style="margin-bottom:0px;"/>
+        <RadzenText Text="親ﾊﾟﾚｯﾄNo.在庫情報" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" Style="margin-bottom:0px;"></RadzenText>
+    </RadzenRow>
+
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            <HtTitleValueTextBox Title="親ﾊﾟﾚｯﾄNo." Value="@(((StepItemPalletDivisionViewModel)PageVm!).MPalletNo)" IsMixed="@(((StepItemPalletDivisionViewModel?)PageVm)!.IsMixed)" />
+            <HtTitleValueTextBox Title="入荷-明細No." Value="@(((StepItemPalletDivisionViewModel)PageVm!).ArrivalDetailNoShow)" />
+            <HtTitleValueTextBox Title="品名" Value="@(((StepItemPalletDivisionViewModel)PageVm!).ProductName)" />
+            <HtTitleValueTextBox Title="等階級" Value="@(((StepItemPalletDivisionViewModel)PageVm!).GradeClass)" />
+            <HtTitleValueTextBox Title="産地" Value="@(((StepItemPalletDivisionViewModel)PageVm!).ProductArea)" />
+            <HtTitleValueTextBox Title="引当済数" Value="@(((StepItemPalletDivisionViewModel)PageVm!).MTotalAllocateBara)" />
+            <HtTitleValueTextBoxCaseBara Title="ｹｰｽ/ﾊﾞﾗ数"
+                                         Value="@(((StepItemPalletDivisionViewModel)PageVm!).MCase)"
+                                         Value2="@(((StepItemPalletDivisionViewModel)PageVm!).MBara)" />
+        </RadzenStack>
+    </RadzenCard>
+
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px" >
+        <RadzenIcon Icon="edit" Style="margin-bottom:0px;"/>
+        <RadzenText Text="子ﾊﾟﾚｯﾄNo.在庫情報入力" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left"Style="margin-bottom:0px;"></RadzenText>
+    </RadzenRow>
+
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            @{
+                decimal sobaramax = ComService.ConvertDecimal("9".PadLeft(SharedConst.LEN_SOBARA, '9'));
+            }
+            <HtTitleValueTextBox Id="SPalletNo" NextId="STotalBara" Focus="true" Disabled="false" Title="子ﾊﾟﾚｯﾄNo." @bind-Value="@(((StepItemPalletDivisionViewModel)PageVm!).SPalletNo)" MaxLength="@SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+            @{
+                decimal casemax = ComService.ConvertDecimal("9".PadLeft(SharedConst.LEN_CASE, '9'));
+                decimal baramax = ComService.ConvertDecimal("9".PadLeft(SharedConst.LEN_BARA, '9'));
+            }
+            <HtTitleValueTextBoxCaseBara Id="Case" Id2="Bara" NextId="Case" Focus="true" Title="ｹｰｽ/ﾊﾞﾗ数"
+                                         Disabled="false" CaseTitle="ｹｰｽ数" @bind-Value="@(((StepItemPalletDivisionViewModel)PageVm!).Case)" Min="0" Max="casemax" MaxLength="@SharedConst.LEN_CASE"
+                                         Disabled2="@(((StepItemPalletDivisionViewModel)PageVm!).PackingQuantity == SharedConst.STR_HT_CASE_PACKING_QUANTITY_CONST)"
+                                         BaraTitle="ﾊﾞﾗ数" @bind-Value2="@(((StepItemPalletDivisionViewModel)PageVm!).Bara)" Min2="0" Max2="baramax" MaxLength2="@SharedConst.LEN_BARA" RegexPattern="@SharedConst.STR_VARIDATE_NUM" RegexPattern2="@SharedConst.STR_VARIDATE_NUM" />
+
+        </RadzenStack>
+
+    </RadzenCard>
+</EditForm>

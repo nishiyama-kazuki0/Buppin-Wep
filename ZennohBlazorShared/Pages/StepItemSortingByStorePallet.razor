@@ -1,0 +1,22 @@
+﻿@inherits StepItemBase
+
+@*HT画面：店別仕分【種まき】/パレット№読取*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px" >
+        <RadzenIcon Icon="search"Style="margin-bottom:0px;"/>
+        <RadzenText Text="ﾊﾟﾚｯﾄNo読取" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left"Style="margin-bottom:0px;"></RadzenText>
+    </RadzenRow>
+
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            <HtTitleValueDropDown Id="DeliveryCd" NextId="PalletNo" Focus="true" Disabled="false" Title="取引先" Data="@dropdownCustomers" 
+                @bind-Value="@(((StepItemSortingByStoreViewModel)PageVm!).CustomerCd)" Change="@OnChangeCustomerCd" Required="true" />
+            <HtTitleValueTextBox Id="PalletNo" NextId="DeliveryCd" Disabled="false" Title="ﾊﾟﾚｯﾄNo." @bind-Value="@(((StepItemSortingByStoreViewModel)PageVm!).PalletNo)"
+                                 MaxLength="SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+
+        </RadzenStack>
+    </RadzenCard>
+</EditForm>

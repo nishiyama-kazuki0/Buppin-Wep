@@ -1,0 +1,77 @@
+﻿@inherits StepItemBase
+
+@*HT画面：出庫作業/倉庫配送先別ピッキング/摘取ピック（倉庫配送先別）/ピック数入力*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+            <HtTitleValueTextBoxCaseBara Title="指示\nｹｰｽ/ﾊﾞﾗ数" 
+                Value="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).SijiCase)" 
+                Value2="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).SijiBara)" />
+            <HtTitleValueTextBoxCaseBara Title="残在庫\nｹｰｽ/ﾊﾞﾗ数"
+                                            Value="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).ZanCase)"
+                                            Value2="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).ZanBara)" />
+            @{
+                decimal casemax = ComService.ConvertDecimal("9".PadLeft(SharedConst.LEN_CASE, '9'));
+                decimal baramax = ComService.ConvertDecimal("9".PadLeft(SharedConst.LEN_BARA, '9'));
+            }
+            <HtTitleValueTextBoxCaseBara Id="InCase" Id2="InBara" NextId="SPalletNo" Focus="true" Title="ｹｰｽ/ﾊﾞﾗ数"
+                Disabled="false" CaseTitle="ｹｰｽ数" @bind-Value="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).InCase)" Min="0" Max="casemax" MaxLength="@SharedConst.LEN_CASE"
+                Disabled2="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).PackingQuantity == SharedConst.STR_HT_CASE_PACKING_QUANTITY_CONST)"
+                BaraTitle="ﾊﾞﾗ数" @bind-Value2="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).InBara)" Min2="0" Max2="baramax" MaxLength2="@SharedConst.LEN_BARA" RegexPattern="@SharedConst.STR_VARIDATE_NUM" RegexPattern2="@SharedConst.STR_VARIDATE_NUM"/>
+        </RadzenStack>
+    </RadzenCard>
+
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+        <RadzenIcon Icon="edit" />
+        <RadzenText Text="先ﾊﾟﾚｯﾄNo.読取" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px"></RadzenText>
+    </RadzenRow>
+
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            <HtTitleValueTextBox Id="SPalletNo" NextId="InCase" Disabled="false" Title="先ﾊﾟﾚｯﾄNo." @bind-Value="@(((StepItemPickingItemByDeliveryViewModel?)PageVm!).SPalletNo)" Change="@OnChangePalletNo"
+                                 MaxLength="@SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+
+        </RadzenStack>
+    </RadzenCard>
+
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+        <RadzenIcon Icon="info" />
+        <RadzenText Text="品名情報" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px"></RadzenText>
+    </RadzenRow>
+
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            <HtTitleValueTextBox Title="品名" Value="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).ProductName)" />
+            <HtTitleValueTextBox Title="等階級" Value="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).GradeClass)" />
+            @if (((StepItemPickingItemByDeliveryViewModel)PageVm!).ProcPlantFlag == "1")
+            {
+                <HtTitleValueTextBox Disabled="true" Title="加工場名" Value="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).ProcPlantName)" />
+            }
+            <HtTitleValueTextBox Title="倉庫配送\nｺｰﾄﾞ" Value="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).DeliveryCdTwoLineTitle)" />
+            @if (((StepItemPickingItemByDeliveryViewModel)PageVm!).ProcPlantFlag == "1")
+            {
+                <HtTitleValueTextBox Disabled="true" Title="加工場ｺｰﾄﾞ" Value="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).ProcPlantCd)" />
+            }
+            <HtTitleValueTextBox Title="倉庫配送先" Value="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).DeliveryName)" />
+            
+            <HtTitleValueTextBox Title="産地" Value="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).ProductArea)" />
+            <HtTitleValueTextBox Title="荷印" Value="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).PackingMark)" />
+            <HtTitleValueTextBox Title="説明" Value="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).Explanation)" />
+            <HtTitleValueTextBox Title="摘要" Value="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).Abstract)" />
+            <HtTitleValueTextBox Title="元ﾊﾟﾚｯﾄNo." Value="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).MPalletNo)" IsMixed="@(((StepItemPickingItemByDeliveryViewModel?)PageVm)!.IsMixed)" />
+            <HtTitleValueTextBox Title="入荷-明細No." Value="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).ArrivalDetailNoShow)" />
+            <HtTitleValueTextBox Title="入数" Value="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).PackingQuantity)" />
+            <HtTitleValueTextBoxCaseBara Title="ｹｰｽ/ﾊﾞﾗ数" 
+                Value="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).Case)" 
+                Value2="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).Bara)" />
+@* 
+            <HtTitleValueTextBox Title="ｹｰｽ数" Value="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).Case)" />
+            <HtTitleValueTextBox Title="ﾊﾞﾗ数" Value="@(((StepItemPickingItemByDeliveryViewModel)PageVm!).Bara)" />
+ *@
+        </RadzenStack>
+    </RadzenCard>
+</EditForm>

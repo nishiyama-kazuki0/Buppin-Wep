@@ -1,0 +1,56 @@
+﻿@inherits ChildPageBasePC
+
+<RadzenFieldset>
+    <HeaderTemplate>
+        <span class="d-inline-flex align-items-center align-middle">
+            <RadzenIcon Icon="edit" class="me-1" /><span style=@($"font-size:{TitleFontSize};font-weight:{TitleFontWeight};")>設定</span>
+        </span>
+    </HeaderTemplate>
+    <ChildContent>
+        <RadzenCard>
+            <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Start" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+                <EditForm Model="@(this)" @ref="@editForm">
+                    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+                    <RadzenFieldset>
+                        <HeaderTemplate>
+                            <RadzenIcon Icon="lock_outline" class="me-1" /><span style=@($"font-size:{TitleFontSize};font-weight:{TitleFontWeight};")>パスワード設定</span>
+                        </HeaderTemplate>
+                        <ChildContent>
+                            <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Start" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+                                <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Normal" Wrap="FlexWrap.NoWrap" Gap="5">
+                                    <RadzenText TextStyle="TextStyle.Subtitle2" style=@($"width:{LabelWidth}px;font-size:{LabelFontSize};font-weight:{LabelFontWeight};")>現在のパスワード<span style="color: red;">@RequiredDisplaySuffix</span></RadzenText>
+                                    <CompTextBox @ref="@txtPasswordCur"></CompTextBox>
+                                </RadzenStack>
+                                <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Normal" Wrap="FlexWrap.NoWrap" Gap="5">
+                                    <RadzenText TextStyle="TextStyle.Subtitle2" style=@($"width:{LabelWidth}px;font-size:{LabelFontSize};font-weight:{LabelFontWeight};")>新しいパスワード<span style="color: red;">@RequiredDisplaySuffix</span></RadzenText>
+                                    <CompTextBox @ref="@txtPasswordNew"></CompTextBox>
+                                </RadzenStack>
+                                <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Normal" Wrap="FlexWrap.NoWrap" Gap="5">
+                                    <RadzenText TextStyle="TextStyle.Subtitle2" style=@($"width:{LabelWidth}px;font-size:{LabelFontSize};font-weight:{LabelFontWeight};")>新しいパスワード(確認)<span style="color: red;">@RequiredDisplaySuffix</span></RadzenText>
+                                    <CompTextBox @ref="@txtPasswordNewConf"></CompTextBox>
+                                </RadzenStack>
+                                <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Normal" Wrap="FlexWrap.NoWrap" Gap="5">
+                                    <RadzenButton Icon="settings" Click="@OnClickSettingPassword" class="rz-border-radius-10 rz-shadow-10" Text="設定"></RadzenButton>
+                                    <RadzenButton Icon="" Click="@OnClickClearPassword" class="rz-border-radius-10 rz-shadow-10" Text="クリア"></RadzenButton>
+                                </RadzenStack>
+                            </RadzenStack>
+                        </ChildContent>
+                    </RadzenFieldset>
+                </EditForm>
+                <RadzenFieldset Visible="@IsVisibleSaveSearch">
+                    <HeaderTemplate>
+                        <RadzenIcon Icon="settings" class="me-1" /><span style=@($"font-size:{TitleFontSize};font-weight:{TitleFontWeight};")>検索条件保存</span>
+                    </HeaderTemplate>
+                    <ChildContent>
+                        <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Normal" Wrap="FlexWrap.NoWrap" Gap="5">
+                            <RadzenButton Icon="manage_accounts" Click="@OnClickSettingSearch" class="rz-border-radius-10 rz-shadow-10" Text="設定"></RadzenButton>
+                            <RadzenButton Icon="" Click="@OnClickInitializeSearch" class="rz-border-radius-10 rz-shadow-10" Text="初期化"></RadzenButton>
+                        </RadzenStack>
+                    </ChildContent>
+                </RadzenFieldset>
+            </RadzenStack>
+        </RadzenCard>
+    </ChildContent>
+    <SummaryTemplate>
+    </SummaryTemplate>
+</RadzenFieldset>

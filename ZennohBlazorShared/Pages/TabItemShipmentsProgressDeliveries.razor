@@ -1,0 +1,10 @@
+﻿@inherits TabItemBase
+
+@*出荷進捗照会/倉庫配送先別*@
+
+<EditForm Model="@(this)" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <CompGroupField @attributes="@(GetAttributes(STR_ATTRIBUTE_SEARCH))" />
+    <DataGridProgress @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID_ALL))" />
+    <DataGridProgress @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID))" @bind-SelectedData="@_gridSelectedData" OnCellRenderCallback="@CellRender" />
+</EditForm>

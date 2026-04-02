@@ -1,0 +1,41 @@
+﻿@inherits StepItemBase
+
+@*HT画面：在庫作業/パレット詰合せ/子パレットNo.読取*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <div id=@STR_INIT_FOCUS_MARK tabindex="0" />
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px" >
+        <RadzenIcon Icon="info"Style="margin-bottom:0px;" />
+        <RadzenText Text="親ﾊﾟﾚｯﾄNo.代表情報" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left"Style="margin-bottom:0px;"></RadzenText>
+    </RadzenRow>
+
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+            <HtTitleValueTextBox Title="親ﾊﾟﾚｯﾄNo." Value="@(((StepItemPalletAssortViewModel)PageVm!).PPalletNo)" IsMixed="@(((StepItemPalletAssortViewModel?)PageVm)!.IsMixed)" Disabled="true" />
+            <HtTitleValueTextBox Title="品名" Value="@(((StepItemPalletAssortViewModel)PageVm!).PProductName)" />
+            <HtTitleValueTextBox Title="等階級" Value="@(((StepItemPalletAssortViewModel)PageVm!).GradeClass)" />
+            <HtTitleValueTextBox Title="産地" Value="@(((StepItemPalletAssortViewModel)PageVm!).ProductArea)" />
+            <HtTitleValueTextBox Title="総ﾊﾞﾗ数" Value="@(((StepItemPalletAssortViewModel)PageVm!).TotalBara)" />
+            <RadzenAlert Variant="Variant.Filled"
+                         AlertStyle="AlertStyle.Warning"
+                         Size="AlertSize.Small"
+                         Shade="Shade.Light"
+                         AllowClose=false
+                         Title="@(((StepItemPalletAssortViewModel?)PageVm)!.AlertTitle)"
+                         Text="@(((StepItemPalletAssortViewModel?)PageVm)!.AlertText)"
+                         Visible="@(((StepItemPalletAssortViewModel?)PageVm)!.IsMixed)" />
+            <HtTitleValueTextBox Id="InCPalletNo" NextId="InCPalletNo" Focus="true" Disabled="false" Title="子ﾊﾟﾚｯﾄNo." @bind-Value="@(((StepItemPalletAssortViewModel)PageVm!).InCPalletNo)" Change="@OnChangePalletNo"
+                                 MaxLength="SharedConst.LEN_PALLET_NO" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+
+        </RadzenStack>
+    </RadzenCard>
+
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px" >
+        <RadzenIcon Icon="view_list"Style="margin-bottom:0px;" />
+        <RadzenText Text="読取子ﾊﾟﾚｯﾄNo." TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" Style="margin-bottom:0px;"></RadzenText>
+    </RadzenRow>
+
+    <DataCardList @ref="@cardLst" CardValues="@_cardValuesList" @bind-SelectedData="@_cardSelectedData" OnPageChangedCallback="@OnPageChange"
+    Style="margin-left: 0px;margin-right: 0px;margin-bottom: 0px;margin-top: 0px"/>
+</EditForm>

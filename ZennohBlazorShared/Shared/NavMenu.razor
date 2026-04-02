@@ -1,0 +1,33 @@
+﻿@inject NavigationManager Navigation
+@inject CommonService ComService
+
+<RadzenPanelMenu Style="width:inherit">
+    @if (IsVisibleSearchText)
+    {
+        <RadzenCard class="rz-background-color-base-700">
+            <RadzenTextBox Change="@(args => ChangeSearchText(args))"
+                       Placeholder="ﾒﾆｭｰ検索..."
+                       Style="width:100%"></RadzenTextBox>
+        </RadzenCard>
+    }
+    @foreach (var menu in this.MenuItems)
+    {
+        @* 親メニューのパスは、存在URLだとindexページに遷移し、使い勝手が良くないとのことで設定しない対応 *@
+        @* Path=@menu.menuUrlString *@
+        <RadzenPanelMenuItem
+            Text=@menu.menuName
+            Icon=@menu.iconName
+            MouseEnter="@(args => ShowTooltip(args, menu.ToolTipMessage,new TooltipOptions(){ Position = TooltipPosition.Right }))">
+            @foreach (var subMenu in menu.subMenuList)
+            {
+                <RadzenPanelMenuItem
+                    Text=@subMenu.menuName
+                    Path=@subMenu.menuUrlString
+                    Icon=@subMenu.iconName
+                    MouseEnter="@(args => ShowTooltip(args, subMenu.ToolTipMessage,new TooltipOptions(){ Position = TooltipPosition.Right }))">
+                </RadzenPanelMenuItem>
+            }
+        </RadzenPanelMenuItem>
+    }
+</RadzenPanelMenu>
+

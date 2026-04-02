@@ -1,0 +1,12 @@
+﻿@page "/mobile_arrival_menu"
+@inherits ChildPageBaseMobile
+
+@*HT画面：HTメニュー/入庫メニュー*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <RadzenCard>
+        <ButtonHTMenuRadzen ClassName="@ClassName">
+        </ButtonHTMenuRadzen>
+    </RadzenCard>
+</EditForm>

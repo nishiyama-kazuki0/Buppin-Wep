@@ -1,0 +1,31 @@
+﻿@inherits StepItemBase
+
+@*HT画面：出庫作業/倉庫配送先別ピッキング/パレットピック（倉庫配送先別）/ピック確定*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <div id=@STR_INIT_FOCUS_MARK tabindex="0" />
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            <HtTitleValueTextBox Title="ﾊﾟﾚｯﾄNo." Value="@(((StepItemPickingPalletByDeliveryViewModel?)PageVm!).PalletNo)" IsMixed="@(((StepItemPickingPalletByDeliveryViewModel?)PageVm)!.IsMixed)" />
+           @*  <HtTitleValueLabel Title="ﾋﾟｯｸ数:" Value="@(((StepItemPickingPalletByDeliveryViewModel)PageVm!).Pick)"
+                               Title2="残数:" Value2="@(((StepItemPickingPalletByDeliveryViewModel?)PageVm)!.Remain)" /> *@
+            <HtTitleValueTextBoxCaseBara Title="ﾋﾟｯｸ\nｹｰｽ/ﾊﾞﾗ数"
+                                         Value="@(((StepItemPickingPalletByDeliveryViewModel)PageVm!).SijiCase)"
+                                         Value2="@(((StepItemPickingPalletByDeliveryViewModel)PageVm!).SijiBara)" />
+            <HtTitleValueTextBoxCaseBara Title="残在庫\nｹｰｽ/ﾊﾞﾗ数"
+                                         Value="@(((StepItemPickingPalletByDeliveryViewModel)PageVm!).ZanCase)"
+                                         Value2="@(((StepItemPickingPalletByDeliveryViewModel)PageVm!).ZanBara)" />
+
+        </RadzenStack>
+    </RadzenCard>
+
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+        <RadzenIcon Icon="view_list" />
+        <RadzenText Text="倉庫配送先一覧" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px"></RadzenText>
+    </RadzenRow>
+
+    <DataGridExtend2 @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID))" />
+</EditForm>
+

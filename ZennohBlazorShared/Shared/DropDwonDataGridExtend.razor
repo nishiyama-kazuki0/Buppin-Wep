@@ -1,0 +1,53 @@
+﻿
+
+    <RadzenDropDownDataGrid  
+        Chips="true" 
+        AllowFiltering="true" 
+        FilterCaseSensitivity="FilterCaseSensitivity.CaseInsensitive" 
+        AllowClear="true"
+        Multiple="true" 
+        Placeholder="Select..."
+        Data=@Data 
+        TextProperty="@TextProperty"
+        ValueProperty="@ValueProperty"
+        @bind-Value=@selectedData
+        @attributes="AttributesStringText">
+
+        <Columns>
+
+        @*チェックボックスカラム*@
+        @if (SelectionMode == DataGridSelectionMode.Multiple)
+        {
+            <RadzenDataGridColumn TItem="IDictionary<string, object>" Title="check" Width="40px" Sortable="false" Filterable="false" Reorderable="false" Resizable="false">
+                <HeaderTemplate>
+                    <RadzenCheckBox TriState="false" TValue="bool" Value="@(Data.Any(i => selectedData != null && selectedData.Contains(i)))"
+                                Change="@ChangeSelectCheckClick" />
+                </HeaderTemplate>
+                <Template Context="data">
+                    <RadzenCheckBox TriState="false" Value="@(selectedData != null && selectedData.Contains(data))"
+                                TValue="bool" Change="@ChangeSelectCheckClick" />
+                </Template>
+            </RadzenDataGridColumn>
+        }
+        else
+        {
+
+        }
+
+        @*データカラム*@
+        @foreach (var col in this.Columns)
+        {
+            <RadzenDataGridColumn TItem="IDictionary<string, object>" Width="@GetColumnWidthExpression(col.Value.Item2)"
+                                Property="@GetColumnPropertyExpression(col.Key)" Title="@col.Key" Type="col.Value.Item1" TextAlign="@col.Value.Item3">
+                <Template>
+                    @if (context.ContainsKey(col.Key))
+                    {
+                        @context[col.Key]
+                    }
+                </Template>
+            </RadzenDataGridColumn>
+        }
+        </Columns>
+    </RadzenDropDownDataGrid>
+
+

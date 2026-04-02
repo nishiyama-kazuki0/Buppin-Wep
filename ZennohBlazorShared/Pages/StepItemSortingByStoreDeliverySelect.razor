@@ -1,0 +1,22 @@
+﻿@inherits StepItemBase
+
+@*HT画面：店別仕分【摘取】/納品先選択*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px" >
+        <RadzenIcon Icon="search"Style="margin-bottom:0px;"/>
+        <RadzenText Text="納品先選択" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left"Style="margin-bottom:0px;"></RadzenText>
+    </RadzenRow>
+
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            <HtTitleValueDropDown Id="CustomerCd" NextId="DeliveryCd" Focus="true" Disabled="false" Title="取引先" Data="@dropdownCustomers"
+                                  @bind-Value="@(((StepItemSortingByStoreDeliveryViewModel)PageVm!).CustomerCd)" Change="@OnChangeCustomerCd" Required="true" />
+            <HtTitleValueDropDown Id="DeliveryCd" NextId="CustomerCd" Disabled="false" Title="納品先" Data="@dropdownDelivery"
+                @bind-Value="@(((StepItemSortingByStoreDeliveryViewModel)PageVm!).DeliveryCd)" Change="@OnChangeDelivery" Required="true" />
+
+        </RadzenStack>
+    </RadzenCard>
+</EditForm>

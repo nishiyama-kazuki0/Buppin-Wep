@@ -1,0 +1,68 @@
+﻿@inherits RadzenComponent
+@inject CommonService ComService
+@inject IJSRuntime JS
+
+@if (Visible)
+{
+    <div @ref="@Element" @attributes="Attributes" class="@GetCssClass()" style="@Style" id="@GetId()" >
+        <div class="rz-form">
+            <RadzenRow class="rz-text-align-left" AlignItems="AlignItems.Center" Gap="0.5rem" RowGap="0.5rem" Style="width:100%">
+                <RadzenColumn Size=@LoginFormTitleColumnSize>
+                    <label class="rz-label" for=@Id("workername")>@WorkerText</label>
+                </RadzenColumn>
+                <RadzenColumn Size=@LoginFormTextBoxColumnSize>
+                    <RadzenTextBox id=@Id("workername") Disabled="true" Name="Workername" @bind-Value=@workername @ref="txtWorkername" Style=@($"width:100%;font-size:{LoginFontSize};font-weight:{LoginFontWeight};") />
+                </RadzenColumn>
+            </RadzenRow>
+            <RadzenRow class="rz-text-align-left" AlignItems="AlignItems.Center" Gap="0.5rem" RowGap="0.5rem" Style="width:100%">
+                <RadzenColumn Size=@LoginFormTitleColumnSize>
+                    <label class="rz-label" for=@Id("username")>@UserText</label>
+                </RadzenColumn>
+                <RadzenColumn Size=@LoginFormTextBoxColumnSize>
+                    <div class="rz-form-row">
+                        <div class="rz-form-input-wrapper">
+                            <RadzenTextBox AutoComplete=@AutoComplete AutoCompleteType=@UserNameAutoCompleteType id=@Id("username") Name="Username" @bind-Value=@username @ref="txtUsername" @onkeydown="@UsernameEnter" @oninput=@(args => username = args.Value.ToString()) @onfocus="@(args => OnUsernameFocus(args))" Change="@OnUsernameChanged" Style=@($"width:100%;font-size:{LoginFontSize};font-weight:{LoginFontWeight};") />
+                            <RadzenRequiredValidator Component="Username" Text=@UserRequired />
+                        </div>
+                    </div>
+                </RadzenColumn>
+            </RadzenRow>
+            <RadzenRow class="rz-text-align-left" AlignItems="AlignItems.Center" Gap="0.5rem" RowGap="0.5rem" Style="width:100%">
+                <RadzenColumn Size=@LoginFormTitleColumnSize>
+                    <label class="rz-label" for=@Id("password")>@PasswordText</label>
+                </RadzenColumn>
+                <RadzenColumn Size=@LoginFormTextBoxColumnSize>
+                    <div class="rz-form-row">
+                        <div class="rz-form-input-wrapper">
+                            <RadzenPassword id=@Id("password") AutoComplete=@AutoComplete AutoCompleteType=@PasswordAutoCompleteType Name="Password" @bind-Value=@password @ref="txtPassword" @onkeydown="@PasswordEnter" @oninput=@(args => password = args.Value.ToString()) @onfocus="@(args => OnPasswordFocus(args))" Style=@($"width:100%;font-size:{LoginFontSize};font-weight:{LoginFontWeight};") />
+                            <RadzenRequiredValidator Component="Password" Text=@PasswordRequired />
+                        </div>
+                    </div>
+                </RadzenColumn>
+            </RadzenRow>
+            @if (AllowRememberMe)
+            {
+                <div class="rz-form-row">
+                    <label class="rz-label"></label>
+                    <div class="rz-form-input-wrapper">
+                        <RadzenSwitch @bind-Value="@rememberMe" id=@Id("rememberMe") Name="RememberMe" />
+                        <label class="rz-label" for="RememberMe">@RememberMeText</label>
+                    </div>
+                </div>
+            }
+            <div class="rz-form-row">
+                <label class="rz-label"></label>
+                <div class="rz-form-input-wrapper rz-login-buttons">
+                    @*<RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Text=@LoginText Click=@OnLogin />*@
+                    <RadzenButton class="rz-border-radius-10 rz-shadow-10 rz-ripple" style=@($"font-size:{LoginFontSizeBtn};font-weight:{LoginFontWeightBtn};")
+                                  Variant="Variant.Flat" ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Text="@LoginText" Click="@OnLogin" IsBusy="@isBusyLoginButton" />
+
+                    @if (AllowResetPassword)
+                    {
+                        <a class="rz-link" @onclick=@OnReset>@ResetPasswordText</a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+}

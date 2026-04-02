@@ -1,0 +1,32 @@
+﻿@inherits StepItemBase
+
+@*HT画面：入庫作業/パレット移動/パレットNo.読取*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+        @*検索条件*@
+        <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px" >
+            <RadzenIcon Icon="search" />
+            <RadzenText Text="移動元ﾊﾟﾚｯﾄNo." TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px;"></RadzenText>
+        </RadzenRow>
+
+        <RadzenCard>
+            <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+                <HtTitleValueTextBox Id="PalletNo" NextId="AreaCd" Focus="true" Disabled="false" Title="ﾊﾟﾚｯﾄNo." @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).PalletNo)"
+                                     Change="@OnChangePalletNo"
+                                 MaxLength="SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+                <HtTitleValueDropDown Id="AreaCd" NextId="ZoneCd" Disabled="false" Title="倉庫" Data="@dropdownArea" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).AreaCd)" Change="@OnChangeArea" />
+                <HtTitleValueDropDown Id="ZoneCd" NextId="PalletNo" Disabled="false" Title="ｿﾞｰﾝ" Data="@dropdownZone" @bind-Value="@(((StepItemMovePalletViewModel)PageVm!).ZoneCd)" Change="@OnChangeZone" />
+
+            </RadzenStack>
+        </RadzenCard>
+
+        <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px" >
+            <RadzenIcon Icon="info"/>
+            <RadzenText Text="空き状況" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px;"></RadzenText>
+        </RadzenRow>
+
+        <DataGridExtend2 @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID))"/>
+
+</EditForm>

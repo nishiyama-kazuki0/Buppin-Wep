@@ -1,0 +1,77 @@
+﻿@using Radzen
+@using System.Linq.Dynamic.Core
+@using Microsoft.AspNetCore.Components.Forms
+@using Microsoft.JSInterop
+@typeparam TValue
+
+@if (DropDown.Multiple)
+{
+    <li class="@GetComponentCssClass("rz-multiselect")"
+        aria-label="@DropDown.GetItemOrValueFromProperty(Item, DropDown.TextProperty)"
+    @onmousedown:preventDefault @onmousedown="args=>SelectItem(args,false)"
+    @onclick:preventDefault @onclick="args=>SelectItem(args,true)">
+        <div class="rz-chkbox ">
+            <div class="@(DropDown.IsSelected(Item) ? "rz-chkbox-box rz-state-active" : "rz-chkbox-box") @(Disabled ? " rz-state-disabled  " : "")">
+                <span class="@(DropDown.IsSelected(Item) ? "rz-chkbox-icon  rzi rzi-check" : "rz-chkbox-icon")"></span>
+            </div>
+        </div>
+        <span>
+            @if (DropDown.Template != null)
+            {
+                @DropDown.Template(Item)
+            }
+            else
+            {
+                @DropDown.GetItemOrValueFromProperty(Item, DropDown.TextProperty)
+            }
+        </span>
+    </li>
+}
+else
+{
+    <li role="option" class="@GetComponentCssClass("rz-dropdown")" aria-label="@DropDown.GetItemOrValueFromProperty(Item, DropDown.TextProperty)"
+    @onmousedown:preventDefault @onmousedown="args=>SelectItem(args,false)"
+    @onclick:preventDefault @onclick="args=>SelectItem(args,true)">
+        <span>
+            @if (DropDown.Template != null)
+            {
+                @DropDown.Template(Item)
+            }
+            else
+            {
+                @DropDown.GetItemOrValueFromProperty(Item, DropDown.TextProperty)
+            }
+        </span>
+    </li>
+}
+@code {
+    [Parameter]
+    public CustomHTDropDown<TValue> DropDown { get; set; }
+
+    [Parameter]
+    public bool Disabled { get; set; }
+
+    [Parameter]
+    public object Item { get; set; }
+
+    async Task SelectItem(MouseEventArgs args, bool isclick)
+    {
+        var condition = DropDown.LoadData.HasDelegate && !string.IsNullOrEmpty(DropDown.searchText);
+
+        if (!Disabled && isclick ? !condition : condition)
+        {
+            await DropDown.OnSelectItemInternal(Item);
+        }
+    }
+
+    protected string GetComponentCssClass(string prefix)
+    {
+        string result = $"{prefix}-item ";
+        if (Disabled)
+            result += "rz-state-disabled ";
+        else if (DropDown.IsSelected(Item))
+            result += "rz-state-highlight ";
+
+        return result;
+    }
+}

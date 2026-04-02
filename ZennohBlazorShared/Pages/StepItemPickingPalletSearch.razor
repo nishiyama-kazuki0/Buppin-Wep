@@ -1,0 +1,23 @@
+﻿@inherits StepItemBase
+
+@*HT画面：出庫作業/倉庫別ピッキング/パレットピック（倉庫別）/パレットNo.読取*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            <HtTitleValueTextBox Id="PalletNo" NextId="PalletNo" Focus="true" Disabled="false" Title="ﾊﾟﾚｯﾄNo." @bind-Value="@(((StepItemPickingPalletViewModel?)PageVm!).PalletNo)" Change="@OnChangePalletNo"
+                                 MaxLength="SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+
+        </RadzenStack>
+    </RadzenCard>
+</EditForm>
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+        <RadzenIcon Icon="view_list" />
+        <RadzenText Text="ﾋﾟｯｸ予定一覧" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px"></RadzenText>
+    </RadzenRow>
+
+<DataGridExtend2 @attributes="@(GetAttributes(STR_ATTRIBUTE_GRID))" OnCellRenderCallback="@CellRender" IsHandyGridSelect="true" @ref="@dataGrid" />
+
+

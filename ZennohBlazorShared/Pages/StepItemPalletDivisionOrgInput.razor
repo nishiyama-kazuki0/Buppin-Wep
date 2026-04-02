@@ -1,0 +1,26 @@
+﻿@inherits StepItemBase
+
+@*HT画面：在庫作業/パレット分割/元パレットNo.読取*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px" >
+        <RadzenIcon Icon="search" />
+        <RadzenText Text="親ﾊﾟﾚｯﾄNo.入力" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" Style="margin-bottom:0px;"></RadzenText>
+    </RadzenRow>
+
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            <HtTitleValueTextBox Id="MPalletNo" NextId="MPalletNo" Focus="true" Disabled="false" Title="親ﾊﾟﾚｯﾄNo." @bind-Value="@(((StepItemPalletDivisionViewModel)PageVm!).MPalletNo)" Change="@OnChangePalletNo" MaxLength="SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+
+        </RadzenStack>
+    </RadzenCard>
+
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px" >
+        <RadzenIcon Icon="view_list" Style="margin-bottom:0px;"/>
+        <RadzenText Text="在庫情報" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" Style="margin-bottom:0px;"></RadzenText>
+    </RadzenRow>
+
+    <DataCardList @ref="@cardLst" CardValues="@_cardValuesList" @bind-SelectedData="@_cardSelectedData"/>
+</EditForm>

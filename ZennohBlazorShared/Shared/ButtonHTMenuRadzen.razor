@@ -1,0 +1,30 @@
+﻿@inject NavigationManager Navigation
+@inject CommonService ComService
+
+<div style="display:flex; flex-direction:column;">
+    @foreach (var menu in this.MenuItems)
+    {
+        @foreach (var subMenu in menu.subMenuList)
+        {
+            countNumber++;
+            <div class="rz-navigation-item rz-border-radius-10 rz-shadow-10 rz-ripple">
+                @{
+                    int number = countNumber;
+                }
+                <CompMenuButton @ref="menubtn[number]" style=@($"text-align: start; font-size: {FontSize}; font-weight: {Fontweight};")
+                    BackGroundColorCode="@BackGroundColorCode"
+                    ForeColorCode="@ForeColorCode"
+                    BackGroundColorCodeForFocus="@BackGroundColorCodeForFocus"
+                    ForeColorCodeCodeForFocus="@ForeColorCodeCodeForFocus"
+                    Text=@subMenu.menuName
+                    Path=@subMenu.menuUrlString
+                    Icon=@subMenu.iconName
+                    RenderNum=@countNumber />
+            </div>
+            <div style=@($"border-bottom: {BottonMargin} solid transparent;")></div>
+        }
+    }
+    @{
+        countNumber = 0;
+    }
+</div>

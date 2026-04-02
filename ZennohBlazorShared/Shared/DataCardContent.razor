@@ -1,0 +1,59 @@
+﻿<RadzenCard Style=@($"margin-left: {DataCardContentMarginLeft};margin-right: {DataCardContentMarginRight};margin-bottom: {DataCardContentMarginBottom};margin-top: {DataCardContentMarginTop}")>
+    <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" Wrap="FlexWrap.Wrap" Gap="5">
+
+@*         <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Start" Wrap="FlexWrap.Wrap" Gap="5">
+            <RadzenText TextStyle="TextStyle.Subtitle2" Text="@(@$"{SubNum}/{TotalNum}")" Visible = "@IsDispCountNum"></RadzenText>
+        </RadzenStack>
+ *@
+            @foreach (var o in Values)
+            {
+                @if (o.Value.Visible)
+                {
+                    bool bCaseBara = o.Key.Contains(CaseBaraContains);
+                    bool bBara = o.Key.Contains(SharedConst.STR_HT_BARA_COLOR_CONTAINS);
+                    <RadzenRow class="rz-text-align-left" AlignItems="AlignItems.Center" Gap="0.5rem" RowGap="0.5rem">
+                        <RadzenColumn Size="ColumnSize">
+                            <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.P" style=@($"font-size:{FontSizeLabel};font-weight:{FontWeightBold};")>
+                                @{
+                                    string strValue = o.Key;
+                                    strValue = strValue.Replace("\\n", "\n");
+                                }
+                                @if (strValue.Contains("\n"))
+                                {
+                                    @foreach (var line in strValue.Split("\n"))
+                                    {
+                                        <div>
+                                            @line
+                                        </div>
+                                    }
+                                }
+                                else
+                                {
+                                    @strValue
+                                }
+                            </RadzenText>
+                        </RadzenColumn>
+                        <RadzenColumn Size="12 - ColumnSize">
+                            @if (!bCaseBara)
+                            {
+                                <RadzenTextBox Disabled="true" Value="@(bBara && o.Value.Value == "0" ? "" : o.Value.Value)" Class="w-100" Style=@($"width:100%;font-size:{FontSizeTextBox};font-weight:{FontWeightBold};{(bBara ? "color:#ff0000" : "")}") />
+                            }
+                            else
+                            {
+                                string[] vals = o.Value.Value.ToString().Split('/');
+                                <RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Start" Wrap="FlexWrap.NoWrap" Gap="0">
+                                    <RadzenTextBox Disabled="true" Value="@vals[0]" Class="w-100" Style=@($"width:50%;font-size:{FontSizeTextBox};font-weight:{FontWeightBold};text-align:right") />
+
+                                    <div style=@($"border-right: {CaseBaraMargin} solid transparent;")></div>
+
+                                    <RadzenTextBox Disabled="true" Value="@(vals.Length <= 1 || vals[1] == "0" ? "" : vals[1])" Class="w-100" Style=@($"width:50%;font-size:{FontSizeTextBox};font-weight:{FontWeightBold};text-align:right;color:#ff0000") />
+                                </RadzenStack>
+
+                            }
+                        </RadzenColumn>
+                    </RadzenRow>
+                }
+            }
+    </RadzenStack>
+</RadzenCard>
+

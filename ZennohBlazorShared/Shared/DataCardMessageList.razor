@@ -1,0 +1,17 @@
+﻿<RadzenDataList @ref="radzenData"
+                AllowVirtualization=@AllowVirtualization
+                Style="@(AllowVirtualization ? $"height:{HT_DataCardListHeight};overflow:auto;" : "")"
+                WrapItems="@(!AllowVirtualization)"
+                AllowPaging="@(!AllowVirtualization)"
+                Data="@CardValues"
+                TItem="DataCardMessageListInfo"
+                PageSize="@PageSize"
+                PagerHorizontalAlign="@PagerHorizontalAlign"
+                ShowPagingSummary="@ShowPagingSummary"
+                @attributes="AttributesStringText"
+                PagerPosition="@PagerPosition"
+                Page="@OnPageChanged">
+    <Template Context="cardData">
+        <DataCardContentMessage Values="@cardData" TotalNum="@CardValues.Count"></DataCardContentMessage>
+    </Template>
+</RadzenDataList>

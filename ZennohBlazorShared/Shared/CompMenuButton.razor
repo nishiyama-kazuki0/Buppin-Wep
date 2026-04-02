@@ -1,0 +1,10 @@
+﻿@implements IAsyncDisposable
+@inject IJSRuntime JS
+
+<RadzenButton 
+    class="rz-navigation-item rz-border-radius-10 rz-shadow-10 rz-ripple"
+    style=@($"width:{HT_MenuBottonWidth};background-color:{BackGroundColorCode};color{ForeColorCode};{style};")
+    onmouseover=@($"this.style.background='{BackGroundColorCode}';this.style.color='{ForeColorCode}'")
+    Icon="@Icon"
+    Text="@Text"
+    Click="@ButtonClick" />

@@ -1,0 +1,35 @@
+﻿@inherits StepItemBase
+
+@*HT画面：出庫作業/コーナー別仕分/仕分数入力*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            <HtTitleValueTextBox Title="切出済\nﾊﾟﾚｯﾄNo." Value="@(((StepItemSortingByCornersViewModel)PageVm!).PalletNo)" IsMixed="@(((StepItemSortingByCornersViewModel?)PageVm)!.IsMixed)" />
+@* 
+            @{
+                decimal casemax = ComService.ConvertDecimal("9".PadLeft(SharedConst.LEN_CASE, '9'));
+                decimal baramax = ComService.ConvertDecimal("9".PadLeft(SharedConst.LEN_BARA, '9'));
+            }
+            <HtTitleValueTextBoxCaseBara Id="SortingCase" Id2="SortingBara" NextId="SortingCase" Focus="true" Title="ｹｰｽ/ﾊﾞﾗ数"
+                Disabled="false" CaseTitle="ｹｰｽ数" @bind-Value="@(((StepItemSortingByCornersViewModel)PageVm!).SortingCase)" Min="0" Max="casemax" MaxLength="SharedConst.LEN_CASE"
+                Disabled2="@(((StepItemSortingByCornersViewModel)PageVm!).PackingQuantity == SharedConst.STR_HT_CASE_PACKING_QUANTITY_CONST)"
+                BaraTitle="ﾊﾞﾗ数" @bind-Value2="@(((StepItemSortingByCornersViewModel)PageVm!).SortingBara)" Min2="0" Max2="baramax" MaxLength2="SharedConst.LEN_BARA" />
+ *@
+        </RadzenStack>
+    </RadzenCard>
+                        
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+        <RadzenIcon Icon="view_list" />
+        <RadzenText Text="切出在庫" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px"></RadzenText>
+    </RadzenRow>
+
+    <DataCardList @ref="@cardLst" CardValues="@_cardValuesList" @bind-SelectedData="@_cardSelectedData" OnPageChangedCallback="@OnPageChanged"
+                  IsInCaseBara="true"
+                  Id="SortingCase" Id2="SortingBara" NextId="SortingCase" FirstFocus="true"
+                  @bind-InCase="@(((StepItemSortingByCornersViewModel)PageVm!).SortingCase)"
+                  @bind-InBara="@(((StepItemSortingByCornersViewModel)PageVm!).SortingBara)" />
+</EditForm>
+

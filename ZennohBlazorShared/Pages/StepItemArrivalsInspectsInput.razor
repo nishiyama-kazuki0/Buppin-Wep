@@ -1,0 +1,79 @@
+﻿@inherits StepItemBase
+@using System
+
+@*HT画面：入庫作業/入荷検品/入荷検品入力*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+
+        @*検索条件*@
+        <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+            <RadzenIcon Icon="info" />
+            <RadzenText Text="予定情報" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px"></RadzenText>
+        </RadzenRow>
+            
+        <RadzenCard>
+            <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+                <HtTitleValueTextBox Title="車番" Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).CarNumber)" />
+                <HtTitleValueTextBox Title=@($"入荷-明細\nNo.") Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).ArrivalDetailNoShow)" />
+                <HtTitleValueTextBox Title="済/残" Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).Remain)" />
+
+                <HtTitleValueTextBoxCaseBara Title="指示\nｹｰｽ/ﾊﾞﾗ数"
+                                             Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).InspectCase)"
+                                             Value2="@(((StepItemArrivalsInspectsViewModel)PageVm!).InspectBara)" />
+                <HtTitleValueTextBoxCaseBara Title="未検品\nｹｰｽ/ﾊﾞﾗ数"
+                                             Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).RemainCase)"
+                                             Value2="@(((StepItemArrivalsInspectsViewModel)PageVm!).RemainBara)" />
+
+               @*  <HtTitleValueTextBox Title=@($"出荷指示\n数量") Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).ShipQuantity)" />  *@
+                <HtTitleValueTextBoxCaseBara Title="出荷指示\nｹｰｽ/ﾊﾞﾗ数"
+                                             Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).ShipCase)"
+                                             Value2="@(((StepItemArrivalsInspectsViewModel)PageVm!).ShipBara)" />
+                <HtTitleValueTextBox Title="入数" Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).PackingQuantity)" />
+
+            </RadzenStack >
+        </RadzenCard>
+
+        @*入力*@
+        <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+            <RadzenIcon Icon="edit" />
+            <RadzenText Text="入荷検品入力" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px"></RadzenText>
+        </RadzenRow>
+            
+        <RadzenCard>
+             <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+                @{
+                    decimal casemax = ComService.ConvertDecimal("9".PadLeft(SharedConst.LEN_CASE, '9'));
+                    decimal baramax = ComService.ConvertDecimal("9".PadLeft(SharedConst.LEN_BARA, '9'));
+                }
+                <HtTitleValueTextBoxCaseBara Id="Case" Id2="Bara" NextId="Case" Focus="true" Title="ｹｰｽ/ﾊﾞﾗ数"
+                    Disabled="false" CaseTitle="ｹｰｽ数" @bind-Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).Case)" Min="0" Max="casemax" MaxLength="@SharedConst.LEN_CASE" 
+                    Disabled2="@(((StepItemArrivalsInspectsViewModel)PageVm!).PackingQuantity == SharedConst.STR_HT_CASE_PACKING_QUANTITY_CONST)"
+                    BaraTitle="ﾊﾞﾗ数" @bind-Value2="@(((StepItemArrivalsInspectsViewModel)PageVm!).Bara)" Min2="0" Max2="baramax" MaxLength2="@SharedConst.LEN_BARA"  RegexPattern="@SharedConst.STR_VARIDATE_NUM"  RegexPattern2="@SharedConst.STR_VARIDATE_NUM"/>
+            </RadzenStack>
+        </RadzenCard>
+
+        @*明細*@
+        <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+            <RadzenIcon Icon="info" />
+            <RadzenText Text="品名情報" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px"></RadzenText>
+        </RadzenRow>
+
+        <RadzenCard Visible="@(((StepItemArrivalsInspectsViewModel)PageVm!).IsDetail)">
+            <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+                <HtTitleValueTextBox Title="品名" Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).ProductName)" />
+                <HtTitleValueTextBox Title="等階級" Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).GradeClass)" />
+                <HtTitleValueTextBox Title="出荷者" Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).Shipper)" />
+                <HtTitleValueTextBox Title="産地" Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).ProductArea)" />
+                <HtTitleValueTextBox Title="荷姿" Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).Packing)" />
+                <HtTitleValueTextBox Title="荷印" Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).PackingMark)" />
+                <HtTitleValueTextBox Title="説明" Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).Explanation)" />
+                <HtTitleValueTextBox Title="特管品" Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).SpeciallyItem)" />
+                <HtTitleValueTextBox Title="ｴﾁﾚﾝ" Value="@(((StepItemArrivalsInspectsViewModel)PageVm!).Ethylene)" />
+
+            </RadzenStack>
+        </RadzenCard>
+    
+</EditForm>

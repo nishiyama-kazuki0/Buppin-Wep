@@ -1,0 +1,6 @@
+﻿<RadzenCard>
+    <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3">ファイルアップロード</RadzenText>
+    <RadzenUpload @ref="upload" Auto="false" Url="upload/single" Change=@(args => OnChange(args, "Manual Upload"))
+                  Progress=@(args => OnProgress(args, "Manual Upload")) Complete="CompleteUpload" class="w-100" />
+    <RadzenButton style="margin-bottom: 1px" Icon="upload" Text="アップロード" Click="OnClick" class="rz-border-radius-10 rz-shadow-10 rz-ripple" />
+</RadzenCard>

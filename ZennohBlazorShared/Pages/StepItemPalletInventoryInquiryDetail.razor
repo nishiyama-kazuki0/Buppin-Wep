@@ -1,0 +1,43 @@
+﻿@inherits StepItemBase
+
+@*HT画面：在庫作業/パレット照会/パレット在庫明細*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <div id=@STR_INIT_FOCUS_MARK tabindex="0" />
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+            <HtTitleValueTextBox Disabled="true" Title="ﾊﾟﾚｯﾄNo." Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).PalletNo)" IsMixed="@(((StepItemPalletInventoryInquiryViewModel?)PageVm)!.IsMixed)" />
+        </RadzenStack>
+    </RadzenCard>
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px" >
+        <RadzenIcon Icon="info"Style="margin-bottom:0px;" />
+        <RadzenText Text="在庫明細" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left"Style="margin-bottom:0px;"></RadzenText>
+    </RadzenRow>
+
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            <HtTitleValueTextBox Title="品名" Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).ProductName)" />
+            <HtTitleValueTextBox Title="入荷-明細\nNo." Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).ArrivalDetailNoShow)" />
+            <HtTitleValueTextBox Title="等階級" Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).GradeClass)" />
+            <HtTitleValueTextBox Title="出荷者" Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).Shipper)" />
+            <HtTitleValueTextBox Title="産地" Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).ProductArea)" />
+            <HtTitleValueTextBox Title="荷姿" Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).Packing)" />
+            <HtTitleValueTextBox Title="入数" Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).PackingQuantity)" />
+            <HtTitleValueTextBox Title="荷印" Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).PackingMark)" />
+            <HtTitleValueTextBox Title="説明" Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).Explanation)" />
+            <HtTitleValueTextBox Title="特管品" Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).SpecialType)" />
+            <HtTitleValueTextBox Title="ｴﾁﾚﾝ" Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).Ethylene)" />
+            <HtTitleValueTextBox Title="温度帯" Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).TempRange)" />
+            <HtTitleValueTextBoxCaseBara Title="ｹｰｽ/ﾊﾞﾗ数" 
+                Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).Case)" 
+                Value2="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).Bara)" />
+            <HtTitleValueTextBox Title="倉庫配送先\nｺｰﾄﾞ" Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).DeliveryCd)" />
+            <HtTitleValueTextBox Title="倉庫配送先" Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).DeliveryNm)" />
+            <HtTitleValueTextBoxCaseBara Title="引当\nｹｰｽ/ﾊﾞﾗ数"
+                Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).ApplyCase)"
+                Value2="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).ApplyBara)" />
+        </RadzenStack>
+    </RadzenCard>
+</EditForm>

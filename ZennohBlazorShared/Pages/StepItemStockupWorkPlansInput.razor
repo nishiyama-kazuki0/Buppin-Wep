@@ -1,0 +1,56 @@
+﻿@inherits StepItemBase
+
+@*HT画面：入庫作業/パレット紐付/パレットNo.入力*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+        <RadzenIcon Icon="edit" />
+        <RadzenText Text="紐付情報入力" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px"></RadzenText>
+    </RadzenRow>
+
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            @{
+                decimal casemax = ComService.ConvertDecimal("9".PadLeft(SharedConst.LEN_CASE, '9'));
+                decimal baramax = ComService.ConvertDecimal("9".PadLeft(SharedConst.LEN_BARA, '9'));
+            }
+            <HtTitleValueTextBox Id="PalletNo" NextId="CaseIn" Focus="true" Disabled="false" Title="ﾊﾟﾚｯﾄNo." @bind-Value="@(((StepItemStockupWorkPlansViewModel)PageVm!).PalletNo)" Change="@OnChangePalletNo" IsMixed="@(((StepItemStockupWorkPlansViewModel)PageVm!).IsMixed)" MaxLength="@SharedConst.LEN_PALLET_NO" Required="true" RegexPattern="@SharedConst.STR_VARIDATE_PALLETE_NO" />
+            <HtTitleValueTextBoxCaseBara Id="CaseIn" Id2="BaraIn" NextId="PalletNo" Title="ｹｰｽ/ﾊﾞﾗ数"
+                Disabled="false" CaseTitle="ｹｰｽ数" @bind-Value="@(((StepItemStockupWorkPlansViewModel)PageVm!).CaseIn)" Min="0" Max="casemax" MaxLength="SharedConst.LEN_CASE"
+                Disabled2="@(((StepItemStockupWorkPlansViewModel)PageVm!).PackingQuantity == SharedConst.STR_HT_CASE_PACKING_QUANTITY_CONST)"
+                BaraTitle="ﾊﾞﾗ数" @bind-Value2="@(((StepItemStockupWorkPlansViewModel)PageVm!).BaraIn)" Min2="0" Max2="baramax" MaxLength2="@SharedConst.LEN_BARA" RegexPattern="@SharedConst.STR_VARIDATE_NUM" RegexPattern2="@SharedConst.STR_VARIDATE_NUM"/>
+
+        </RadzenStack>
+    </RadzenCard>
+
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px">
+        <RadzenIcon Icon="info" />
+        <RadzenText Text="入荷検品実績" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" TagName="TagName.P" Style="margin-bottom: 0px"></RadzenText>
+    </RadzenRow>
+
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            <HtTitleValueTextBox Title="@($"入荷-明細\nNo.")" Value="@(((StepItemStockupWorkPlansViewModel)PageVm!).ArrivalDetailNoShow)" />
+            <HtTitleValueTextBox Title="品名" Value="@(((StepItemStockupWorkPlansViewModel)PageVm!).ProductName)" />
+            <HtTitleValueTextBox Title="等階級" Value="@(((StepItemStockupWorkPlansViewModel)PageVm!).GradeClass)" />
+            <HtTitleValueTextBox Title="特管品" Value="@(((StepItemStockupWorkPlansViewModel)PageVm!).SpecialType)" />
+            <HtTitleValueTextBox Title="出荷者" Value="@(((StepItemStockupWorkPlansViewModel)PageVm!).Shipper)" />
+            <HtTitleValueTextBox Title="産地" Value="@(((StepItemStockupWorkPlansViewModel)PageVm!).ProductArea)" />
+            <HtTitleValueTextBox Title="荷姿" Value="@(((StepItemStockupWorkPlansViewModel)PageVm!).Packing)" />
+            <HtTitleValueTextBox Title="荷印" Value="@(((StepItemStockupWorkPlansViewModel)PageVm!).PackingMark)" />
+            <HtTitleValueTextBox Title="説明" Value="@(((StepItemStockupWorkPlansViewModel)PageVm!).Explanation)" />
+            <HtTitleValueTextBox Title="入数" Value="@(((StepItemStockupWorkPlansViewModel)PageVm!).PackingQuantity)" />
+            <HtTitleValueTextBoxCaseBara Title=@("検品\nｹｰｽ/ﾊﾞﾗ数")
+                Value="@(((StepItemStockupWorkPlansViewModel)PageVm!).Case)"
+                Value2="@(((StepItemStockupWorkPlansViewModel)PageVm!).Bara)" />
+            <HtTitleValueTextBoxCaseBara Title=@("紐付済\nｹｰｽ/ﾊﾞﾗ数")
+                Value="@(((StepItemStockupWorkPlansViewModel)PageVm!).LinkCase)"
+                Value2="@(((StepItemStockupWorkPlansViewModel)PageVm!).LinkBara)" />
+            <HtTitleValueTextBox Title=@($"出荷指示\n数量") Value="@(((StepItemStockupWorkPlansViewModel)PageVm!).ShipQuantity)" />
+        </RadzenStack>
+    </RadzenCard>
+</EditForm>
+

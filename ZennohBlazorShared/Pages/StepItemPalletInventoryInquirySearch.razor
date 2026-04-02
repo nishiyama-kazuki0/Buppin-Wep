@@ -1,0 +1,50 @@
+﻿@inherits StepItemBase
+
+@*HT画面：在庫作業/パレット照会/パレットNo.読取*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+   <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px" >
+        <RadzenIcon Icon="search" Style="margin-bottom:0px;"/>
+        <RadzenText Text="ﾊﾟﾚｯﾄNo.読取" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left"Style="margin-bottom:0px;"></RadzenText>
+
+    </RadzenRow>
+
+    <RadzenCard>
+       <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+            <HtTitleValueTextBox Id="PalletNo" NextId="PalletNo" Focus="true" Disabled="false" Title="ﾊﾟﾚｯﾄNo." @bind-Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).PalletNo)" Change="@OnChangePalletNo" IsMixed="@(((StepItemPalletInventoryInquiryViewModel?)PageVm)!.IsMixed)" MaxLength="SharedConst.LEN_PALLET_NO" Required="true" />
+
+        </RadzenStack>
+    </RadzenCard>
+
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px" >
+        <RadzenIcon Icon="view_list" Style="margin-bottom:0px;"/>
+        <RadzenText Text="在庫情報" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left" Style="margin-bottom:0px;"></RadzenText>
+    </RadzenRow>
+
+    <DataCardList @ref="@cardLst" CardValues="@_cardValuesList" @bind-SelectedData="@_cardSelectedData"/>
+
+    <RadzenRow AlignItems="AlignItems.Center" JustifyContent="JustifyContent.Start" RowGap="0" Gap="1px" >
+        <RadzenIcon Icon="info" Style="margin-bottom:0px;"/>
+        <RadzenText Text="ﾊﾟﾚｯﾄNo.情報" TextStyle="TextStyle.Subtitle2" TextAlign="TextAlign.Left"Style="margin-bottom:0px;"></RadzenText>
+    </RadzenRow>
+
+    <RadzenCard>
+        <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Normal" JustifyContent="JustifyContent.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+            <HtTitleValueTextBox Title="状態" Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).Status)" />
+            <HtTitleValueTextBox Title="割付ｺｰﾅｰ" Value="@(((StepItemPalletInventoryInquiryViewModel?)PageVm)!.AllocCorner)" />
+            <HtTitleValueTextBox Title="倉庫" Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).Area)" />
+            <HtTitleValueTextBox Title="ｿﾞｰﾝ" Value="@(((StepItemPalletInventoryInquiryViewModel?)PageVm)!.Zone)" />
+            <HtTitleValueTextBox Title="ﾛｹ" Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).Location)" />
+
+            @* 名称が見切れるので2Line表示は一旦コメント化 *@
+            @* <HtTitleValueTextBox2Line Title="割付ｺｰﾅｰ" Value="@(((StepItemPalletInventoryInquiryViewModel?)PageVm)!.AllocCorner)" 
+                                                    Title2="倉庫" Value2="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).Area)" />
+            <HtTitleValueTextBox2Line Title="ﾛｹ" Value="@(((StepItemPalletInventoryInquiryViewModel)PageVm!).Location)"
+                                                    Title2="ｿﾞｰﾝ" Value2="@(((StepItemPalletInventoryInquiryViewModel?)PageVm)!.Zone)" /> *@
+
+        </RadzenStack>
+    </RadzenCard>
+
+</EditForm>

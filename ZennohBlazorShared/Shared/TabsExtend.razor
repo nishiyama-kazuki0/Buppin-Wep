@@ -1,0 +1,12 @@
+﻿<style>
+    .@(GetType().Name) .rz-tabview-title {
+        font-size: @($"{TabsExtendFontSize}");
+        font-weight: @($"{TabsExtendFontWeight}");
+    }
+</style>
+<RadzenTabs TabPosition="TabPosition.Top"
+            RenderMode="TabRenderMode.Server"
+            Tabs="@tabs"
+            @ref="radzenTabs"
+            class="@(GetType().Name)" />
+@*TabRenderMode.Serverにしないと、全てのタブのOnInitializedAsyncが走る*@

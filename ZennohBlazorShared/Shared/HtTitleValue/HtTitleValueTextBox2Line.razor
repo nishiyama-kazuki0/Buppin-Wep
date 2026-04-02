@@ -1,0 +1,37 @@
+﻿@inherits HtTitleValueBase
+
+<RadzenStack Orientation="Orientation.Horizontal" AlignItems="AlignItems.Start" Wrap="FlexWrap.NoWrap" Gap="5">
+
+    <RadzenRow class="rz-text-align-left" AlignItems="AlignItems.Center" Gap="0.5rem" RowGap="0.5rem" Style="width:100%">
+        <RadzenColumn Size="6">
+            <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Start" Wrap="FlexWrap.NoWrap" Gap="0">
+                <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.P" Text="@Title" style=@($"font-size:{FontSizeLabel};font-weight:{FontWeightBold};") />
+                @{
+                    bool bBara = Title.Contains(SharedConst.STR_HT_BARA_COLOR_CONTAINS);
+                }
+                <RadzenTextBox Disabled="true" Value="@(bBara && Value == "0" ? "" : Value)" Class="w-100" Style=@($"font-size:{FontSizeTextBox};font-weight:{FontWeightBold};{(bBara ? "color:#ff0000" : "")}") />
+            </RadzenStack>
+        </RadzenColumn>
+        @if (!string.IsNullOrEmpty(Title2))
+        {
+            <RadzenColumn Size="6">
+                <RadzenStack Orientation="Orientation.Vertical" AlignItems="AlignItems.Start" Wrap="FlexWrap.NoWrap" Gap="0">
+                    <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.P" Text="@Title2" style=@($"font-size:{FontSizeLabel};font-weight:{FontWeightBold};") />
+                    @{
+                        bool bBara = Title2.Contains(SharedConst.STR_HT_BARA_COLOR_CONTAINS);
+                    }
+                    <RadzenTextBox Disabled="true" Value="@(bBara && Value2 == "0" ? "" : Value2)" Class="w-100" Style=@($"font-size:{FontSizeTextBox};font-weight:{FontWeightBold};{(bBara ? "color:#ff0000" : "")}") />
+                </RadzenStack>
+            </RadzenColumn>
+        }
+    </RadzenRow>
+
+</RadzenStack>
+
+@code
+{
+    [Parameter]
+    public string Title2 { get; set; } = string.Empty;
+    [Parameter]
+    public string Value2 { get; set; } = string.Empty;
+}

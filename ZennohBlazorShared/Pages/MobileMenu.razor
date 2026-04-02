@@ -1,0 +1,11 @@
+﻿@page "/mobile_menu"
+@inherits ChildPageBaseMobile
+
+@*HT画面：HTメニュー*@
+
+<EditForm Model="@this" @ref="@editForm">
+    <ValidationSummary style=@($"{ChildBaseService.StyleValidationSammary}") />
+    <RadzenCard>
+        <ButtonHTMenuRadzen IsTopMenu="true"></ButtonHTMenuRadzen>
+    </RadzenCard>
+</EditForm>

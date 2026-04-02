@@ -1,0 +1,10 @@
+﻿<RadzenRow Gap="1rem">
+    <RadzenText TextStyle="TextStyle.DisplayH5">
+        @((MarkupString)MessageContent.Replace("\n", "<br/>"))
+    </RadzenText>
+</RadzenRow>
+<RadzenStack Orientation="Orientation.Horizontal" JustifyContent="JustifyContent.Start" Gap="4px" Wrap="FlexWrap.NoWrap">
+<ButtonFuncRadzen @attributes="@AttributesFuncButton"
+                  OnClickResultF1="@OnClickResultF1">
+</ButtonFuncRadzen>
+</RadzenStack>
